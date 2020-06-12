@@ -1,0 +1,19 @@
+{
+    "title": "CodeIgniter4 API Reference",
+    "copyright": "(c) 2020",
+    "license": "MIT",
+    "website": "https://codeigniter.com",
+    "keywords": [
+        "php",
+        "codeigniter4 framework",
+        "api",
+        "reference"
+    ],
+    "links": {
+        "Home": "https://codeigniter.com",
+        "Contribute": "https://github.com/enix-app/codeigniter4-api-reference"
+    },
+    "components": [
+        "codeigniter4/framework"
+    ]
+}
