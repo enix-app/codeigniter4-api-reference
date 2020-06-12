@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Images\ImageHandlerInterface &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Images/ImageHandlerInterface.html">Class ImageHandlerInterface</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Interface 
+        ImageHandlerInterface</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Images\ImageHandlerInterface        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Expected behavior of an Image handler    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#convert()">
+            convert()
+            </a>
+        </td>
+        <td>
+            Changes the stored image type to indicate the new file format to use when saving.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#crop()">
+            crop()
+            </a>
+        </td>
+        <td>
+            Crops the image to the desired height and width. If one of the height/width values
+is not provided, that value will be set the appropriate value based on offsets and
+image dimensions.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fit()">
+            fit()
+            </a>
+        </td>
+        <td>
+            Combine cropping and resizing into a single command.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#flatten()">
+            flatten()
+            </a>
+        </td>
+        <td>
+            Flattens transparencies, default white background        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#flip()">
+            flip()
+            </a>
+        </td>
+        <td>
+            Flip an image horizontally or vertically        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEXIF()">
+            getEXIF()
+            </a>
+        </td>
+        <td>
+            Retrieve the EXIF information from the image, if possible. Returns
+an array of the information, or null if nothing can be found.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reorient()">
+            reorient()
+            </a>
+        </td>
+        <td>
+            Reads the EXIF information from the image and modifies the orientation
+so that displays correctly in the browser.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resize()">
+            resize()
+            </a>
+        </td>
+        <td>
+            Resize the image        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#rotate()">
+            rotate()
+            </a>
+        </td>
+        <td>
+            Rotates the image on the current canvas.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#save()">
+            save()
+            </a>
+        </td>
+        <td>
+            Saves any changes that have been made to file.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#text()">
+            text()
+            </a>
+        </td>
+        <td>
+            Overlays a string of text over the image.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\ImageHandlerInterface.html">
+            ImageHandlerInterface            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="convert()">convert()</h3>
+
+<p>
+Changes the stored image type to indicate the new file format to use when saving.</p>
+
+<p>Does not touch the actual resource.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $imageType        </td>
+        <td>
+            int|null        </td>
+        <td>
+            A        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="crop()">crop()</h3>
+
+<p>
+Crops the image to the desired height and width. If one of the height/width values
+is not provided, that value will be set the appropriate value based on offsets and
+image dimensions.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $width        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $height        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $x        </td>
+        <td>
+            int|null        </td>
+        <td>
+            X-axis        </td>
+    </tr>
+        <tr>
+        <td>
+            $y        </td>
+        <td>
+            int|null        </td>
+        <td>
+            Y-axis        </td>
+    </tr>
+        <tr>
+        <td>
+            $maintainRatio        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $masterDim        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="fit()">fit()</h3>
+
+<p>
+Combine cropping and resizing into a single command.</p>
+
+<p>Supported positions:</p>
+<ul>
+<li>top-left</li>
+<li>top</li>
+<li>top-right</li>
+<li>left</li>
+<li>center</li>
+<li>right</li>
+<li>bottom-left</li>
+<li>bottom</li>
+<li>bottom-right</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $width        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $height        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $position        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="flatten()">flatten()</h3>
+
+<p>
+Flattens transparencies, default white background</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $red        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $green        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $blue        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="flip()">flip()</h3>
+
+<p>
+Flip an image horizontally or vertically</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $dir        </td>
+        <td>
+            string        </td>
+        <td>
+            Direction        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getEXIF()">getEXIF()</h3>
+
+<p>
+Retrieve the EXIF information from the image, if possible. Returns
+an array of the information, or null if nothing can be found.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string|null        </td>
+        <td>
+            If        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="reorient()">reorient()</h3>
+
+<p>
+Reads the EXIF information from the image and modifies the orientation
+so that displays correctly in the browser.</p>
+
+
+
+<p>Returns: \ImageHandlerInterface </p>
+
+
+<h3 id="resize()">resize()</h3>
+
+<p>
+Resize the image</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $width        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $height        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $maintainRatio        </td>
+        <td>
+            bool        </td>
+        <td>
+            If        </td>
+    </tr>
+        <tr>
+        <td>
+            $masterDim        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="rotate()">rotate()</h3>
+
+<p>
+Rotates the image on the current canvas.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $angle        </td>
+        <td>
+            float        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="save()">save()</h3>
+
+<p>
+Saves any changes that have been made to file.</p>
+
+<p>Example:
+$image-&gt;resize(100, 200, true)</p>
+<pre><code>  -&gt;save($target);
+</code></pre>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $target        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $quality        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="text()">text()</h3>
+
+<p>
+Overlays a string of text over the image.</p>
+
+<p>Valid options:</p>
+<ul>
+<li>color         Text Color (hex number)</li>
+<li>shadowColor   Color of the shadow (hex number)</li>
+<li>hAlign        Horizontal alignment: left, center, right</li>
+<li>vAlign        Vertical alignment: top, middle, bottom</li>
+<li>hOffset</li>
+<li>vOffset</li>
+<li>fontPath</li>
+<li>fontSize</li>
+<li>shadowOffset</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $text        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

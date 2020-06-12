@@ -1,0 +1,3456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Database\SQLite3\Builder &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../../classes/CodeIgniter/Database/SQLite3/Builder.html">Class Builder</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Builder</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Database\SQLite3\Builder        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">BaseBuilder</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Builder for SQLite3    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#countAll()">
+            countAll()
+            </a>
+        </td>
+        <td>
+            "Count All" query        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#countAllResults()">
+            countAllResults()
+            </a>
+        </td>
+        <td>
+            "Count All Results" query        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#decrement()">
+            decrement()
+            </a>
+        </td>
+        <td>
+            Decrements a numeric column by the specified value.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#delete()">
+            delete()
+            </a>
+        </td>
+        <td>
+            Delete        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#distinct()">
+            distinct()
+            </a>
+        </td>
+        <td>
+            DISTINCT        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#emptyTable()">
+            emptyTable()
+            </a>
+        </td>
+        <td>
+            Empty Table        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#from()">
+            from()
+            </a>
+        </td>
+        <td>
+            From        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get()">
+            get()
+            </a>
+        </td>
+        <td>
+            Get        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBinds()">
+            getBinds()
+            </a>
+        </td>
+        <td>
+            Returns an array of bind values and their
+named parameters for binding in the Query object later.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCompiledDelete()">
+            getCompiledDelete()
+            </a>
+        </td>
+        <td>
+            Get DELETE query string        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCompiledInsert()">
+            getCompiledInsert()
+            </a>
+        </td>
+        <td>
+            Get INSERT query string        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCompiledQBWhere()">
+            getCompiledQBWhere()
+            </a>
+        </td>
+        <td>
+            Get compiled 'where' condition string        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCompiledSelect()">
+            getCompiledSelect()
+            </a>
+        </td>
+        <td>
+            Get SELECT query string        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCompiledUpdate()">
+            getCompiledUpdate()
+            </a>
+        </td>
+        <td>
+            Get UPDATE query string        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSetData()">
+            getSetData()
+            </a>
+        </td>
+        <td>
+            Returns the previously set() data, alternatively resetting it
+if needed.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWhere()">
+            getWhere()
+            </a>
+        </td>
+        <td>
+            Get_Where        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#groupBy()">
+            groupBy()
+            </a>
+        </td>
+        <td>
+            GROUP BY        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#groupEnd()">
+            groupEnd()
+            </a>
+        </td>
+        <td>
+            Ends a query group        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#groupStart()">
+            groupStart()
+            </a>
+        </td>
+        <td>
+            Starts a query group.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#having()">
+            having()
+            </a>
+        </td>
+        <td>
+            HAVING        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#havingGroupEnd()">
+            havingGroupEnd()
+            </a>
+        </td>
+        <td>
+            Ends a query group for HAVING clause.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#havingGroupStart()">
+            havingGroupStart()
+            </a>
+        </td>
+        <td>
+            Starts a query group for HAVING clause.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#havingIn()">
+            havingIn()
+            </a>
+        </td>
+        <td>
+            HAVING IN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#havingLike()">
+            havingLike()
+            </a>
+        </td>
+        <td>
+            LIKE with HAVING clause        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#havingNotIn()">
+            havingNotIn()
+            </a>
+        </td>
+        <td>
+            HAVING NOT IN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#ignore()">
+            ignore()
+            </a>
+        </td>
+        <td>
+            Ignore        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#increment()">
+            increment()
+            </a>
+        </td>
+        <td>
+            Increments a numeric column by the specified value.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#insert()">
+            insert()
+            </a>
+        </td>
+        <td>
+            Insert        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#insertBatch()">
+            insertBatch()
+            </a>
+        </td>
+        <td>
+            Insert_Batch        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#join()">
+            join()
+            </a>
+        </td>
+        <td>
+            JOIN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#like()">
+            like()
+            </a>
+        </td>
+        <td>
+            LIKE        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#limit()">
+            limit()
+            </a>
+        </td>
+        <td>
+            LIMIT        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notGroupStart()">
+            notGroupStart()
+            </a>
+        </td>
+        <td>
+            Starts a query group, but NOTs the group        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notHavingGroupStart()">
+            notHavingGroupStart()
+            </a>
+        </td>
+        <td>
+            Starts a query group for HAVING clause, but NOTs the group.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notHavingLike()">
+            notHavingLike()
+            </a>
+        </td>
+        <td>
+            NOT LIKE with HAVING clause        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notLike()">
+            notLike()
+            </a>
+        </td>
+        <td>
+            NOT LIKE        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#offset()">
+            offset()
+            </a>
+        </td>
+        <td>
+            Sets the OFFSET value        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orGroupStart()">
+            orGroupStart()
+            </a>
+        </td>
+        <td>
+            Starts a query group, but ORs the group        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orHaving()">
+            orHaving()
+            </a>
+        </td>
+        <td>
+            OR HAVING        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orHavingGroupStart()">
+            orHavingGroupStart()
+            </a>
+        </td>
+        <td>
+            Starts a query group for HAVING clause, but ORs the group.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orHavingIn()">
+            orHavingIn()
+            </a>
+        </td>
+        <td>
+            OR HAVING IN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orHavingLike()">
+            orHavingLike()
+            </a>
+        </td>
+        <td>
+            OR LIKE with HAVING clause        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orHavingNotIn()">
+            orHavingNotIn()
+            </a>
+        </td>
+        <td>
+            OR HAVING NOT IN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orLike()">
+            orLike()
+            </a>
+        </td>
+        <td>
+            OR LIKE        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orNotGroupStart()">
+            orNotGroupStart()
+            </a>
+        </td>
+        <td>
+            Starts a query group, but OR NOTs the group        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orNotHavingGroupStart()">
+            orNotHavingGroupStart()
+            </a>
+        </td>
+        <td>
+            Starts a query group for HAVING clause, but OR NOTs the group.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orNotHavingLike()">
+            orNotHavingLike()
+            </a>
+        </td>
+        <td>
+            OR NOT LIKE with HAVING clause        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orNotLike()">
+            orNotLike()
+            </a>
+        </td>
+        <td>
+            OR NOT LIKE        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orWhere()">
+            orWhere()
+            </a>
+        </td>
+        <td>
+            OR WHERE        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orWhereIn()">
+            orWhereIn()
+            </a>
+        </td>
+        <td>
+            OR WHERE IN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orWhereNotIn()">
+            orWhereNotIn()
+            </a>
+        </td>
+        <td>
+            OR WHERE NOT IN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orderBy()">
+            orderBy()
+            </a>
+        </td>
+        <td>
+            ORDER BY        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#replace()">
+            replace()
+            </a>
+        </td>
+        <td>
+            Replace        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resetQuery()">
+            resetQuery()
+            </a>
+        </td>
+        <td>
+            Reset Query Builder values.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#select()">
+            select()
+            </a>
+        </td>
+        <td>
+            Select        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#selectAvg()">
+            selectAvg()
+            </a>
+        </td>
+        <td>
+            Select Average        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#selectCount()">
+            selectCount()
+            </a>
+        </td>
+        <td>
+            Select Count        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#selectMax()">
+            selectMax()
+            </a>
+        </td>
+        <td>
+            Select Max        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#selectMin()">
+            selectMin()
+            </a>
+        </td>
+        <td>
+            Select Min        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#selectSum()">
+            selectSum()
+            </a>
+        </td>
+        <td>
+            Select Sum        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#set()">
+            set()
+            </a>
+        </td>
+        <td>
+            The "set" function.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setInsertBatch()">
+            setInsertBatch()
+            </a>
+        </td>
+        <td>
+            The "setInsertBatch" function.  Allows key/value pairs to be set for batch inserts        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUpdateBatch()">
+            setUpdateBatch()
+            </a>
+        </td>
+        <td>
+            The "setUpdateBatch" function.  Allows key/value pairs to be set for batch updating        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#testMode()">
+            testMode()
+            </a>
+        </td>
+        <td>
+            Sets a test mode status.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#truncate()">
+            truncate()
+            </a>
+        </td>
+        <td>
+            Truncate        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#update()">
+            update()
+            </a>
+        </td>
+        <td>
+            UPDATE        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#updateBatch()">
+            updateBatch()
+            </a>
+        </td>
+        <td>
+            Update_Batch        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#where()">
+            where()
+            </a>
+        </td>
+        <td>
+            WHERE        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#whereIn()">
+            whereIn()
+            </a>
+        </td>
+        <td>
+            WHERE IN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#whereNotIn()">
+            whereNotIn()
+            </a>
+        </td>
+        <td>
+            WHERE NOT IN        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseBuilder.html">
+            BaseBuilder            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $tableName        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $db        </td>
+        <td>
+            \CodeIgniter\Database\ConnectionInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="countAll()">countAll()</h3>
+
+<p>
+"Count All" query</p>
+
+<p>Generates a platform-specific query string that counts all records in
+the specified database</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+            Are        </td>
+    </tr>
+    </table>
+
+<p>Returns: int|string when $test = true</p>
+
+
+<h3 id="countAllResults()">countAllResults()</h3>
+
+<p>
+"Count All Results" query</p>
+
+<p>Generates a platform-specific query string that counts all records
+returned by an Query Builder query.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: int|string when $test = true</p>
+
+
+<h3 id="decrement()">decrement()</h3>
+
+<p>
+Decrements a numeric column by the specified value.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $column        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="delete()">delete()</h3>
+
+<p>
+Delete</p>
+
+<p>Compiles a delete string and runs the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $where        </td>
+        <td>
+            mixed        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $limit        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $reset_data        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="distinct()">distinct()</h3>
+
+<p>
+DISTINCT</p>
+
+<p>Sets a flag which tells the query string compiler to add DISTINCT</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $val        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="emptyTable()">emptyTable()</h3>
+
+<p>
+Empty Table</p>
+
+<p>Compiles a delete string and runs "DELETE FROM table"</p>
+
+
+<p>Returns: bool TRUE on success, FALSE on failure</p>
+
+
+<h3 id="from()">from()</h3>
+
+<p>
+From</p>
+
+<p>Generates the FROM portion of the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            mixed        </td>
+        <td>
+            can        </td>
+    </tr>
+        <tr>
+        <td>
+            $overwrite        </td>
+        <td>
+            bool        </td>
+        <td>
+            Should        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+Get</p>
+
+<p>Compiles the select statement based on the other functions called
+and runs the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $limit        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $offset        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+            Are        </td>
+    </tr>
+    </table>
+
+<p>Returns: \ResultInterface </p>
+
+
+<h3 id="getBinds()">getBinds()</h3>
+
+<p>
+Returns an array of bind values and their
+named parameters for binding in the Query object later.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getCompiledDelete()">getCompiledDelete()</h3>
+
+<p>
+Get DELETE query string</p>
+
+<p>Compiles a delete query string and returns the sql</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+            TRUE:        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getCompiledInsert()">getCompiledInsert()</h3>
+
+<p>
+Get INSERT query string</p>
+
+<p>Compiles an insert query and returns the sql</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+            TRUE:        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getCompiledQBWhere()">getCompiledQBWhere()</h3>
+
+<p>
+Get compiled 'where' condition string</p>
+
+<p>Compiles the set conditions and returns the sql statement</p>
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getCompiledSelect()">getCompiledSelect()</h3>
+
+<p>
+Get SELECT query string</p>
+
+<p>Compiles a SELECT query string and returns the sql.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+            TRUE:        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getCompiledUpdate()">getCompiledUpdate()</h3>
+
+<p>
+Get UPDATE query string</p>
+
+<p>Compiles an update query and returns the sql</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+            TRUE:        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getSetData()">getSetData()</h3>
+
+<p>
+Returns the previously set() data, alternatively resetting it
+if needed.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $clean        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="getWhere()">getWhere()</h3>
+
+<p>
+Get_Where</p>
+
+<p>Allows the where clause, limit and offset to be added directly</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $where        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Where        </td>
+    </tr>
+        <tr>
+        <td>
+            $limit        </td>
+        <td>
+            int        </td>
+        <td>
+            Limit        </td>
+    </tr>
+        <tr>
+        <td>
+            $offset        </td>
+        <td>
+            int        </td>
+        <td>
+            Offset        </td>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+            Are        </td>
+    </tr>
+    </table>
+
+<p>Returns: \ResultInterface </p>
+
+
+<h3 id="groupBy()">groupBy()</h3>
+
+<p>
+GROUP BY</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $by        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="groupEnd()">groupEnd()</h3>
+
+<p>
+Ends a query group</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="groupStart()">groupStart()</h3>
+
+<p>
+Starts a query group.</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="having()">having()</h3>
+
+<p>
+HAVING</p>
+
+<p>Separates multiple calls with 'AND'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="havingGroupEnd()">havingGroupEnd()</h3>
+
+<p>
+Ends a query group for HAVING clause.</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="havingGroupStart()">havingGroupStart()</h3>
+
+<p>
+Starts a query group for HAVING clause.</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="havingIn()">havingIn()</h3>
+
+<p>
+HAVING IN</p>
+
+<p>Generates a HAVING field IN('item', 'item') SQL query,
+joined with 'AND' if appropriate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $values        </td>
+        <td>
+            array|string|\Closure        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="havingLike()">havingLike()</h3>
+
+<p>
+LIKE with HAVING clause</p>
+
+<p>Generates a %LIKE% portion of the query.
+Separates multiple calls with 'AND'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $match        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $side        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $insensitiveSearch        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="havingNotIn()">havingNotIn()</h3>
+
+<p>
+HAVING NOT IN</p>
+
+<p>Generates a HAVING field NOT IN('item', 'item') SQL query,
+joined with 'AND' if appropriate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $values        </td>
+        <td>
+            array|string|\Closure        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="ignore()">ignore()</h3>
+
+<p>
+Ignore</p>
+
+<p>Set ignore Flag for next insert,
+update or delete query.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $ignore        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="increment()">increment()</h3>
+
+<p>
+Increments a numeric column by the specified value.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $column        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="insert()">insert()</h3>
+
+<p>
+Insert</p>
+
+<p>Compiles an insert string and runs the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseResult|\Query|bool </p>
+
+
+<h3 id="insertBatch()">insertBatch()</h3>
+
+<p>
+Insert_Batch</p>
+
+<p>Compiles batch insert strings and runs the queries</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+        <tr>
+        <td>
+            $batchSize        </td>
+        <td>
+            int        </td>
+        <td>
+            Batch        </td>
+    </tr>
+    </table>
+
+<p>Returns: int Number of rows inserted or FALSE on failure</p>
+
+
+<h3 id="join()">join()</h3>
+
+<p>
+JOIN</p>
+
+<p>Generates the JOIN portion of the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $cond        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="like()">like()</h3>
+
+<p>
+LIKE</p>
+
+<p>Generates a %LIKE% portion of the query.
+Separates multiple calls with 'AND'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $match        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $side        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $insensitiveSearch        </td>
+        <td>
+            bool        </td>
+        <td>
+            IF        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="limit()">limit()</h3>
+
+<p>
+LIMIT</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+            LIMIT        </td>
+    </tr>
+        <tr>
+        <td>
+            $offset        </td>
+        <td>
+            int        </td>
+        <td>
+            OFFSET        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="notGroupStart()">notGroupStart()</h3>
+
+<p>
+Starts a query group, but NOTs the group</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="notHavingGroupStart()">notHavingGroupStart()</h3>
+
+<p>
+Starts a query group for HAVING clause, but NOTs the group.</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="notHavingLike()">notHavingLike()</h3>
+
+<p>
+NOT LIKE with HAVING clause</p>
+
+<p>Generates a NOT LIKE portion of the query.
+Separates multiple calls with 'AND'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $match        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $side        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $insensitiveSearch        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="notLike()">notLike()</h3>
+
+<p>
+NOT LIKE</p>
+
+<p>Generates a NOT LIKE portion of the query.
+Separates multiple calls with 'AND'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $match        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $side        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $insensitiveSearch        </td>
+        <td>
+            bool        </td>
+        <td>
+            IF        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="offset()">offset()</h3>
+
+<p>
+Sets the OFFSET value</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $offset        </td>
+        <td>
+            int        </td>
+        <td>
+            OFFSET        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orGroupStart()">orGroupStart()</h3>
+
+<p>
+Starts a query group, but ORs the group</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orHaving()">orHaving()</h3>
+
+<p>
+OR HAVING</p>
+
+<p>Separates multiple calls with 'OR'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orHavingGroupStart()">orHavingGroupStart()</h3>
+
+<p>
+Starts a query group for HAVING clause, but ORs the group.</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orHavingIn()">orHavingIn()</h3>
+
+<p>
+OR HAVING IN</p>
+
+<p>Generates a HAVING field IN('item', 'item') SQL query,
+joined with 'OR' if appropriate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $values        </td>
+        <td>
+            array|string|\Closure        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orHavingLike()">orHavingLike()</h3>
+
+<p>
+OR LIKE with HAVING clause</p>
+
+<p>Generates a %LIKE% portion of the query.
+Separates multiple calls with 'OR'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $match        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $side        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $insensitiveSearch        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orHavingNotIn()">orHavingNotIn()</h3>
+
+<p>
+OR HAVING NOT IN</p>
+
+<p>Generates a HAVING field NOT IN('item', 'item') SQL query,
+joined with 'OR' if appropriate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $values        </td>
+        <td>
+            array|string|\Closure        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orLike()">orLike()</h3>
+
+<p>
+OR LIKE</p>
+
+<p>Generates a %LIKE% portion of the query.
+Separates multiple calls with 'OR'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $match        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $side        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $insensitiveSearch        </td>
+        <td>
+            bool        </td>
+        <td>
+            IF        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orNotGroupStart()">orNotGroupStart()</h3>
+
+<p>
+Starts a query group, but OR NOTs the group</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orNotHavingGroupStart()">orNotHavingGroupStart()</h3>
+
+<p>
+Starts a query group for HAVING clause, but OR NOTs the group.</p>
+
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orNotHavingLike()">orNotHavingLike()</h3>
+
+<p>
+OR NOT LIKE with HAVING clause</p>
+
+<p>Generates a NOT LIKE portion of the query.
+Separates multiple calls with 'OR'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $match        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $side        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $insensitiveSearch        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orNotLike()">orNotLike()</h3>
+
+<p>
+OR NOT LIKE</p>
+
+<p>Generates a NOT LIKE portion of the query.
+Separates multiple calls with 'OR'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $match        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $side        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $insensitiveSearch        </td>
+        <td>
+            bool        </td>
+        <td>
+            IF        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orWhere()">orWhere()</h3>
+
+<p>
+OR WHERE</p>
+
+<p>Generates the WHERE portion of the query.
+Separates multiple calls with 'OR'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orWhereIn()">orWhereIn()</h3>
+
+<p>
+OR WHERE IN</p>
+
+<p>Generates a WHERE field IN('item', 'item') SQL query,
+joined with 'OR' if appropriate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $values        </td>
+        <td>
+            array|string|\Closure        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orWhereNotIn()">orWhereNotIn()</h3>
+
+<p>
+OR WHERE NOT IN</p>
+
+<p>Generates a WHERE field NOT IN('item', 'item') SQL query,
+joined with 'OR' if appropriate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $values        </td>
+        <td>
+            array|string|\Closure        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="orderBy()">orderBy()</h3>
+
+<p>
+ORDER BY</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $orderBy        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $direction        </td>
+        <td>
+            string        </td>
+        <td>
+            ASC,        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="replace()">replace()</h3>
+
+<p>
+Replace</p>
+
+<p>Compiles an replace into string and runs the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseResult|\Query|string|bool </p>
+
+
+<h3 id="resetQuery()">resetQuery()</h3>
+
+<p>
+Reset Query Builder values.</p>
+
+<p>Publicly-visible method to reset the QB values.</p>
+
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="select()">select()</h3>
+
+<p>
+Select</p>
+
+<p>Generates the SELECT portion of the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="selectAvg()">selectAvg()</h3>
+
+<p>
+Select Average</p>
+
+<p>Generates a SELECT AVG(field) portion of a query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $alias        </td>
+        <td>
+            string        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="selectCount()">selectCount()</h3>
+
+<p>
+Select Count</p>
+
+<p>Generates a SELECT COUNT(field) portion of a query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $alias        </td>
+        <td>
+            string        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="selectMax()">selectMax()</h3>
+
+<p>
+Select Max</p>
+
+<p>Generates a SELECT MAX(field) portion of a query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $alias        </td>
+        <td>
+            string        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="selectMin()">selectMin()</h3>
+
+<p>
+Select Min</p>
+
+<p>Generates a SELECT MIN(field) portion of a query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $alias        </td>
+        <td>
+            string        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="selectSum()">selectSum()</h3>
+
+<p>
+Select Sum</p>
+
+<p>Generates a SELECT SUM(field) portion of a query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $alias        </td>
+        <td>
+            string        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="set()">set()</h3>
+
+<p>
+The "set" function.</p>
+
+<p>Allows key/value pairs to be set for insert(), update() or replace().</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string|array|object        </td>
+        <td>
+            Field        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+            Field        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="setInsertBatch()">setInsertBatch()</h3>
+
+<p>
+The "setInsertBatch" function.  Allows key/value pairs to be set for batch inserts</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder|null </p>
+
+
+<h3 id="setUpdateBatch()">setUpdateBatch()</h3>
+
+<p>
+The "setUpdateBatch" function.  Allows key/value pairs to be set for batch updating</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            array|object        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $index        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder|null </p>
+
+
+<h3 id="testMode()">testMode()</h3>
+
+<p>
+Sets a test mode status.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $mode        </td>
+        <td>
+            bool        </td>
+        <td>
+            Mode        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="truncate()">truncate()</h3>
+
+<p>
+Truncate</p>
+
+<p>Compiles a truncate string and runs the query
+If the database does not support the truncate() command
+This function maps to "DELETE FROM table"</p>
+
+
+<p>Returns: bool TRUE on success, FALSE on failure</p>
+
+
+<h3 id="update()">update()</h3>
+
+<p>
+UPDATE</p>
+
+<p>Compiles an update string and runs the query.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $where        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $limit        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool TRUE on success, FALSE on failure</p>
+
+
+<h3 id="updateBatch()">updateBatch()</h3>
+
+<p>
+Update_Batch</p>
+
+<p>Compiles an update string and runs the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $index        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $batchSize        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed Number of rows affected, SQL string, or FALSE on failure</p>
+
+
+<h3 id="where()">where()</h3>
+
+<p>
+WHERE</p>
+
+<p>Generates the WHERE portion of the query.
+Separates multiple calls with 'AND'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="whereIn()">whereIn()</h3>
+
+<p>
+WHERE IN</p>
+
+<p>Generates a WHERE field IN('item', 'item') SQL query,
+joined with 'AND' if appropriate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $values        </td>
+        <td>
+            array|string|\Closure        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="whereNotIn()">whereNotIn()</h3>
+
+<p>
+WHERE NOT IN</p>
+
+<p>Generates a WHERE field NOT IN('item', 'item') SQL query,
+joined with 'AND' if appropriate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $values        </td>
+        <td>
+            array|string|\Closure        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

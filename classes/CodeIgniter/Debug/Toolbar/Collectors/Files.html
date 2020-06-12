@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Debug\Toolbar\Collectors\Files &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../../../classes/CodeIgniter/Debug/Toolbar/Collectors/Files.html">Class Files</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Files</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Debug\Toolbar\Collectors\Files        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">BaseCollector</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Files collector    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#cleanPath()">
+            cleanPath()
+            </a>
+        </td>
+        <td>
+            Clean Path        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#display()">
+            display()
+            </a>
+        </td>
+        <td>
+            Returns the data of this collector to be formatted in the toolbar        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\Files.html">
+            Files            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAsArray()">
+            getAsArray()
+            </a>
+        </td>
+        <td>
+            Return settings as an array.        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBadgeValue()">
+            getBadgeValue()
+            </a>
+        </td>
+        <td>
+            Displays the number of included files as a badge in the tab button.        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\Files.html">
+            Files            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTitle()">
+            getTitle()
+            </a>
+        </td>
+        <td>
+            Gets the Collector's title.        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTitleDetails()">
+            getTitleDetails()
+            </a>
+        </td>
+        <td>
+            Returns any information that should be shown next to the title.        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\Files.html">
+            Files            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getVarData()">
+            getVarData()
+            </a>
+        </td>
+        <td>
+            Gets a collection of data that should be shown in the 'Vars' tab.        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasLabel()">
+            hasLabel()
+            </a>
+        </td>
+        <td>
+            Does this collector have a label?        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasTabContent()">
+            hasTabContent()
+            </a>
+        </td>
+        <td>
+            Does this collector need it's own tab?        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasTimelineData()">
+            hasTimelineData()
+            </a>
+        </td>
+        <td>
+            Does this collector have information for the timeline?        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasVarData()">
+            hasVarData()
+            </a>
+        </td>
+        <td>
+            Does this Collector have data that should be shown in the
+'Vars' tab?        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#icon()">
+            icon()
+            </a>
+        </td>
+        <td>
+            Display the icon.        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\Files.html">
+            Files            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isEmpty()">
+            isEmpty()
+            </a>
+        </td>
+        <td>
+            Does this collector have any data collected?        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#timelineData()">
+            timelineData()
+            </a>
+        </td>
+        <td>
+            Grabs the data for the timeline, properly formatted,
+or returns an empty array.        </td>
+        <td>
+            <a href="../../../../../classes/CodeIgniter\Debug\Toolbar\Collectors\BaseCollector.html">
+            BaseCollector            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="cleanPath()">cleanPath()</h3>
+
+<p>
+Clean Path</p>
+
+<p>This makes nicer looking paths for the error output.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $file        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="display()">display()</h3>
+
+<p>
+Returns the data of this collector to be formatted in the toolbar</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getAsArray()">getAsArray()</h3>
+
+<p>
+Return settings as an array.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getBadgeValue()">getBadgeValue()</h3>
+
+<p>
+Displays the number of included files as a badge in the tab button.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getTitle()">getTitle()</h3>
+
+<p>
+Gets the Collector's title.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $safe        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getTitleDetails()">getTitleDetails()</h3>
+
+<p>
+Returns any information that should be shown next to the title.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getVarData()">getVarData()</h3>
+
+<p>
+Gets a collection of data that should be shown in the 'Vars' tab.</p>
+
+<p>The format is an array of sections, each with their own array
+of key/value pairs:</p>
+<p> $data = [</p>
+<pre><code> 'section 1' =&gt; [
+     'foo' =&gt; 'bar,
+     'bar' =&gt; 'baz'
+ ],
+ 'section 2' =&gt; [
+     'foo' =&gt; 'bar,
+     'bar' =&gt; 'baz'
+ ],
+</code></pre>
+<p> ];</p>
+
+
+<p>Returns: null </p>
+
+
+<h3 id="hasLabel()">hasLabel()</h3>
+
+<p>
+Does this collector have a label?</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasTabContent()">hasTabContent()</h3>
+
+<p>
+Does this collector need it's own tab?</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasTimelineData()">hasTimelineData()</h3>
+
+<p>
+Does this collector have information for the timeline?</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasVarData()">hasVarData()</h3>
+
+<p>
+Does this Collector have data that should be shown in the
+'Vars' tab?</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="icon()">icon()</h3>
+
+<p>
+Display the icon.</p>
+
+<p>Icon from <a href="https://icons8.com">https://icons8.com</a> - 1em package</p>
+
+
+<p>Returns: string </p>
+
+
+<h3 id="isEmpty()">isEmpty()</h3>
+
+<p>
+Does this collector have any data collected?</p>
+
+<p>If not, then the toolbar button won't get shown.</p>
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="timelineData()">timelineData()</h3>
+
+<p>
+Grabs the data for the timeline, properly formatted,
+or returns an empty array.</p>
+
+
+
+<p>Returns: array </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../../assets/js/popup.js"></script>
+
+<script src="../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

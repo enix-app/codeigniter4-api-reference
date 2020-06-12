@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Validation\FileRules &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Validation/FileRules.html">Class FileRules</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        FileRules</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Validation\FileRules        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    File validation rules    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Validation\FileRules.html">
+            FileRules            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#ext_in()">
+            ext_in()
+            </a>
+        </td>
+        <td>
+            Checks to see if an uploaded file's extension matches one in the parameter.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Validation\FileRules.html">
+            FileRules            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#is_image()">
+            is_image()
+            </a>
+        </td>
+        <td>
+            Uses the mime config file to determine if a file is considered an "image",
+which for our purposes basically means that it's a raster image or svg.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Validation\FileRules.html">
+            FileRules            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#max_dims()">
+            max_dims()
+            </a>
+        </td>
+        <td>
+            Checks an uploaded file to verify that the dimensions are within
+a specified allowable dimension.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Validation\FileRules.html">
+            FileRules            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#max_size()">
+            max_size()
+            </a>
+        </td>
+        <td>
+            Verifies if the file's size in Kilobytes is no larger than the parameter.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Validation\FileRules.html">
+            FileRules            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#mime_in()">
+            mime_in()
+            </a>
+        </td>
+        <td>
+            Checks to see if an uploaded file's mime type matches one in the parameter.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Validation\FileRules.html">
+            FileRules            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#uploaded()">
+            uploaded()
+            </a>
+        </td>
+        <td>
+            Verifies that $name is the name of a valid uploaded file.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Validation\FileRules.html">
+            FileRules            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \RequestInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="ext_in()">ext_in()</h3>
+
+<p>
+Checks to see if an uploaded file's extension matches one in the parameter.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $blank        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="is_image()">is_image()</h3>
+
+<p>
+Uses the mime config file to determine if a file is considered an "image",
+which for our purposes basically means that it's a raster image or svg.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $blank        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="max_dims()">max_dims()</h3>
+
+<p>
+Checks an uploaded file to verify that the dimensions are within
+a specified allowable dimension.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $blank        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="max_size()">max_size()</h3>
+
+<p>
+Verifies if the file's size in Kilobytes is no larger than the parameter.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $blank        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="mime_in()">mime_in()</h3>
+
+<p>
+Checks to see if an uploaded file's mime type matches one in the parameter.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $blank        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="uploaded()">uploaded()</h3>
+
+<p>
+Verifies that $name is the name of a valid uploaded file.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $blank        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

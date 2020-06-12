@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\HTTP\URI &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/HTTP/URI.html">Class URI</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        URI</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\HTTP\URI        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Abstraction for a uniform resource identifier (URI).    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Allow the URI to be output as a string by simply casting it to a string
+or echoing out.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addQuery()">
+            addQuery()
+            </a>
+        </td>
+        <td>
+            Adds a single new element to the query vars.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createURIString()">
+            createURIString()
+            </a>
+        </td>
+        <td>
+            Builds a representation of the string from the component parts.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAuthority()">
+            getAuthority()
+            </a>
+        </td>
+        <td>
+            Retrieve the authority component of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFragment()">
+            getFragment()
+            </a>
+        </td>
+        <td>
+            Retrieve a URI fragment        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHost()">
+            getHost()
+            </a>
+        </td>
+        <td>
+            Retrieve the host component of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPath()">
+            getPath()
+            </a>
+        </td>
+        <td>
+            Retrieve the path component of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPort()">
+            getPort()
+            </a>
+        </td>
+        <td>
+            Retrieve the port component of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getQuery()">
+            getQuery()
+            </a>
+        </td>
+        <td>
+            Retrieve the query string        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getScheme()">
+            getScheme()
+            </a>
+        </td>
+        <td>
+            Retrieve the scheme component of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSegment()">
+            getSegment()
+            </a>
+        </td>
+        <td>
+            Returns the value of a specific segment of the URI path.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSegments()">
+            getSegments()
+            </a>
+        </td>
+        <td>
+            Returns the segments of the path as an array.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTotalSegments()">
+            getTotalSegments()
+            </a>
+        </td>
+        <td>
+            Returns the total number of segments.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUserInfo()">
+            getUserInfo()
+            </a>
+        </td>
+        <td>
+            Retrieve the user information component of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#keepQuery()">
+            keepQuery()
+            </a>
+        </td>
+        <td>
+            Filters the query variables so that only the keys passed in
+are kept. The rest are removed from the object.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#refreshPath()">
+            refreshPath()
+            </a>
+        </td>
+        <td>
+            Sets the path portion of the URI based on segments.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeDotSegments()">
+            removeDotSegments()
+            </a>
+        </td>
+        <td>
+            Used when resolving and merging paths to correctly interpret and
+remove single and double dot segments from the path per
+RFC 3986 Section 5.2.4        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resolveRelativeURI()">
+            resolveRelativeURI()
+            </a>
+        </td>
+        <td>
+            Combines one URI string with this one based on the rules set out in
+RFC 3986 Section 2        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAuthority()">
+            setAuthority()
+            </a>
+        </td>
+        <td>
+            Parses the given string an saves the appropriate authority pieces.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFragment()">
+            setFragment()
+            </a>
+        </td>
+        <td>
+            Sets the fragment portion of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHost()">
+            setHost()
+            </a>
+        </td>
+        <td>
+            Sets the host name to use.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPath()">
+            setPath()
+            </a>
+        </td>
+        <td>
+            Sets the path portion of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPort()">
+            setPort()
+            </a>
+        </td>
+        <td>
+            Sets the port portion of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setQuery()">
+            setQuery()
+            </a>
+        </td>
+        <td>
+            Sets the query portion of the URI, while attempting
+to clean the various parts of the query keys and values.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setQueryArray()">
+            setQueryArray()
+            </a>
+        </td>
+        <td>
+            A convenience method to pass an array of items in as the Query
+portion of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setScheme()">
+            setScheme()
+            </a>
+        </td>
+        <td>
+            Sets the scheme for this URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSegment()">
+            setSegment()
+            </a>
+        </td>
+        <td>
+            Set the value of a specific segment of the URI path.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setURI()">
+            setURI()
+            </a>
+        </td>
+        <td>
+            Sets and overwrites any current URI information.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUserInfo()">
+            setUserInfo()
+            </a>
+        </td>
+        <td>
+            Sets the userInfo/Authority portion of the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#showPassword()">
+            showPassword()
+            </a>
+        </td>
+        <td>
+            Temporarily sets the URI to show a password in userInfo. Will
+reset itself after the first call to authority().        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#stripQuery()">
+            stripQuery()
+            </a>
+        </td>
+        <td>
+            Removes one or more query vars from the URI.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\URI.html">
+            URI            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Allow the URI to be output as a string by simply casting it to a string
+or echoing out.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="addQuery()">addQuery()</h3>
+
+<p>
+Adds a single new element to the query vars.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="createURIString()">createURIString()</h3>
+
+<p>
+Builds a representation of the string from the component parts.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $scheme        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $authority        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $query        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $fragment        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getAuthority()">getAuthority()</h3>
+
+<p>
+Retrieve the authority component of the URI.</p>
+
+<p>If no authority information is present, this method MUST return an empty
+string.</p>
+<p>The authority syntax of the URI is:</p>
+<pre>
+[user-info@]host[:port]
+</pre>
+<p>If the port component is not set or is the standard port for the current
+scheme, it SHOULD NOT be included.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $ignorePort        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string The URI authority, in &quot;[user-info@]host[:port]&quot; format.</p>
+
+
+<h3 id="getFragment()">getFragment()</h3>
+
+<p>
+Retrieve a URI fragment</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getHost()">getHost()</h3>
+
+<p>
+Retrieve the host component of the URI.</p>
+
+<p>If no host is present, this method MUST return an empty string.</p>
+<p>The value returned MUST be normalized to lowercase, per RFC 3986
+Section 3.2.2.</p>
+
+
+<p>Returns: string The URI host.</p>
+
+
+<h3 id="getPath()">getPath()</h3>
+
+<p>
+Retrieve the path component of the URI.</p>
+
+<p>The path can either be empty or absolute (starting with a slash) or
+rootless (not starting with a slash). Implementations MUST support all
+three syntaxes.</p>
+<p>Normally, the empty path "" and absolute path "/" are considered equal as
+defined in RFC 7230 Section 2.7.3. But this method MUST NOT automatically
+do this normalization because in contexts with a trimmed base path, e.g.
+the front controller, this difference becomes significant. It's the task
+of the user to handle both "" and "/".</p>
+<p>The value returned MUST be percent-encoded, but MUST NOT double-encode
+any characters. To determine what characters to encode, please refer to
+RFC 3986, Sections 2 and 3.3.</p>
+<p>As an example, if the value should include a slash ("/") not intended as
+delimiter between path segments, that value MUST be passed in encoded
+form (e.g., "%2F") to the instance.</p>
+
+
+<p>Returns: string The URI path.</p>
+
+
+<h3 id="getPort()">getPort()</h3>
+
+<p>
+Retrieve the port component of the URI.</p>
+
+<p>If a port is present, and it is non-standard for the current scheme,
+this method MUST return it as an integer. If the port is the standard port
+used with the current scheme, this method SHOULD return null.</p>
+<p>If no port is present, and no scheme is present, this method MUST return
+a null value.</p>
+<p>If no port is present, but a scheme is present, this method MAY return
+the standard port for that scheme, but SHOULD return null.</p>
+
+
+<p>Returns: null|int The URI port.</p>
+
+
+<h3 id="getQuery()">getQuery()</h3>
+
+<p>
+Retrieve the query string</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getScheme()">getScheme()</h3>
+
+<p>
+Retrieve the scheme component of the URI.</p>
+
+<p>If no scheme is present, this method MUST return an empty string.</p>
+<p>The value returned MUST be normalized to lowercase, per RFC 3986
+Section 3.1.</p>
+<p>The trailing ":" character is not part of the scheme and MUST NOT be
+added.</p>
+
+
+<p>Returns: string The URI scheme.</p>
+
+
+<h3 id="getSegment()">getSegment()</h3>
+
+<p>
+Returns the value of a specific segment of the URI path.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $number        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string The value of the segment. If no segment is found,
+throws InvalidArgumentError</p>
+
+
+<h3 id="getSegments()">getSegments()</h3>
+
+<p>
+Returns the segments of the path as an array.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getTotalSegments()">getTotalSegments()</h3>
+
+<p>
+Returns the total number of segments.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getUserInfo()">getUserInfo()</h3>
+
+<p>
+Retrieve the user information component of the URI.</p>
+
+<p>If no user information is present, this method MUST return an empty
+string.</p>
+<p>If a user is present in the URI, this will return that value;
+additionally, if the password is also present, it will be appended to the
+user value, with a colon (":") separating the values.</p>
+<p>NOTE that be default, the password, if available, will NOT be shown
+as a security measure as discussed in RFC 3986, Section 7.5. If you know
+the password is not a security issue, you can force it to be shown
+with $this-&gt;showPassword();</p>
+<p>The trailing "@" character is not part of the user information and MUST
+NOT be added.</p>
+
+
+<p>Returns: string|null The URI user information, in &quot;username[:password]&quot; format.</p>
+
+
+<h3 id="keepQuery()">keepQuery()</h3>
+
+<p>
+Filters the query variables so that only the keys passed in
+are kept. The rest are removed from the object.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            ...$params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="refreshPath()">refreshPath()</h3>
+
+<p>
+Sets the path portion of the URI based on segments.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="removeDotSegments()">removeDotSegments()</h3>
+
+<p>
+Used when resolving and merging paths to correctly interpret and
+remove single and double dot segments from the path per
+RFC 3986 Section 5.2.4</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="resolveRelativeURI()">resolveRelativeURI()</h3>
+
+<p>
+Combines one URI string with this one based on the rules set out in
+RFC 3986 Section 2</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\URI </p>
+
+
+<h3 id="setAuthority()">setAuthority()</h3>
+
+<p>
+Parses the given string an saves the appropriate authority pieces.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $str        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setFragment()">setFragment()</h3>
+
+<p>
+Sets the fragment portion of the URI.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $string        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setHost()">setHost()</h3>
+
+<p>
+Sets the host name to use.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $str        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setPath()">setPath()</h3>
+
+<p>
+Sets the path portion of the URI.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setPort()">setPort()</h3>
+
+<p>
+Sets the port portion of the URI.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $port        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setQuery()">setQuery()</h3>
+
+<p>
+Sets the query portion of the URI, while attempting
+to clean the various parts of the query keys and values.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $query        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setQueryArray()">setQueryArray()</h3>
+
+<p>
+A convenience method to pass an array of items in as the Query
+portion of the URI.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $query        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\URI </p>
+
+
+<h3 id="setScheme()">setScheme()</h3>
+
+<p>
+Sets the scheme for this URI.</p>
+
+<p>Because of the large number of valid schemes we cannot limit this
+to only http or https.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $str        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $str        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setSegment()">setSegment()</h3>
+
+<p>
+Set the value of a specific segment of the URI path.</p>
+
+<p>Allows to set only existing segments or add new one.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $number        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            (string        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setURI()">setURI()</h3>
+
+<p>
+Sets and overwrites any current URI information.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \URI </p>
+
+
+<h3 id="setUserInfo()">setUserInfo()</h3>
+
+<p>
+Sets the userInfo/Authority portion of the URI.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $user        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $pass        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="showPassword()">showPassword()</h3>
+
+<p>
+Temporarily sets the URI to show a password in userInfo. Will
+reset itself after the first call to authority().</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $val        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \URI </p>
+
+
+<h3 id="stripQuery()">stripQuery()</h3>
+
+<p>
+Removes one or more query vars from the URI.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            ...$params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

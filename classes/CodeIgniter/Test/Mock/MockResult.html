@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Test\Mock\MockResult &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../../classes/CodeIgniter/Test/Mock/MockResult.html">Class MockResult</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        MockResult</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Test\Mock\MockResult        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">BaseResult</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#dataSeek()">
+            dataSeek()
+            </a>
+        </td>
+        <td>
+            Moves the internal pointer to the desired offset. This is called
+internally before fetching results to make sure the result set
+starts at zero.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockResult.html">
+            MockResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#freeResult()">
+            freeResult()
+            </a>
+        </td>
+        <td>
+            Frees the current result.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockResult.html">
+            MockResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCustomResultObject()">
+            getCustomResultObject()
+            </a>
+        </td>
+        <td>
+            Returns the results as an array of custom objects.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCustomRowObject()">
+            getCustomRowObject()
+            </a>
+        </td>
+        <td>
+            Returns a row as a custom class instance.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFieldCount()">
+            getFieldCount()
+            </a>
+        </td>
+        <td>
+            Gets the number of fields in the result set.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockResult.html">
+            MockResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFieldData()">
+            getFieldData()
+            </a>
+        </td>
+        <td>
+            Generates an array of objects representing field meta-data.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockResult.html">
+            MockResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFieldNames()">
+            getFieldNames()
+            </a>
+        </td>
+        <td>
+            Generates an array of column names in the result set.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockResult.html">
+            MockResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFirstRow()">
+            getFirstRow()
+            </a>
+        </td>
+        <td>
+            Returns the "first" row of the current results.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastRow()">
+            getLastRow()
+            </a>
+        </td>
+        <td>
+            Returns the "last" row of the current results.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getNextRow()">
+            getNextRow()
+            </a>
+        </td>
+        <td>
+            Returns the "next" row of the current results.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPreviousRow()">
+            getPreviousRow()
+            </a>
+        </td>
+        <td>
+            Returns the "previous" row of the current results.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResult()">
+            getResult()
+            </a>
+        </td>
+        <td>
+            Retrieve the results of the query. Typically an array of
+individual data rows, which can be either an 'array', an
+'object', or a custom class name.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResultArray()">
+            getResultArray()
+            </a>
+        </td>
+        <td>
+            Returns the results as an array of arrays.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResultObject()">
+            getResultObject()
+            </a>
+        </td>
+        <td>
+            Returns the results as an array of objects.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRow()">
+            getRow()
+            </a>
+        </td>
+        <td>
+            Wrapper object to return a row as either an array, an object, or
+a custom class.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRowArray()">
+            getRowArray()
+            </a>
+        </td>
+        <td>
+            Returns a single row from the results as an array.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRowObject()">
+            getRowObject()
+            </a>
+        </td>
+        <td>
+            Returns a single row from the results as an object.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUnbufferedRow()">
+            getUnbufferedRow()
+            </a>
+        </td>
+        <td>
+            Returns an unbuffered row and move the pointer to the next row.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRow()">
+            setRow()
+            </a>
+        </td>
+        <td>
+            Assigns an item into a particular column slot.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseResult.html">
+            BaseResult            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $connID        </td>
+        <td>
+            object|resource        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $resultID        </td>
+        <td>
+            object|resource        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="dataSeek()">dataSeek()</h3>
+
+<p>
+Moves the internal pointer to the desired offset. This is called
+internally before fetching results to make sure the result set
+starts at zero.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $n        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="freeResult()">freeResult()</h3>
+
+<p>
+Frees the current result.</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getCustomResultObject()">getCustomResultObject()</h3>
+
+<p>
+Returns the results as an array of custom objects.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $className        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getCustomRowObject()">getCustomRowObject()</h3>
+
+<p>
+Returns a row as a custom class instance.</p>
+
+<p>If row doesn't exists, returns null.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $n        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $className        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getFieldCount()">getFieldCount()</h3>
+
+<p>
+Gets the number of fields in the result set.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getFieldData()">getFieldData()</h3>
+
+<p>
+Generates an array of objects representing field meta-data.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getFieldNames()">getFieldNames()</h3>
+
+<p>
+Generates an array of column names in the result set.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getFirstRow()">getFirstRow()</h3>
+
+<p>
+Returns the "first" row of the current results.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getLastRow()">getLastRow()</h3>
+
+<p>
+Returns the "last" row of the current results.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getNextRow()">getNextRow()</h3>
+
+<p>
+Returns the "next" row of the current results.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getPreviousRow()">getPreviousRow()</h3>
+
+<p>
+Returns the "previous" row of the current results.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getResult()">getResult()</h3>
+
+<p>
+Retrieve the results of the query. Typically an array of
+individual data rows, which can be either an 'array', an
+'object', or a custom class name.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="getResultArray()">getResultArray()</h3>
+
+<p>
+Returns the results as an array of arrays.</p>
+
+<p>If no results, an empty array is returned.</p>
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getResultObject()">getResultObject()</h3>
+
+<p>
+Returns the results as an array of objects.</p>
+
+<p>If no results, an empty array is returned.</p>
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getRow()">getRow()</h3>
+
+<p>
+Wrapper object to return a row as either an array, an object, or
+a custom class.</p>
+
+<p>If row doesn't exist, returns null.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $n        </td>
+        <td>
+            mixed        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getRowArray()">getRowArray()</h3>
+
+<p>
+Returns a single row from the results as an array.</p>
+
+<p>If row doesn't exist, returns null.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $n        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getRowObject()">getRowObject()</h3>
+
+<p>
+Returns a single row from the results as an object.</p>
+
+<p>If row doesn't exist, returns null.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $n        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getUnbufferedRow()">getUnbufferedRow()</h3>
+
+<p>
+Returns an unbuffered row and move the pointer to the next row.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="setRow()">setRow()</h3>
+
+<p>
+Assigns an item into a particular column slot.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\API\ResponseTrait &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/API/ResponseTrait.html">Class ResponseTrait</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Interface 
+        ResponseTrait</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\API\ResponseTrait        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Response trait.    </p>
+    <p>Provides common, more readable, methods to provide
+consistent HTTP responses under a variety of common
+situations when working as an API.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fail()">
+            fail()
+            </a>
+        </td>
+        <td>
+            Used for generic failures that no custom methods exist for.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#failForbidden()">
+            failForbidden()
+            </a>
+        </td>
+        <td>
+            Used when access is always denied to this resource and no amount
+of trying again will help.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#failNotFound()">
+            failNotFound()
+            </a>
+        </td>
+        <td>
+            Used when a specified resource cannot be found.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#failResourceExists()">
+            failResourceExists()
+            </a>
+        </td>
+        <td>
+            Use when trying to create a new resource and it already exists.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#failResourceGone()">
+            failResourceGone()
+            </a>
+        </td>
+        <td>
+            Use when a resource was previously deleted. This is different than
+Not Found, because here we know the data previously existed, but is now gone,
+where Not Found means we simply cannot find any information about it.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#failServerError()">
+            failServerError()
+            </a>
+        </td>
+        <td>
+            Used when there is a server error.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#failTooManyRequests()">
+            failTooManyRequests()
+            </a>
+        </td>
+        <td>
+            Used when the user has made too many requests for the resource recently.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#failUnauthorized()">
+            failUnauthorized()
+            </a>
+        </td>
+        <td>
+            Used when the client is either didn't send authorization information,
+or had bad authorization credentials. User is encouraged to try again
+with the proper information.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#failValidationError()">
+            failValidationError()
+            </a>
+        </td>
+        <td>
+            Used when the data provided by the client cannot be validated.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#respond()">
+            respond()
+            </a>
+        </td>
+        <td>
+            Provides a single, simple method to return an API response, formatted
+to match the requested format, with proper content-type and status code.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#respondCreated()">
+            respondCreated()
+            </a>
+        </td>
+        <td>
+            Used after successfully creating a new resource.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#respondDeleted()">
+            respondDeleted()
+            </a>
+        </td>
+        <td>
+            Used after a resource has been successfully deleted.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#respondNoContent()">
+            respondNoContent()
+            </a>
+        </td>
+        <td>
+            Used after a command has been successfully executed but there is no
+meaningful reply to send back to the client.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#respondUpdated()">
+            respondUpdated()
+            </a>
+        </td>
+        <td>
+            Used after a resource has been successfully updated.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setResponseFormat()">
+            setResponseFormat()
+            </a>
+        </td>
+        <td>
+            Sets the format the response should be in.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\API\ResponseTrait.html">
+            ResponseTrait            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="fail()">fail()</h3>
+
+<p>
+Used for generic failures that no custom methods exist for.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $messages        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $status        </td>
+        <td>
+            int|null        </td>
+        <td>
+            HTTP        </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string|null        </td>
+        <td>
+            Custom,        </td>
+    </tr>
+        <tr>
+        <td>
+            $customMessage        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="failForbidden()">failForbidden()</h3>
+
+<p>
+Used when access is always denied to this resource and no amount
+of trying again will help.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $description        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="failNotFound()">failNotFound()</h3>
+
+<p>
+Used when a specified resource cannot be found.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $description        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="failResourceExists()">failResourceExists()</h3>
+
+<p>
+Use when trying to create a new resource and it already exists.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $description        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="failResourceGone()">failResourceGone()</h3>
+
+<p>
+Use when a resource was previously deleted. This is different than
+Not Found, because here we know the data previously existed, but is now gone,
+where Not Found means we simply cannot find any information about it.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $description        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="failServerError()">failServerError()</h3>
+
+<p>
+Used when there is a server error.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $description        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string|null        </td>
+        <td>
+            A        </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+            A        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Response The value of the Response's send() method.</p>
+
+
+<h3 id="failTooManyRequests()">failTooManyRequests()</h3>
+
+<p>
+Used when the user has made too many requests for the resource recently.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $description        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="failUnauthorized()">failUnauthorized()</h3>
+
+<p>
+Used when the client is either didn't send authorization information,
+or had bad authorization credentials. User is encouraged to try again
+with the proper information.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $description        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="failValidationError()">failValidationError()</h3>
+
+<p>
+Used when the data provided by the client cannot be validated.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $description        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="respond()">respond()</h3>
+
+<p>
+Provides a single, simple method to return an API response, formatted
+to match the requested format, with proper content-type and status code.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array|string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $status        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="respondCreated()">respondCreated()</h3>
+
+<p>
+Used after successfully creating a new resource.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Data.        </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+            Message.        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="respondDeleted()">respondDeleted()</h3>
+
+<p>
+Used after a resource has been successfully deleted.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Data.        </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+            Message.        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="respondNoContent()">respondNoContent()</h3>
+
+<p>
+Used after a command has been successfully executed but there is no
+meaningful reply to send back to the client.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+            Message.        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="respondUpdated()">respondUpdated()</h3>
+
+<p>
+Used after a resource has been successfully updated.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Data.        </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+            Message.        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="setResponseFormat()">setResponseFormat()</h3>
+
+<p>
+Sets the format the response should be in.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

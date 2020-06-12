@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Images\Image &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Images/Image.html">Class Image</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Image</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Images\Image        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../classes/CodeIgniter\Files\File.html">File</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Encapsulation of an Image file    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Run our SplFileInfo constructor with an optional verification
+that the path is really a file.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Files\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#copy()">
+            copy()
+            </a>
+        </td>
+        <td>
+            Makes a copy of itself to the new location. If no filename is provided
+it will use the existing filename.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\Image.html">
+            Image            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDestination()">
+            getDestination()
+            </a>
+        </td>
+        <td>
+            Returns the destination path for the move operation where overwriting is not expected.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Files\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMimeType()">
+            getMimeType()
+            </a>
+        </td>
+        <td>
+            Retrieve the media type of the file. SHOULD not use information from
+the $_FILES array, but should use other methods to more accurately
+determine the type of file, like finfo, or mime_content_type().        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Files\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProperties()">
+            getProperties()
+            </a>
+        </td>
+        <td>
+            Get image properties        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Images\Image.html">
+            Image            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRandomName()">
+            getRandomName()
+            </a>
+        </td>
+        <td>
+            Generates a random names based on a simple hash and the time, with
+the correct file extension attached.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Files\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSize()">
+            getSize()
+            </a>
+        </td>
+        <td>
+            Retrieve the file size.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Files\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSizeByUnit()">
+            getSizeByUnit()
+            </a>
+        </td>
+        <td>
+            Retrieve the file size by unit.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Files\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#guessExtension()">
+            guessExtension()
+            </a>
+        </td>
+        <td>
+            Attempts to determine the file extension based on the trusted
+getType() method. If the mime type is unknown, will return null.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Files\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#move()">
+            move()
+            </a>
+        </td>
+        <td>
+            Moves a file to a new location.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Files\File.html">
+            File            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Run our SplFileInfo constructor with an optional verification
+that the path is really a file.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $checkFile        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="copy()">copy()</h3>
+
+<p>
+Makes a copy of itself to the new location. If no filename is provided
+it will use the existing filename.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $targetPath        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $targetName        </td>
+        <td>
+            string|null        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $perms        </td>
+        <td>
+            int        </td>
+        <td>
+            File        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="getDestination()">getDestination()</h3>
+
+<p>
+Returns the destination path for the move operation where overwriting is not expected.</p>
+
+<p>First, it checks whether the delimiter is present in the filename, if it is, then it checks whether the
+last element is an integer as there may be cases that the delimiter may be present in the filename.
+For the all other cases, it appends an integer starting from zero before the file's extension.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $destination        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $delimiter        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $i        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getMimeType()">getMimeType()</h3>
+
+<p>
+Retrieve the media type of the file. SHOULD not use information from
+the $_FILES array, but should use other methods to more accurately
+determine the type of file, like finfo, or mime_content_type().</p>
+
+
+
+<p>Returns: string|null The media type we determined it to be.</p>
+
+
+<h3 id="getProperties()">getProperties()</h3>
+
+<p>
+Get image properties</p>
+
+<p>A helper function that gets info about the file</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $return        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getRandomName()">getRandomName()</h3>
+
+<p>
+Generates a random names based on a simple hash and the time, with
+the correct file extension attached.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getSize()">getSize()</h3>
+
+<p>
+Retrieve the file size.</p>
+
+<p>Implementations SHOULD return the value stored in the "size" key of
+the file in the $_FILES array if available, as PHP calculates this based
+on the actual size transmitted.</p>
+
+
+<p>Returns: int The file size in bytes</p>
+
+
+<h3 id="getSizeByUnit()">getSizeByUnit()</h3>
+
+<p>
+Retrieve the file size by unit.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $unit        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: int|string </p>
+
+
+<h3 id="guessExtension()">guessExtension()</h3>
+
+<p>
+Attempts to determine the file extension based on the trusted
+getType() method. If the mime type is unknown, will return null.</p>
+
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="move()">move()</h3>
+
+<p>
+Moves a file to a new location.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $targetPath        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $overwrite        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Files\File </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

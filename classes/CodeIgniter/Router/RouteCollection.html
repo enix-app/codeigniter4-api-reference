@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Router\RouteCollection &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Router/RouteCollection.html">Class RouteCollection</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        RouteCollection</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Router\RouteCollection        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/CodeIgniter\Router\RouteCollectionInterface.html">RouteCollectionInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class RouteCollection    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#add()">
+            add()
+            </a>
+        </td>
+        <td>
+            Adds a single route to the collection.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPlaceholder()">
+            addPlaceholder()
+            </a>
+        </td>
+        <td>
+            Registers a new constraint with the system. Constraints are used
+by the routes as placeholders for regular expressions to make defining
+the routes more human-friendly.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addRedirect()">
+            addRedirect()
+            </a>
+        </td>
+        <td>
+            Adds a temporary redirect from one route to another. Used for
+redirecting traffic from old, non-existing routes to the new
+moved routes.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#cli()">
+            cli()
+            </a>
+        </td>
+        <td>
+            Specifies a route that is only available to command-line requests.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#delete()">
+            delete()
+            </a>
+        </td>
+        <td>
+            Specifies a route that is only available to DELETE requests.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#environment()">
+            environment()
+            </a>
+        </td>
+        <td>
+            Limits the routes to a specified ENVIRONMENT or they won't run.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get()">
+            get()
+            </a>
+        </td>
+        <td>
+            Specifies a route that is only available to GET requests.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get404Override()">
+            get404Override()
+            </a>
+        </td>
+        <td>
+            Returns the 404 Override setting, which can be null, a closure
+or the controller/string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultController()">
+            getDefaultController()
+            </a>
+        </td>
+        <td>
+            Returns the name of the default controller. With Namespace.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultMethod()">
+            getDefaultMethod()
+            </a>
+        </td>
+        <td>
+            Returns the name of the default method to use within the controller.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultNamespace()">
+            getDefaultNamespace()
+            </a>
+        </td>
+        <td>
+            Returns the default namespace as set in the Routes config file.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFilterForRoute()">
+            getFilterForRoute()
+            </a>
+        </td>
+        <td>
+            Returns the filter that should be applied for a single route, along
+with any parameters it might have. Parameters are found by splitting
+the parameter name on a colon to separate the filter name from the parameter list,
+and the splitting the result on commas. So:        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHTTPVerb()">
+            getHTTPVerb()
+            </a>
+        </td>
+        <td>
+            Returns the current HTTP Verb being used.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRedirectCode()">
+            getRedirectCode()
+            </a>
+        </td>
+        <td>
+            Grabs the HTTP status code from a redirecting Route.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRoutes()">
+            getRoutes()
+            </a>
+        </td>
+        <td>
+            Returns the raw array of available routes.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRoutesOptions()">
+            getRoutesOptions()
+            </a>
+        </td>
+        <td>
+            Returns one or all routes options        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#group()">
+            group()
+            </a>
+        </td>
+        <td>
+            Group a series of routes under a single URL segment. This is handy
+for grouping items into an admin area, like:        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#head()">
+            head()
+            </a>
+        </td>
+        <td>
+            Specifies a route that is only available to HEAD requests.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isFiltered()">
+            isFiltered()
+            </a>
+        </td>
+        <td>
+            Checks a route (using the "from") to see if it's filtered or not.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isRedirect()">
+            isRedirect()
+            </a>
+        </td>
+        <td>
+            Determines if the route is a redirecting route.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#map()">
+            map()
+            </a>
+        </td>
+        <td>
+            A shortcut method to add a number of routes at a single time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#match()">
+            match()
+            </a>
+        </td>
+        <td>
+            Specifies a single route to match for multiple HTTP Verbs.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#options()">
+            options()
+            </a>
+        </td>
+        <td>
+            Specifies a route that is only available to OPTIONS requests.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#patch()">
+            patch()
+            </a>
+        </td>
+        <td>
+            Specifies a route that is only available to PATCH requests.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#post()">
+            post()
+            </a>
+        </td>
+        <td>
+            Specifies a route that is only available to POST requests.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#presenter()">
+            presenter()
+            </a>
+        </td>
+        <td>
+            Creates a collections of HTTP-verb based routes for a presenter controller.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#put()">
+            put()
+            </a>
+        </td>
+        <td>
+            Specifies a route that is only available to PUT requests.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resetRoutes()">
+            resetRoutes()
+            </a>
+        </td>
+        <td>
+            Reset the routes, so that a FeatureTestCase can provide the
+explicit ones needed for it.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resource()">
+            resource()
+            </a>
+        </td>
+        <td>
+            Creates a collections of HTTP-verb based routes for a controller.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reverseRoute()">
+            reverseRoute()
+            </a>
+        </td>
+        <td>
+            Attempts to look up a route based on it's destination.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#set404Override()">
+            set404Override()
+            </a>
+        </td>
+        <td>
+            Sets the class/method that should be called if routing doesn't
+find a match. It can be either a closure or the controller/method
+name exactly like a route is defined: Users::index        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAutoRoute()">
+            setAutoRoute()
+            </a>
+        </td>
+        <td>
+            If TRUE, the system will attempt to match the URI against
+Controllers by matching each segment against folders/files
+in APPPATH/Controllers, when a match wasn't found against
+defined routes.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultConstraint()">
+            setDefaultConstraint()
+            </a>
+        </td>
+        <td>
+            Sets the default constraint to be used in the system. Typically
+for use with the 'resource' method.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultController()">
+            setDefaultController()
+            </a>
+        </td>
+        <td>
+            Sets the default controller to use when no other controller has been
+specified.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultMethod()">
+            setDefaultMethod()
+            </a>
+        </td>
+        <td>
+            Sets the default method to call on the controller when no other
+method has been set in the route.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultNamespace()">
+            setDefaultNamespace()
+            </a>
+        </td>
+        <td>
+            Sets the default namespace to use for Controllers when no other
+namespace has been specified.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHTTPVerb()">
+            setHTTPVerb()
+            </a>
+        </td>
+        <td>
+            Sets the current HTTP verb.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTranslateURIDashes()">
+            setTranslateURIDashes()
+            </a>
+        </td>
+        <td>
+            Tells the system whether to convert dashes in URI strings into
+underscores. In some search engines, including Google, dashes
+create more meaning and make it easier for the search engine to
+find words and meaning in the URI for better SEO. But it
+doesn't work well with PHP method names.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#shouldAutoRoute()">
+            shouldAutoRoute()
+            </a>
+        </td>
+        <td>
+            Returns the flag that tells whether to autoRoute URI against Controllers.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#shouldTranslateURIDashes()">
+            shouldTranslateURIDashes()
+            </a>
+        </td>
+        <td>
+            Returns the current value of the translateURIDashes setting.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Router\RouteCollection.html">
+            RouteCollection            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $locator        </td>
+        <td>
+            \FileLocator        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $moduleConfig        </td>
+        <td>
+            \Config\Modules        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="add()">add()</h3>
+
+<p>
+Adds a single route to the collection.</p>
+
+<p>Example:
+$routes-&gt;add('news', 'Posts::index');</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            array|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollectionInterface </p>
+
+
+<h3 id="addPlaceholder()">addPlaceholder()</h3>
+
+<p>
+Registers a new constraint with the system. Constraints are used
+by the routes as placeholders for regular expressions to make defining
+the routes more human-friendly.</p>
+
+<p>You can pass an associative array as $placeholder, and have
+multiple placeholders added at once.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $placeholder        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $pattern        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="addRedirect()">addRedirect()</h3>
+
+<p>
+Adds a temporary redirect from one route to another. Used for
+redirecting traffic from old, non-existing routes to the new
+moved routes.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string        </td>
+        <td>
+            Either        </td>
+    </tr>
+        <tr>
+        <td>
+            $status        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollection </p>
+
+
+<h3 id="cli()">cli()</h3>
+
+<p>
+Specifies a route that is only available to command-line requests.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="delete()">delete()</h3>
+
+<p>
+Specifies a route that is only available to DELETE requests.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="environment()">environment()</h3>
+
+<p>
+Limits the routes to a specified ENVIRONMENT or they won't run.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $env        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $callback        </td>
+        <td>
+            \Closure        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollectionInterface </p>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+Specifies a route that is only available to GET requests.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="get404Override()">get404Override()</h3>
+
+<p>
+Returns the 404 Override setting, which can be null, a closure
+or the controller/string.</p>
+
+
+
+<p>Returns: string|\Closure|null </p>
+
+
+<h3 id="getDefaultController()">getDefaultController()</h3>
+
+<p>
+Returns the name of the default controller. With Namespace.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getDefaultMethod()">getDefaultMethod()</h3>
+
+<p>
+Returns the name of the default method to use within the controller.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getDefaultNamespace()">getDefaultNamespace()</h3>
+
+<p>
+Returns the default namespace as set in the Routes config file.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getFilterForRoute()">getFilterForRoute()</h3>
+
+<p>
+Returns the filter that should be applied for a single route, along
+with any parameters it might have. Parameters are found by splitting
+the parameter name on a colon to separate the filter name from the parameter list,
+and the splitting the result on commas. So:</p>
+
+<p>'role:admin,manager'</p>
+<p>has a filter of "role", with parameters of ['admin', 'manager'].</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $search        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getHTTPVerb()">getHTTPVerb()</h3>
+
+<p>
+Returns the current HTTP Verb being used.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getRedirectCode()">getRedirectCode()</h3>
+
+<p>
+Grabs the HTTP status code from a redirecting Route.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: int </p>
+
+
+<h3 id="getRoutes()">getRoutes()</h3>
+
+<p>
+Returns the raw array of available routes.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $verb        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="getRoutesOptions()">getRoutesOptions()</h3>
+
+<p>
+Returns one or all routes options</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="group()">group()</h3>
+
+<p>
+Group a series of routes under a single URL segment. This is handy
+for grouping items into an admin area, like:</p>
+
+<p>Example:
+// Creates route: admin/users
+$route-&gt;group('admin', function() {</p>
+<pre><code>   $route-&gt;resource('users');
+</code></pre>
+<p>});</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $params        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="head()">head()</h3>
+
+<p>
+Specifies a route that is only available to HEAD requests.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="isFiltered()">isFiltered()</h3>
+
+<p>
+Checks a route (using the "from") to see if it's filtered or not.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $search        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="isRedirect()">isRedirect()</h3>
+
+<p>
+Determines if the route is a redirecting route.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="map()">map()</h3>
+
+<p>
+A shortcut method to add a number of routes at a single time.</p>
+
+<p>It does not allow any options to be set on the route, or to
+define the method used.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $routes        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollectionInterface </p>
+
+
+<h3 id="match()">match()</h3>
+
+<p>
+Specifies a single route to match for multiple HTTP Verbs.</p>
+
+<p>Example:
+$route-&gt;match( ['get', 'post'], 'users/(:num)', 'users/$1);</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $verbs        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="options()">options()</h3>
+
+<p>
+Specifies a route that is only available to OPTIONS requests.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="patch()">patch()</h3>
+
+<p>
+Specifies a route that is only available to PATCH requests.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="post()">post()</h3>
+
+<p>
+Specifies a route that is only available to POST requests.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="presenter()">presenter()</h3>
+
+<p>
+Creates a collections of HTTP-verb based routes for a presenter controller.</p>
+
+<p>Possible Options:</p>
+<pre><code> 'controller'    - Customize the name of the controller used in the 'to' route
+ 'placeholder'   - The regex used by the Router. Defaults to '(:any)'
+</code></pre>
+<p>Example:</p>
+<pre><code> $route-&gt;presenter('photos');
+
+ // Generates the following routes:
+ HTTP Verb | Path        | Action        | Used for...
+ ----------+-------------+---------------+-----------------
+ GET         /photos             index           showing all array of photo objects
+ GET         /photos/show/{id}   show            showing a specific photo object, all properties
+ GET         /photos/new         new             showing a form for an empty photo object, with default properties
+ POST        /photos/create      create          processing the form for a new photo
+ GET         /photos/edit/{id}   edit            show an editing form for a specific photo object, editable properties
+ POST        /photos/update/{id} update          process the editing form data
+ GET         /photos/remove/{id} remove          show a form to confirm deletion of a specific photo object
+ POST        /photos/delete/{id} delete          deleting the specified photo object
+</code></pre>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollectionInterface </p>
+
+
+<h3 id="put()">put()</h3>
+
+<p>
+Specifies a route that is only available to PUT requests.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="resetRoutes()">resetRoutes()</h3>
+
+<p>
+Reset the routes, so that a FeatureTestCase can provide the
+explicit ones needed for it.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="resource()">resource()</h3>
+
+<p>
+Creates a collections of HTTP-verb based routes for a controller.</p>
+
+<p>Possible Options:</p>
+<pre><code> 'controller'    - Customize the name of the controller used in the 'to' route
+ 'placeholder'   - The regex used by the Router. Defaults to '(:any)'
+ 'websafe'   -	- '1' if only GET and POST HTTP verbs are supported
+</code></pre>
+<p>Example:</p>
+<pre><code> $route-&gt;resource('photos');
+
+ // Generates the following routes:
+ HTTP Verb | Path        | Action        | Used for...
+ ----------+-------------+---------------+-----------------
+ GET         /photos             index           an array of photo objects
+ GET         /photos/new         new             an empty photo object, with default properties
+ GET         /photos/{id}/edit   edit            a specific photo object, editable properties
+ GET         /photos/{id}        show            a specific photo object, all properties
+ POST        /photos             create          a new photo object, to add to the resource
+ DELETE      /photos/{id}        delete          deletes the specified photo object
+ PUT/PATCH   /photos/{id}        update          replacement properties for existing photo
+</code></pre>
+<p> If 'websafe' option is present, the following paths are also available:</p>
+<pre><code> POST		/photos/{id}/delete delete
+ POST        /photos/{id}        update
+</code></pre>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollectionInterface </p>
+
+
+<h3 id="reverseRoute()">reverseRoute()</h3>
+
+<p>
+Attempts to look up a route based on it's destination.</p>
+
+<p>If a route exists:</p>
+<pre><code> 'path/(:any)/(:any)' =&gt; 'Controller::method/$1/$2'
+</code></pre>
+<p>This method allows you to know the Controller and method
+and get the route that leads to it.</p>
+<pre><code> // Equals 'path/$param1/$param2'
+ reverseRoute('Controller::method', $param1, $param2);
+</code></pre>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $search        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            ...$params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string|bool </p>
+
+
+<h3 id="set404Override()">set404Override()</h3>
+
+<p>
+Sets the class/method that should be called if routing doesn't
+find a match. It can be either a closure or the controller/method
+name exactly like a route is defined: Users::index</p>
+
+<p>This setting is passed to the Router class and handled there.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $callable        </td>
+        <td>
+            callable|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollectionInterface </p>
+
+
+<h3 id="setAutoRoute()">setAutoRoute()</h3>
+
+<p>
+If TRUE, the system will attempt to match the URI against
+Controllers by matching each segment against folders/files
+in APPPATH/Controllers, when a match wasn't found against
+defined routes.</p>
+
+<p>If FALSE, will stop searching and do NO automatic routing.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollectionInterface </p>
+
+
+<h3 id="setDefaultConstraint()">setDefaultConstraint()</h3>
+
+<p>
+Sets the default constraint to be used in the system. Typically
+for use with the 'resource' method.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $placeholder        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \RouteCollectionInterface </p>
+
+
+<h3 id="setDefaultController()">setDefaultController()</h3>
+
+<p>
+Sets the default controller to use when no other controller has been
+specified.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="setDefaultMethod()">setDefaultMethod()</h3>
+
+<p>
+Sets the default method to call on the controller when no other
+method has been set in the route.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="setDefaultNamespace()">setDefaultNamespace()</h3>
+
+<p>
+Sets the default namespace to use for Controllers when no other
+namespace has been specified.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="setHTTPVerb()">setHTTPVerb()</h3>
+
+<p>
+Sets the current HTTP verb.</p>
+
+<p>Used primarily for testing.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $verb        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setTranslateURIDashes()">setTranslateURIDashes()</h3>
+
+<p>
+Tells the system whether to convert dashes in URI strings into
+underscores. In some search engines, including Google, dashes
+create more meaning and make it easier for the search engine to
+find words and meaning in the URI for better SEO. But it
+doesn't work well with PHP method names.</p>
+
+<p>...</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollectionInterface </p>
+
+
+<h3 id="shouldAutoRoute()">shouldAutoRoute()</h3>
+
+<p>
+Returns the flag that tells whether to autoRoute URI against Controllers.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="shouldTranslateURIDashes()">shouldTranslateURIDashes()</h3>
+
+<p>
+Returns the current value of the translateURIDashes setting.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

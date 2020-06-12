@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\CodeIgniter &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../index.html">All Components</a>
+    &rarr;        <a href="../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../classes/CodeIgniter/CodeIgniter.html">Class CodeIgniter</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        CodeIgniter</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\CodeIgniter        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    This class is the core of the framework, and will analyse the
+request, route it to a controller, and send back the response.    </p>
+    <p>Of course, there are variations to that flow, but this is the brains.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#cache()">
+            cache()
+            </a>
+        </td>
+        <td>
+            Tells the app that the final output should be cached.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#cachePage()">
+            cachePage()
+            </a>
+        </td>
+        <td>
+            Caches the full response from the current request. Used for
+full-page caching for very high performance.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#displayCache()">
+            displayCache()
+            </a>
+        </td>
+        <td>
+            Determines if a response has been cached for the given URI.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#displayPerformanceMetrics()">
+            displayPerformanceMetrics()
+            </a>
+        </td>
+        <td>
+            Replaces the memory_usage and elapsed_time tags.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPerformanceStats()">
+            getPerformanceStats()
+            </a>
+        </td>
+        <td>
+            Returns an array with our basic performance stats collected.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#initialize()">
+            initialize()
+            </a>
+        </td>
+        <td>
+            Handles some basic app and environment setup.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#run()">
+            run()
+            </a>
+        </td>
+        <td>
+            Launch the application!        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPath()">
+            setPath()
+            </a>
+        </td>
+        <td>
+            Allows the request path to be set from outside the class,
+instead of relying on CLIRequest or IncomingRequest for the path.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRequest()">
+            setRequest()
+            </a>
+        </td>
+        <td>
+            Sets a Request object to be used for this request.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#spoofRequestMethod()">
+            spoofRequestMethod()
+            </a>
+        </td>
+        <td>
+            Modifies the Request Object to use a different method if a POST
+variable called _method is found.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#storePreviousURL()">
+            storePreviousURL()
+            </a>
+        </td>
+        <td>
+            If we have a session object to use, store the current URI
+as the previous URI. This is called just prior to sending the
+response to the client, and will make it available next request.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#useSafeOutput()">
+            useSafeOutput()
+            </a>
+        </td>
+        <td>
+            Set our Response instance to "pretend" mode so that things like
+cookies and headers are not actually sent, allowing PHP 7.2+ to
+not complain when ini_set() function is used.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\CodeIgniter.html">
+            CodeIgniter            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \type        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="cache()">cache()</h3>
+
+<p>
+Tells the app that the final output should be cached.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $time        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="cachePage()">cachePage()</h3>
+
+<p>
+Caches the full response from the current request. Used for
+full-page caching for very high performance.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\Cache        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="displayCache()">displayCache()</h3>
+
+<p>
+Determines if a response has been cached for the given URI.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\Cache        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool|\CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="displayPerformanceMetrics()">displayPerformanceMetrics()</h3>
+
+<p>
+Replaces the memory_usage and elapsed_time tags.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $output        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getPerformanceStats()">getPerformanceStats()</h3>
+
+<p>
+Returns an array with our basic performance stats collected.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="initialize()">initialize()</h3>
+
+<p>
+Handles some basic app and environment setup.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="run()">run()</h3>
+
+<p>
+Launch the application!</p>
+
+<p>This is "the loop" if you will. The main entry point into the script
+that gets the required class instances, fires off the filters,
+tries to route the response, loads the controller and generally
+makes all of the pieces work together.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $routes        </td>
+        <td>
+            \CodeIgniter\Router\RouteCollectionInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $returnResponse        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool|\CodeIgniter\HTTP\RequestInterface|\CodeIgniter\HTTP\Response|\CodeIgniter\HTTP\ResponseInterface|mixed </p>
+
+
+<h3 id="setPath()">setPath()</h3>
+
+<p>
+Allows the request path to be set from outside the class,
+instead of relying on CLIRequest or IncomingRequest for the path.</p>
+
+<p>This is primarily used by the Console.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setRequest()">setRequest()</h3>
+
+<p>
+Sets a Request object to be used for this request.</p>
+
+<p>Used when running certain tests.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \CodeIgniter\HTTP\Request        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\CodeIgniter </p>
+
+
+<h3 id="spoofRequestMethod()">spoofRequestMethod()</h3>
+
+<p>
+Modifies the Request Object to use a different method if a POST
+variable called _method is found.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="storePreviousURL()">storePreviousURL()</h3>
+
+<p>
+If we have a session object to use, store the current URI
+as the previous URI. This is called just prior to sending the
+response to the client, and will make it available next request.</p>
+
+<p>This helps provider safer, more reliable previous_url() detection.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            \CodeIgniter\HTTP\URI        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="useSafeOutput()">useSafeOutput()</h3>
+
+<p>
+Set our Response instance to "pretend" mode so that things like
+cookies and headers are not actually sent, allowing PHP 7.2+ to
+not complain when ini_set() function is used.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $safe        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/loadCSS.js"></script>
+<script src="../../assets/js/popup.js"></script>
+
+<script src="../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

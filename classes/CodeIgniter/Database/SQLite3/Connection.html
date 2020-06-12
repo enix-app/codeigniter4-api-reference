@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Database\SQLite3\Connection &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../../classes/CodeIgniter/Database/SQLite3/Connection.html">Class Connection</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Connection</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Database\SQLite3\Connection        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">BaseConnection</a>                    </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../../classes/CodeIgniter\Database\ConnectionInterface.html">ConnectionInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Connection for SQLite3    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Saves our connection settings.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Accessor for properties if they exist.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__isset()">
+            __isset()
+            </a>
+        </td>
+        <td>
+            Checker for properties existence.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#_fieldData()">
+            _fieldData()
+            </a>
+        </td>
+        <td>
+            Returns an array of objects with field data        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#_foreignKeyData()">
+            _foreignKeyData()
+            </a>
+        </td>
+        <td>
+            Returns an array of objects with Foreign key data        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#_indexData()">
+            _indexData()
+            </a>
+        </td>
+        <td>
+            Returns an array of objects with index data        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addTableAlias()">
+            addTableAlias()
+            </a>
+        </td>
+        <td>
+            Add a table alias to our list.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#affectedRows()">
+            affectedRows()
+            </a>
+        </td>
+        <td>
+            Returns the total number of rows affected by this query.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#callFunction()">
+            callFunction()
+            </a>
+        </td>
+        <td>
+            This function enables you to call PHP database functions that are not natively included
+in CodeIgniter, in a platform independent manner.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#close()">
+            close()
+            </a>
+        </td>
+        <td>
+            Close the database connection.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#connect()">
+            connect()
+            </a>
+        </td>
+        <td>
+            Connect to the database.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#disableForeignKeyChecks()">
+            disableForeignKeyChecks()
+            </a>
+        </td>
+        <td>
+            Disables foreign key checks temporarily.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#enableForeignKeyChecks()">
+            enableForeignKeyChecks()
+            </a>
+        </td>
+        <td>
+            Enables foreign key checks temporarily.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#error()">
+            error()
+            </a>
+        </td>
+        <td>
+            Returns the last error code and message.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#escape()">
+            escape()
+            </a>
+        </td>
+        <td>
+            "Smart" Escape String        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#escapeIdentifiers()">
+            escapeIdentifiers()
+            </a>
+        </td>
+        <td>
+            Escape the SQL Identifiers        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#escapeLikeString()">
+            escapeLikeString()
+            </a>
+        </td>
+        <td>
+            Escape LIKE String        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#escapeString()">
+            escapeString()
+            </a>
+        </td>
+        <td>
+            Escape String        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#execute()">
+            execute()
+            </a>
+        </td>
+        <td>
+            Execute the query        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fieldExists()">
+            fieldExists()
+            </a>
+        </td>
+        <td>
+            Determine if a particular field exists        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getConnectDuration()">
+            getConnectDuration()
+            </a>
+        </td>
+        <td>
+            Returns the number of seconds with microseconds that it took
+to connect to the database.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getConnectStart()">
+            getConnectStart()
+            </a>
+        </td>
+        <td>
+            Returns the time we started to connect to this database in
+seconds with microseconds.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getConnection()">
+            getConnection()
+            </a>
+        </td>
+        <td>
+            Returns the actual connection object. If both a 'read' and 'write'
+connection has been specified, you can pass either term in to
+get that connection. If you pass either alias in and only a single
+connection is present, it must return the sole connection.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDatabase()">
+            getDatabase()
+            </a>
+        </td>
+        <td>
+            Returns the name of the current database being used.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getError()">
+            getError()
+            </a>
+        </td>
+        <td>
+            Returns the last error encountered by this connection.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFieldData()">
+            getFieldData()
+            </a>
+        </td>
+        <td>
+            Returns an object with field data        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFieldNames()">
+            getFieldNames()
+            </a>
+        </td>
+        <td>
+            Fetch Field Names        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getForeignKeyData()">
+            getForeignKeyData()
+            </a>
+        </td>
+        <td>
+            Returns an object with foreign key data        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIndexData()">
+            getIndexData()
+            </a>
+        </td>
+        <td>
+            Returns an object with key data        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastQuery()">
+            getLastQuery()
+            </a>
+        </td>
+        <td>
+            Returns the last query's statement object.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPlatform()">
+            getPlatform()
+            </a>
+        </td>
+        <td>
+            The name of the platform in use (MySQLi, mssql, etc)        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPrefix()">
+            getPrefix()
+            </a>
+        </td>
+        <td>
+            Returns the database prefix.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getVersion()">
+            getVersion()
+            </a>
+        </td>
+        <td>
+            Returns a string containing the version of the database being used.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#initialize()">
+            initialize()
+            </a>
+        </td>
+        <td>
+            Initializes the database connection/settings.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#insertID()">
+            insertID()
+            </a>
+        </td>
+        <td>
+            Insert ID        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isWriteType()">
+            isWriteType()
+            </a>
+        </td>
+        <td>
+            Determines if the statement is a write-type query or not.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#listTables()">
+            listTables()
+            </a>
+        </td>
+        <td>
+            Returns an array of table names        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#persistentConnect()">
+            persistentConnect()
+            </a>
+        </td>
+        <td>
+            Create a persistent database connection.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prefixTable()">
+            prefixTable()
+            </a>
+        </td>
+        <td>
+            DB Prefix        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prepare()">
+            prepare()
+            </a>
+        </td>
+        <td>
+            Creates a prepared statement with the database that can then
+be used to execute multiple statements against. Within the
+closure, you would build the query in any normal way, though
+the Query Builder is the expected manner.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#pretend()">
+            pretend()
+            </a>
+        </td>
+        <td>
+            Allows the engine to be set into a mode where queries are not
+actually executed, but they are still generated, timed, etc.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#protectIdentifiers()">
+            protectIdentifiers()
+            </a>
+        </td>
+        <td>
+            Protect Identifiers        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#query()">
+            query()
+            </a>
+        </td>
+        <td>
+            Orchestrates a query against the database. Queries must use
+Database\Statement objects to store the query and build it.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reconnect()">
+            reconnect()
+            </a>
+        </td>
+        <td>
+            Keep or establish the connection if no queries have been sent for
+a length of time exceeding the server's idle timeout.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resetDataCache()">
+            resetDataCache()
+            </a>
+        </td>
+        <td>
+            Empties our data cache. Especially helpful during testing.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAliasedTables()">
+            setAliasedTables()
+            </a>
+        </td>
+        <td>
+            Sets the Table Aliases to use. These are typically
+collected during use of the Builder, and set here
+so queries are built correctly.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDatabase()">
+            setDatabase()
+            </a>
+        </td>
+        <td>
+            Select a specific database table to use.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPrefix()">
+            setPrefix()
+            </a>
+        </td>
+        <td>
+            Set DB Prefix        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#showLastQuery()">
+            showLastQuery()
+            </a>
+        </td>
+        <td>
+            Returns a string representation of the last query's statement object.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#simpleQuery()">
+            simpleQuery()
+            </a>
+        </td>
+        <td>
+            Performs a basic query against the database. No binding or caching
+is performed, nor are transactions handled. Simply takes a raw
+query string and returns the database-specific result id.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#supportsForeignKeys()">
+            supportsForeignKeys()
+            </a>
+        </td>
+        <td>
+            Checks to see if the current install supports Foreign Keys
+and has them enabled.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\SQLite3\Connection.html">
+            Connection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#table()">
+            table()
+            </a>
+        </td>
+        <td>
+            Returns an instance of the query builder for this connection.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#tableExists()">
+            tableExists()
+            </a>
+        </td>
+        <td>
+            Determine if a particular table exists        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#transBegin()">
+            transBegin()
+            </a>
+        </td>
+        <td>
+            Begin Transaction        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#transCommit()">
+            transCommit()
+            </a>
+        </td>
+        <td>
+            Commit Transaction        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#transComplete()">
+            transComplete()
+            </a>
+        </td>
+        <td>
+            Complete Transaction        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#transOff()">
+            transOff()
+            </a>
+        </td>
+        <td>
+            Disable Transactions        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#transRollback()">
+            transRollback()
+            </a>
+        </td>
+        <td>
+            Rollback Transaction        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#transStart()">
+            transStart()
+            </a>
+        </td>
+        <td>
+            Start Transaction        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#transStatus()">
+            transStatus()
+            </a>
+        </td>
+        <td>
+            Lets you retrieve the transaction flag to determine if it has failed        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#transStrict()">
+            transStrict()
+            </a>
+        </td>
+        <td>
+            Enable/disable Transaction Strict Mode        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Database\BaseConnection.html">
+            BaseConnection            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Saves our connection settings.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Accessor for properties if they exist.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="__isset()">__isset()</h3>
+
+<p>
+Checker for properties existence.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="_fieldData()">_fieldData()</h3>
+
+<p>
+Returns an array of objects with field data</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \stdClass[] </p>
+
+
+<h3 id="_foreignKeyData()">_foreignKeyData()</h3>
+
+<p>
+Returns an array of objects with Foreign key data</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \stdClass[] </p>
+
+
+<h3 id="_indexData()">_indexData()</h3>
+
+<p>
+Returns an array of objects with index data</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \stdClass[] </p>
+
+
+<h3 id="addTableAlias()">addTableAlias()</h3>
+
+<p>
+Add a table alias to our list.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="affectedRows()">affectedRows()</h3>
+
+<p>
+Returns the total number of rows affected by this query.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="callFunction()">callFunction()</h3>
+
+<p>
+This function enables you to call PHP database functions that are not natively included
+in CodeIgniter, in a platform independent manner.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $functionName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            ...$params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="close()">close()</h3>
+
+<p>
+Close the database connection.</p>
+
+
+
+<p>Returns: void </p>
+
+
+<h3 id="connect()">connect()</h3>
+
+<p>
+Connect to the database.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $persistent        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="disableForeignKeyChecks()">disableForeignKeyChecks()</h3>
+
+<p>
+Disables foreign key checks temporarily.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="enableForeignKeyChecks()">enableForeignKeyChecks()</h3>
+
+<p>
+Enables foreign key checks temporarily.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="error()">error()</h3>
+
+<p>
+Returns the last error code and message.</p>
+
+<p>Must return an array with keys 'code' and 'message':</p>
+<p>return ['code' =&gt; null, 'message' =&gt; null);</p>
+
+
+<p>Returns: array </p>
+
+
+<h3 id="escape()">escape()</h3>
+
+<p>
+"Smart" Escape String</p>
+
+<p>Escapes data based on type.
+Sets boolean and null types</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $str        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="escapeIdentifiers()">escapeIdentifiers()</h3>
+
+<p>
+Escape the SQL Identifiers</p>
+
+<p>This function escapes column and table names</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $item        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="escapeLikeString()">escapeLikeString()</h3>
+
+<p>
+Escape LIKE String</p>
+
+<p>Calls the individual driver for platform
+specific escaping for LIKE conditions</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $        </td>
+        <td>
+            string|string[]        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $str        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string|string[] </p>
+
+
+<h3 id="escapeString()">escapeString()</h3>
+
+<p>
+Escape String</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $str        </td>
+        <td>
+            string|string[]        </td>
+        <td>
+            Input        </td>
+    </tr>
+        <tr>
+        <td>
+            $like        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: string|string[] </p>
+
+
+<h3 id="execute()">execute()</h3>
+
+<p>
+Execute the query</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $sql        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed \SQLite3Result object or bool</p>
+
+
+<h3 id="fieldExists()">fieldExists()</h3>
+
+<p>
+Determine if a particular field exists</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $fieldName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $tableName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="getConnectDuration()">getConnectDuration()</h3>
+
+<p>
+Returns the number of seconds with microseconds that it took
+to connect to the database.</p>
+
+<p>Used by the Debug Toolbar's timeline.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $decimals        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getConnectStart()">getConnectStart()</h3>
+
+<p>
+Returns the time we started to connect to this database in
+seconds with microseconds.</p>
+
+<p>Used by the Debug Toolbar's timeline.</p>
+
+
+<p>Returns: float|null </p>
+
+
+<h3 id="getConnection()">getConnection()</h3>
+
+<p>
+Returns the actual connection object. If both a 'read' and 'write'
+connection has been specified, you can pass either term in to
+get that connection. If you pass either alias in and only a single
+connection is present, it must return the sole connection.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $alias        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getDatabase()">getDatabase()</h3>
+
+<p>
+Returns the name of the current database being used.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getError()">getError()</h3>
+
+<p>
+Returns the last error encountered by this connection.</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getFieldData()">getFieldData()</h3>
+
+<p>
+Returns an object with field data</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+            the        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|bool </p>
+
+
+<h3 id="getFieldNames()">getFieldNames()</h3>
+
+<p>
+Fetch Field Names</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+            Table        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|bool </p>
+
+
+<h3 id="getForeignKeyData()">getForeignKeyData()</h3>
+
+<p>
+Returns an object with foreign key data</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+            the        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|bool </p>
+
+
+<h3 id="getIndexData()">getIndexData()</h3>
+
+<p>
+Returns an object with key data</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+            the        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|bool </p>
+
+
+<h3 id="getLastQuery()">getLastQuery()</h3>
+
+<p>
+Returns the last query's statement object.</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getPlatform()">getPlatform()</h3>
+
+<p>
+The name of the platform in use (MySQLi, mssql, etc)</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getPrefix()">getPrefix()</h3>
+
+<p>
+Returns the database prefix.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getVersion()">getVersion()</h3>
+
+<p>
+Returns a string containing the version of the database being used.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="initialize()">initialize()</h3>
+
+<p>
+Initializes the database connection/settings.</p>
+
+
+
+<p>Returns: mixed|void </p>
+
+
+<h3 id="insertID()">insertID()</h3>
+
+<p>
+Insert ID</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="isWriteType()">isWriteType()</h3>
+
+<p>
+Determines if the statement is a write-type query or not.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $sql        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="listTables()">listTables()</h3>
+
+<p>
+Returns an array of table names</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $constrainByPrefix        </td>
+        <td>
+            bool        </td>
+        <td>
+            =        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool|array </p>
+
+
+<h3 id="persistentConnect()">persistentConnect()</h3>
+
+<p>
+Create a persistent database connection.</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="prefixTable()">prefixTable()</h3>
+
+<p>
+DB Prefix</p>
+
+<p>Prepends a database prefix if one exists in configuration</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+            the        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="prepare()">prepare()</h3>
+
+<p>
+Creates a prepared statement with the database that can then
+be used to execute multiple statements against. Within the
+closure, you would build the query in any normal way, though
+the Query Builder is the expected manner.</p>
+
+<p>Example:
+$stmt = $db-&gt;prepare(function($db)</p>
+<pre><code>   {
+     return $db-&gt;table('users')
+           -&gt;where('id', 1)
+             -&gt;get();
+   })
+</code></pre>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $func        </td>
+        <td>
+            \Closure        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+            Passed        </td>
+    </tr>
+    </table>
+
+<p>Returns: \BasePreparedQuery|null </p>
+
+
+<h3 id="pretend()">pretend()</h3>
+
+<p>
+Allows the engine to be set into a mode where queries are not
+actually executed, but they are still generated, timed, etc.</p>
+
+<p>This is primarily used by the prepared query functionality.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pretend        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="protectIdentifiers()">protectIdentifiers()</h3>
+
+<p>
+Protect Identifiers</p>
+
+<p>This function is used extensively by the Query Builder class, and by
+a couple functions in this class.
+It takes a column or table name (optionally with an alias) and inserts
+the table prefix onto it. Some logic is necessary in order to deal with
+column names that include the path. Consider a query like this:</p>
+<p>SELECT hostname.database.table.column AS c FROM hostname.database.table</p>
+<p>Or a query with aliasing:</p>
+<p>SELECT m.member_id, m.member_name FROM members AS m</p>
+<p>Since the column name can include up to four segments (host, DB, table, column)
+or also have an alias prefix, we need to do a bit of work to figure this out and
+insert the table prefix (if it exists) in the proper position, and escape only
+the correct identifiers.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $item        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $prefixSingle        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $protectIdentifiers        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $fieldExists        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string|array </p>
+
+
+<h3 id="query()">query()</h3>
+
+<p>
+Orchestrates a query against the database. Queries must use
+Database\Statement objects to store the query and build it.</p>
+
+<p>This method works with the cache.</p>
+<p>Should automatically handle different connections for read/write
+queries if needed.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $sql        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            ...$binds        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $setEscapeFlags        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $queryClass        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $binds        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseResult|\Query|bool </p>
+
+
+<h3 id="reconnect()">reconnect()</h3>
+
+<p>
+Keep or establish the connection if no queries have been sent for
+a length of time exceeding the server's idle timeout.</p>
+
+
+
+<p>Returns: void </p>
+
+
+<h3 id="resetDataCache()">resetDataCache()</h3>
+
+<p>
+Empties our data cache. Especially helpful during testing.</p>
+
+
+
+<p>Returns: $this </p>
+
+
+<h3 id="setAliasedTables()">setAliasedTables()</h3>
+
+<p>
+Sets the Table Aliases to use. These are typically
+collected during use of the Builder, and set here
+so queries are built correctly.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $aliases        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setDatabase()">setDatabase()</h3>
+
+<p>
+Select a specific database table to use.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $databaseName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="setPrefix()">setPrefix()</h3>
+
+<p>
+Set DB Prefix</p>
+
+<p>Set's the DB Prefix to something new without needing to reconnect</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $prefix        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="showLastQuery()">showLastQuery()</h3>
+
+<p>
+Returns a string representation of the last query's statement object.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="simpleQuery()">simpleQuery()</h3>
+
+<p>
+Performs a basic query against the database. No binding or caching
+is performed, nor are transactions handled. Simply takes a raw
+query string and returns the database-specific result id.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $sql        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="supportsForeignKeys()">supportsForeignKeys()</h3>
+
+<p>
+Checks to see if the current install supports Foreign Keys
+and has them enabled.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="table()">table()</h3>
+
+<p>
+Returns an instance of the query builder for this connection.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $tableName        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \BaseBuilder </p>
+
+
+<h3 id="tableExists()">tableExists()</h3>
+
+<p>
+Determine if a particular table exists</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $tableName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="transBegin()">transBegin()</h3>
+
+<p>
+Begin Transaction</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $test_mode        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="transCommit()">transCommit()</h3>
+
+<p>
+Commit Transaction</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="transComplete()">transComplete()</h3>
+
+<p>
+Complete Transaction</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="transOff()">transOff()</h3>
+
+<p>
+Disable Transactions</p>
+
+<p>This permits transactions to be disabled at run-time.</p>
+
+
+<p>Returns: void </p>
+
+
+<h3 id="transRollback()">transRollback()</h3>
+
+<p>
+Rollback Transaction</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="transStart()">transStart()</h3>
+
+<p>
+Start Transaction</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $test_mode        </td>
+        <td>
+            bool        </td>
+        <td>
+            =        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="transStatus()">transStatus()</h3>
+
+<p>
+Lets you retrieve the transaction flag to determine if it has failed</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="transStrict()">transStrict()</h3>
+
+<p>
+Enable/disable Transaction Strict Mode</p>
+
+<p>When strict mode is enabled, if you are running multiple groups of
+transactions, if one group fails all subsequent groups will be
+rolled back.</p>
+<p>If strict mode is disabled, each group is treated autonomously,
+meaning a failure of one group will not affect any others</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $mode        </td>
+        <td>
+            bool        </td>
+        <td>
+            =        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

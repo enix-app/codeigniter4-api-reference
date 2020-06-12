@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\View\View &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/View/View.html">Class View</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        View</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\View\View        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/CodeIgniter\View\RendererInterface.html">RendererInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class View    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#endSection()">
+            endSection()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#excerpt()">
+            excerpt()
+            </a>
+        </td>
+        <td>
+            Extract first bit of a long string and add ellipsis        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#extend()">
+            extend()
+            </a>
+        </td>
+        <td>
+            Specifies that the current view should extend an existing layout.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getData()">
+            getData()
+            </a>
+        </td>
+        <td>
+            Returns the current data that will be displayed in the view.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPerformanceData()">
+            getPerformanceData()
+            </a>
+        </td>
+        <td>
+            Returns the performance data that might have been collected
+during the execution. Used primarily in the Debug Toolbar.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#include()">
+            include()
+            </a>
+        </td>
+        <td>
+            Used within layout views to include additional views.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#render()">
+            render()
+            </a>
+        </td>
+        <td>
+            Builds the output based upon a file name and any
+data that has already been set.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#renderSection()">
+            renderSection()
+            </a>
+        </td>
+        <td>
+            Renders a section's contents.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#renderString()">
+            renderString()
+            </a>
+        </td>
+        <td>
+            Builds the output based upon a string and any
+data that has already been set.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resetData()">
+            resetData()
+            </a>
+        </td>
+        <td>
+            Removes all of the view data from the system.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#section()">
+            section()
+            </a>
+        </td>
+        <td>
+            Starts holds content for a section within the layout.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setData()">
+            setData()
+            </a>
+        </td>
+        <td>
+            Sets several pieces of view data at once.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setVar()">
+            setVar()
+            </a>
+        </td>
+        <td>
+            Sets a single piece of view data.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\View\View.html">
+            View            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\View        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $viewPath        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $loader        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $debug        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $logger        </td>
+        <td>
+            \LoggerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="endSection()">endSection()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="excerpt()">excerpt()</h3>
+
+<p>
+Extract first bit of a long string and add ellipsis</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $string        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $length        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="extend()">extend()</h3>
+
+<p>
+Specifies that the current view should extend an existing layout.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $layout        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="getData()">getData()</h3>
+
+<p>
+Returns the current data that will be displayed in the view.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getPerformanceData()">getPerformanceData()</h3>
+
+<p>
+Returns the performance data that might have been collected
+during the execution. Used primarily in the Debug Toolbar.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="include()">include()</h3>
+
+<p>
+Used within layout views to include additional views.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $view        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $saveData        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="render()">render()</h3>
+
+<p>
+Builds the output based upon a file name and any
+data that has already been set.</p>
+
+<p>Valid $options:</p>
+<ul>
+<li>cache 		number of seconds to cache for</li>
+<li>cache_name	Name to use for cache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $view        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $saveData        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="renderSection()">renderSection()</h3>
+
+<p>
+Renders a section's contents.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $sectionName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="renderString()">renderString()</h3>
+
+<p>
+Builds the output based upon a string and any
+data that has already been set.</p>
+
+<p>Cache does not apply, because there is no "key".</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $view        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+            Reserved        </td>
+    </tr>
+        <tr>
+        <td>
+            $saveData        </td>
+        <td>
+            bool        </td>
+        <td>
+            If        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="resetData()">resetData()</h3>
+
+<p>
+Removes all of the view data from the system.</p>
+
+
+
+<p>Returns: \RendererInterface </p>
+
+
+<h3 id="section()">section()</h3>
+
+<p>
+Starts holds content for a section within the layout.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setData()">setData()</h3>
+
+<p>
+Sets several pieces of view data at once.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $context        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: \RendererInterface </p>
+
+
+<h3 id="setVar()">setVar()</h3>
+
+<p>
+Sets a single piece of view data.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $context        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: \RendererInterface </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

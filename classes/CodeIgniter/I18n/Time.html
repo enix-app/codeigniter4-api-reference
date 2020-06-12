@@ -1,0 +1,2748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\I18n\Time &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/I18n/Time.html">Class Time</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Time</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\I18n\Time        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../classes/DateTime.html">DateTime</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class Time    </p>
+    <p>A localized date/time package inspired
+by Nesbot/Carbon and CakePHP/Chronos.</p>
+<p>Requires the intl PHP extension.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Time constructor.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Allow for property-type access to any getX method.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__isset()">
+            __isset()
+            </a>
+        </td>
+        <td>
+            Allow for property-type checking to any getX method.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Outputs a short format version of the datetime.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addDays()">
+            addDays()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $days added to the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addHours()">
+            addHours()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $hours added to the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addMinutes()">
+            addMinutes()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $minutes added to the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addMonths()">
+            addMonths()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $months added to the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addSeconds()">
+            addSeconds()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $seconds added to the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addYears()">
+            addYears()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $years added to the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#create()">
+            create()
+            </a>
+        </td>
+        <td>
+            Returns a new instance with the date time values individually set.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createFromDate()">
+            createFromDate()
+            </a>
+        </td>
+        <td>
+            Returns a new instance based on the year, month and day. If any of those three
+are left empty, will default to the current value.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createFromFormat()">
+            createFromFormat()
+            </a>
+        </td>
+        <td>
+            Provides a replacement for DateTime's own createFromFormat function, that provides
+more flexible timeZone handling        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createFromTime()">
+            createFromTime()
+            </a>
+        </td>
+        <td>
+            Returns a new instance with the date set to today, and the time set to the values passed in.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createFromTimestamp()">
+            createFromTimestamp()
+            </a>
+        </td>
+        <td>
+            Returns a new instance with the datetime set based on the provided UNIX timestamp.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#difference()">
+            difference()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#equals()">
+            equals()
+            </a>
+        </td>
+        <td>
+            Determines if the datetime passed in is equal to the current instance.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAge()">
+            getAge()
+            </a>
+        </td>
+        <td>
+            Returns the age in years from the "current" date and 'now'        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCalendar()">
+            getCalendar()
+            </a>
+        </td>
+        <td>
+            Returns the IntlCalendar object used for this object,
+taking into account the locale, date, etc.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDay()">
+            getDay()
+            </a>
+        </td>
+        <td>
+            Return the localized day of the month.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDayOfWeek()">
+            getDayOfWeek()
+            </a>
+        </td>
+        <td>
+            Return the index of the day of the week        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDayOfYear()">
+            getDayOfYear()
+            </a>
+        </td>
+        <td>
+            Return the index of the day of the year        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDst()">
+            getDst()
+            </a>
+        </td>
+        <td>
+            Are we in daylight savings time currently?        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHour()">
+            getHour()
+            </a>
+        </td>
+        <td>
+            Return the localized hour (in 24-hour format).        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLocal()">
+            getLocal()
+            </a>
+        </td>
+        <td>
+            Returns boolean whether the passed timezone is the same as
+the local timezone.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMinute()">
+            getMinute()
+            </a>
+        </td>
+        <td>
+            Return the localized minutes in the hour.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMonth()">
+            getMonth()
+            </a>
+        </td>
+        <td>
+            Returns the localized Month        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getQuarter()">
+            getQuarter()
+            </a>
+        </td>
+        <td>
+            Returns the number of the current quarter for the year.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSecond()">
+            getSecond()
+            </a>
+        </td>
+        <td>
+            Return the localized seconds        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTimezoneName()">
+            getTimezoneName()
+            </a>
+        </td>
+        <td>
+            Returns the name of the current timezone.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUTCObject()">
+            getUTCObject()
+            </a>
+        </td>
+        <td>
+            Returns a Time instance with the timezone converted to UTC.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUtc()">
+            getUtc()
+            </a>
+        </td>
+        <td>
+            Returns boolean whether object is in UTC.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWeekOfMonth()">
+            getWeekOfMonth()
+            </a>
+        </td>
+        <td>
+            Return the index of the week in the month        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWeekOfYear()">
+            getWeekOfYear()
+            </a>
+        </td>
+        <td>
+            Return the index of the week in the year        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getYear()">
+            getYear()
+            </a>
+        </td>
+        <td>
+            Returns the localized Year        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasTestNow()">
+            hasTestNow()
+            </a>
+        </td>
+        <td>
+            Returns whether we have a testNow instance saved.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#humanize()">
+            humanize()
+            </a>
+        </td>
+        <td>
+            Returns a text string that is easily readable that describes
+how long ago, or how long from now, a date is, like:        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#instance()">
+            instance()
+            </a>
+        </td>
+        <td>
+            Takes an instance of DateTime and returns an instance of Time with it's same values.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isAfter()">
+            isAfter()
+            </a>
+        </td>
+        <td>
+            Determines if the current instance's time is after $testTime,
+after converting in UTC.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isBefore()">
+            isBefore()
+            </a>
+        </td>
+        <td>
+            Determines if the current instance's time is before $testTime,
+after converting to UTC.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#now()">
+            now()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with the timezone set.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#parse()">
+            parse()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance while parsing a datetime string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#sameAs()">
+            sameAs()
+            </a>
+        </td>
+        <td>
+            Ensures that the times are identical, taking timezone into account.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDay()">
+            setDay()
+            </a>
+        </td>
+        <td>
+            Sets the day of the month.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHour()">
+            setHour()
+            </a>
+        </td>
+        <td>
+            Sets the hour of the day (24 hour cycle)        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMinute()">
+            setMinute()
+            </a>
+        </td>
+        <td>
+            Sets the minute of the hour        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMonth()">
+            setMonth()
+            </a>
+        </td>
+        <td>
+            Sets the month of the year.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSecond()">
+            setSecond()
+            </a>
+        </td>
+        <td>
+            Sets the second of the minute.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTestNow()">
+            setTestNow()
+            </a>
+        </td>
+        <td>
+            Creates an instance of Time that will be returned during testing
+when calling 'Time::now' instead of the current time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTimestamp()">
+            setTimestamp()
+            </a>
+        </td>
+        <td>
+            Returns a new instance with the date set to the new timestamp.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTimezone()">
+            setTimezone()
+            </a>
+        </td>
+        <td>
+            Returns a new instance with the revised timezone.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setYear()">
+            setYear()
+            </a>
+        </td>
+        <td>
+            Sets the current year for this instance.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#subDays()">
+            subDays()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $days subtracted from the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#subHours()">
+            subHours()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $hours subtracted from the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#subMinutes()">
+            subMinutes()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $minutes subtracted from the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#subMonths()">
+            subMonths()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $months subtracted from the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#subSeconds()">
+            subSeconds()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $seconds subtracted from the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#subYears()">
+            subYears()
+            </a>
+        </td>
+        <td>
+            Returns a new Time instance with $hours subtracted from the time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toDateString()">
+            toDateString()
+            </a>
+        </td>
+        <td>
+            Returns a localized version of the date in Y-m-d format.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toDateTime()">
+            toDateTime()
+            </a>
+        </td>
+        <td>
+            Converts the current instance to a mutable DateTime object.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toDateTimeString()">
+            toDateTimeString()
+            </a>
+        </td>
+        <td>
+            Returns the localized value of the date in the format 'Y-m-d H:i:s'        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toFormattedDateString()">
+            toFormattedDateString()
+            </a>
+        </td>
+        <td>
+            Returns a localized version of the date in nicer date format:        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toLocalizedString()">
+            toLocalizedString()
+            </a>
+        </td>
+        <td>
+            Returns the localized value of this instance in $format.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toTimeString()">
+            toTimeString()
+            </a>
+        </td>
+        <td>
+            Returns a localized version of the time in nicer date format:        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#today()">
+            today()
+            </a>
+        </td>
+        <td>
+            Return a new time with the time set to midnight.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#tomorrow()">
+            tomorrow()
+            </a>
+        </td>
+        <td>
+            Returns an instance set to midnight tomorrow morning.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#yesterday()">
+            yesterday()
+            </a>
+        </td>
+        <td>
+            Returns an instance set to midnight yesterday morning.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\I18n\Time.html">
+            Time            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Time constructor.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $time        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Allow for property-type access to any getX method.</p>
+
+<p>..</p>
+<p>Note that we cannot use this for any of our setX methods,
+as they return new Time objects, but the __set ignores
+return values.
+See <a href="http://php.net/manual/en/language.oop5.overloading.php">http://php.net/manual/en/language.oop5.overloading.php</a></p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="__isset()">__isset()</h3>
+
+<p>
+Allow for property-type checking to any getX method.</p>
+
+<p>..</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Outputs a short format version of the datetime.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="addDays()">addDays()</h3>
+
+<p>
+Returns a new Time instance with $days added to the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $days        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="addHours()">addHours()</h3>
+
+<p>
+Returns a new Time instance with $hours added to the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $hours        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="addMinutes()">addMinutes()</h3>
+
+<p>
+Returns a new Time instance with $minutes added to the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $minutes        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="addMonths()">addMonths()</h3>
+
+<p>
+Returns a new Time instance with $months added to the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $months        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="addSeconds()">addSeconds()</h3>
+
+<p>
+Returns a new Time instance with $seconds added to the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $seconds        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="addYears()">addYears()</h3>
+
+<p>
+Returns a new Time instance with $years added to the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $years        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="create()">create()</h3>
+
+<p>
+Returns a new instance with the date time values individually set.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $year        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $month        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $day        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $hour        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $minutes        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $seconds        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="createFromDate()">createFromDate()</h3>
+
+<p>
+Returns a new instance based on the year, month and day. If any of those three
+are left empty, will default to the current value.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $year        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $month        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $day        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="createFromFormat()">createFromFormat()</h3>
+
+<p>
+Provides a replacement for DateTime's own createFromFormat function, that provides
+more flexible timeZone handling</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $datetime        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timeZone        </td>
+        <td>
+            \DateTimeZone|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="createFromTime()">createFromTime()</h3>
+
+<p>
+Returns a new instance with the date set to today, and the time set to the values passed in.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $hour        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $minutes        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $seconds        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="createFromTimestamp()">createFromTimestamp()</h3>
+
+<p>
+Returns a new instance with the datetime set based on the provided UNIX timestamp.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $timestamp        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timeZone        </td>
+        <td>
+            \DateTimeZone        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="difference()">difference()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $testTime        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $testTime        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\TimeDifference </p>
+
+
+<h3 id="equals()">equals()</h3>
+
+<p>
+Determines if the datetime passed in is equal to the current instance.</p>
+
+<p>Equal in this case means that they represent the same moment in time,
+and are not required to be in the same timezone, as both times are
+converted to UTC and compared that way.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $testTime        </td>
+        <td>
+            \Time|\DateTime|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="getAge()">getAge()</h3>
+
+<p>
+Returns the age in years from the "current" date and 'now'</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="getCalendar()">getCalendar()</h3>
+
+<p>
+Returns the IntlCalendar object used for this object,
+taking into account the locale, date, etc.</p>
+
+<p>Primarily used internally to provide the difference and comparison functions,
+but available for public consumption if they need it.</p>
+
+
+<p>Returns: \IntlCalendar </p>
+
+
+<h3 id="getDay()">getDay()</h3>
+
+<p>
+Return the localized day of the month.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getDayOfWeek()">getDayOfWeek()</h3>
+
+<p>
+Return the index of the day of the week</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getDayOfYear()">getDayOfYear()</h3>
+
+<p>
+Return the index of the day of the year</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getDst()">getDst()</h3>
+
+<p>
+Are we in daylight savings time currently?</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getHour()">getHour()</h3>
+
+<p>
+Return the localized hour (in 24-hour format).</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getLocal()">getLocal()</h3>
+
+<p>
+Returns boolean whether the passed timezone is the same as
+the local timezone.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getMinute()">getMinute()</h3>
+
+<p>
+Return the localized minutes in the hour.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getMonth()">getMonth()</h3>
+
+<p>
+Returns the localized Month</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getQuarter()">getQuarter()</h3>
+
+<p>
+Returns the number of the current quarter for the year.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getSecond()">getSecond()</h3>
+
+<p>
+Return the localized seconds</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getTimezoneName()">getTimezoneName()</h3>
+
+<p>
+Returns the name of the current timezone.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getUTCObject()">getUTCObject()</h3>
+
+<p>
+Returns a Time instance with the timezone converted to UTC.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $time        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $time        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \DateTime|static </p>
+
+
+<h3 id="getUtc()">getUtc()</h3>
+
+<p>
+Returns boolean whether object is in UTC.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getWeekOfMonth()">getWeekOfMonth()</h3>
+
+<p>
+Return the index of the week in the month</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getWeekOfYear()">getWeekOfYear()</h3>
+
+<p>
+Return the index of the week in the year</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getYear()">getYear()</h3>
+
+<p>
+Returns the localized Year</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="hasTestNow()">hasTestNow()</h3>
+
+<p>
+Returns whether we have a testNow instance saved.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="humanize()">humanize()</h3>
+
+<p>
+Returns a text string that is easily readable that describes
+how long ago, or how long from now, a date is, like:</p>
+
+<ul>
+<li>3 weeks ago</li>
+<li>in 4 days</li>
+<li>6 hours ago</li>
+</ul>
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="instance()">instance()</h3>
+
+<p>
+Takes an instance of DateTime and returns an instance of Time with it's same values.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $dateTime        </td>
+        <td>
+            \DateTime        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="isAfter()">isAfter()</h3>
+
+<p>
+Determines if the current instance's time is after $testTime,
+after converting in UTC.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $testTime        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $testTime        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="isBefore()">isBefore()</h3>
+
+<p>
+Determines if the current instance's time is before $testTime,
+after converting to UTC.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $testTime        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $testTime        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="now()">now()</h3>
+
+<p>
+Returns a new Time instance with the timezone set.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            string|\DateTimeZone|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="parse()">parse()</h3>
+
+<p>
+Returns a new Time instance while parsing a datetime string.</p>
+
+<p>Example:
+$time = Time::parse('first day of December 2008');</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $datetime        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="sameAs()">sameAs()</h3>
+
+<p>
+Ensures that the times are identical, taking timezone into account.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $testTime        </td>
+        <td>
+            \Time|\DateTime|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="setDay()">setDay()</h3>
+
+<p>
+Sets the day of the month.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="setHour()">setHour()</h3>
+
+<p>
+Sets the hour of the day (24 hour cycle)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="setMinute()">setMinute()</h3>
+
+<p>
+Sets the minute of the hour</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="setMonth()">setMonth()</h3>
+
+<p>
+Sets the month of the year.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="setSecond()">setSecond()</h3>
+
+<p>
+Sets the second of the minute.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="setTestNow()">setTestNow()</h3>
+
+<p>
+Creates an instance of Time that will be returned during testing
+when calling 'Time::now' instead of the current time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $datetime        </td>
+        <td>
+            \CodeIgniter\I18n\Time|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setTimestamp()">setTimestamp()</h3>
+
+<p>
+Returns a new instance with the date set to the new timestamp.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $timestamp        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="setTimezone()">setTimezone()</h3>
+
+<p>
+Returns a new instance with the revised timezone.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            \DateTimeZone        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="setYear()">setYear()</h3>
+
+<p>
+Sets the current year for this instance.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="subDays()">subDays()</h3>
+
+<p>
+Returns a new Time instance with $days subtracted from the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $days        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="subHours()">subHours()</h3>
+
+<p>
+Returns a new Time instance with $hours subtracted from the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $hours        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="subMinutes()">subMinutes()</h3>
+
+<p>
+Returns a new Time instance with $minutes subtracted from the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $minutes        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="subMonths()">subMonths()</h3>
+
+<p>
+Returns a new Time instance with $months subtracted from the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $months        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="subSeconds()">subSeconds()</h3>
+
+<p>
+Returns a new Time instance with $seconds subtracted from the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $seconds        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="subYears()">subYears()</h3>
+
+<p>
+Returns a new Time instance with $hours subtracted from the time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $years        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: static </p>
+
+
+<h3 id="toDateString()">toDateString()</h3>
+
+<p>
+Returns a localized version of the date in Y-m-d format.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="toDateTime()">toDateTime()</h3>
+
+<p>
+Converts the current instance to a mutable DateTime object.</p>
+
+
+
+<p>Returns: \DateTime </p>
+
+
+<h3 id="toDateTimeString()">toDateTimeString()</h3>
+
+<p>
+Returns the localized value of the date in the format 'Y-m-d H:i:s'</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="toFormattedDateString()">toFormattedDateString()</h3>
+
+<p>
+Returns a localized version of the date in nicer date format:</p>
+
+<p>i.e. Apr 1, 2017</p>
+
+
+<p>Returns: string </p>
+
+
+<h3 id="toLocalizedString()">toLocalizedString()</h3>
+
+<p>
+Returns the localized value of this instance in $format.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string|bool </p>
+
+
+<h3 id="toTimeString()">toTimeString()</h3>
+
+<p>
+Returns a localized version of the time in nicer date format:</p>
+
+<p>i.e. 13:20:33</p>
+
+
+<p>Returns: string </p>
+
+
+<h3 id="today()">today()</h3>
+
+<p>
+Return a new time with the time set to midnight.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="tomorrow()">tomorrow()</h3>
+
+<p>
+Returns an instance set to midnight tomorrow morning.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+<h3 id="yesterday()">yesterday()</h3>
+
+<p>
+Returns an instance set to midnight yesterday morning.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $timezone        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\I18n\Time </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

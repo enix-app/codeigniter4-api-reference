@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\HTTP\UserAgent &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/HTTP/UserAgent.html">Class UserAgent</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        UserAgent</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\HTTP\UserAgent        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Abstraction for an HTTP user agent    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Outputs the original Agent String when cast as a string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAgentString()">
+            getAgentString()
+            </a>
+        </td>
+        <td>
+            Agent String        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBrowser()">
+            getBrowser()
+            </a>
+        </td>
+        <td>
+            Get Browser Name        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMobile()">
+            getMobile()
+            </a>
+        </td>
+        <td>
+            Get the Mobile Device        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPlatform()">
+            getPlatform()
+            </a>
+        </td>
+        <td>
+            Get Platform        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getReferrer()">
+            getReferrer()
+            </a>
+        </td>
+        <td>
+            Get the referrer        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRobot()">
+            getRobot()
+            </a>
+        </td>
+        <td>
+            Get The Robot Name        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getVersion()">
+            getVersion()
+            </a>
+        </td>
+        <td>
+            Get the Browser Version        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isBrowser()">
+            isBrowser()
+            </a>
+        </td>
+        <td>
+            Is Browser        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isMobile()">
+            isMobile()
+            </a>
+        </td>
+        <td>
+            Is Mobile        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isReferral()">
+            isReferral()
+            </a>
+        </td>
+        <td>
+            Is this a referral from another site?        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isRobot()">
+            isRobot()
+            </a>
+        </td>
+        <td>
+            Is Robot        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#parse()">
+            parse()
+            </a>
+        </td>
+        <td>
+            Parse a custom user-agent string        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\UserAgent.html">
+            UserAgent            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+<p>Sets the User Agent and runs the compilation routine</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Outputs the original Agent String when cast as a string.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getAgentString()">getAgentString()</h3>
+
+<p>
+Agent String</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getBrowser()">getBrowser()</h3>
+
+<p>
+Get Browser Name</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getMobile()">getMobile()</h3>
+
+<p>
+Get the Mobile Device</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getPlatform()">getPlatform()</h3>
+
+<p>
+Get Platform</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getReferrer()">getReferrer()</h3>
+
+<p>
+Get the referrer</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getRobot()">getRobot()</h3>
+
+<p>
+Get The Robot Name</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getVersion()">getVersion()</h3>
+
+<p>
+Get the Browser Version</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="isBrowser()">isBrowser()</h3>
+
+<p>
+Is Browser</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="isMobile()">isMobile()</h3>
+
+<p>
+Is Mobile</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="isReferral()">isReferral()</h3>
+
+<p>
+Is this a referral from another site?</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="isRobot()">isRobot()</h3>
+
+<p>
+Is Robot</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="parse()">parse()</h3>
+
+<p>
+Parse a custom user-agent string</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $string        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

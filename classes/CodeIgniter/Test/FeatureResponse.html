@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Test\FeatureResponse &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Test/FeatureResponse.html">Class FeatureResponse</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        FeatureResponse</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Test\FeatureResponse        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../classes/PHPUnit\Framework\TestCase.html">TestCase</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Assertions for a response    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertCookie()">
+            assertCookie()
+            </a>
+        </td>
+        <td>
+            Asserts that the response has the specified cookie.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertCookieExpired()">
+            assertCookieExpired()
+            </a>
+        </td>
+        <td>
+            Asserts that a cookie exists and has an expired time.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertCookieMissing()">
+            assertCookieMissing()
+            </a>
+        </td>
+        <td>
+            Assert the Response does not have the specified cookie set.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertDontSee()">
+            assertDontSee()
+            </a>
+        </td>
+        <td>
+            Asserts that we do not see the specified text.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertDontSeeElement()">
+            assertDontSeeElement()
+            </a>
+        </td>
+        <td>
+            Assert that we do not see an element selected via a CSS selector.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertHeader()">
+            assertHeader()
+            </a>
+        </td>
+        <td>
+            Asserts that the Response contains a specific header.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertHeaderMissing()">
+            assertHeaderMissing()
+            </a>
+        </td>
+        <td>
+            Asserts the Response headers does not contain the specified header.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertJSONExact()">
+            assertJSONExact()
+            </a>
+        </td>
+        <td>
+            Asserts that the JSON exactly matches the passed in data.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertJSONFragment()">
+            assertJSONFragment()
+            </a>
+        </td>
+        <td>
+            Test that the response contains a matching JSON fragment.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertOK()">
+            assertOK()
+            </a>
+        </td>
+        <td>
+            Asserts that the Response is considered OK.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertRedirect()">
+            assertRedirect()
+            </a>
+        </td>
+        <td>
+            Assert that the given response was a redirect.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertSee()">
+            assertSee()
+            </a>
+        </td>
+        <td>
+            Assert that the desired text can be found in the result body.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertSeeElement()">
+            assertSeeElement()
+            </a>
+        </td>
+        <td>
+            Assert that we see an element selected via a CSS selector.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertSeeInField()">
+            assertSeeInField()
+            </a>
+        </td>
+        <td>
+            Assert that we see an input with name/value.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertSeeLink()">
+            assertSeeLink()
+            </a>
+        </td>
+        <td>
+            Assert that we see a link with the matching text and/or class.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertSessionHas()">
+            assertSessionHas()
+            </a>
+        </td>
+        <td>
+            Asserts that an SESSION key has been set and, optionally, test it's value.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertSessionMissing()">
+            assertSessionMissing()
+            </a>
+        </td>
+        <td>
+            Asserts the session is missing $key.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertStatus()">
+            assertStatus()
+            </a>
+        </td>
+        <td>
+            Asserts that the status is a specific value.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getJSON()">
+            getJSON()
+            </a>
+        </td>
+        <td>
+            Returns the response's body as JSON        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getXML()">
+            getXML()
+            </a>
+        </td>
+        <td>
+            Returns the response' body as XML        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isOK()">
+            isOK()
+            </a>
+        </td>
+        <td>
+            Boils down the possible responses into a bolean valid/not-valid
+response type.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isRedirect()">
+            isRedirect()
+            </a>
+        </td>
+        <td>
+            Returns whether or not the Response was a redirect response        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\FeatureResponse.html">
+            FeatureResponse            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \Response        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertCookie()">assertCookie()</h3>
+
+<p>
+Asserts that the response has the specified cookie.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $prefix        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertCookieExpired()">assertCookieExpired()</h3>
+
+<p>
+Asserts that a cookie exists and has an expired time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $prefix        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertCookieMissing()">assertCookieMissing()</h3>
+
+<p>
+Assert the Response does not have the specified cookie set.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertDontSee()">assertDontSee()</h3>
+
+<p>
+Asserts that we do not see the specified text.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $search        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $element        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertDontSeeElement()">assertDontSeeElement()</h3>
+
+<p>
+Assert that we do not see an element selected via a CSS selector.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $search        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertHeader()">assertHeader()</h3>
+
+<p>
+Asserts that the Response contains a specific header.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertHeaderMissing()">assertHeaderMissing()</h3>
+
+<p>
+Asserts the Response headers does not contain the specified header.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertJSONExact()">assertJSONExact()</h3>
+
+<p>
+Asserts that the JSON exactly matches the passed in data.</p>
+
+<p>If the value being passed in is a string, it must be a json_encoded string.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $test        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertJSONFragment()">assertJSONFragment()</h3>
+
+<p>
+Test that the response contains a matching JSON fragment.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $fragment        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertOK()">assertOK()</h3>
+
+<p>
+Asserts that the Response is considered OK.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="assertRedirect()">assertRedirect()</h3>
+
+<p>
+Assert that the given response was a redirect.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="assertSee()">assertSee()</h3>
+
+<p>
+Assert that the desired text can be found in the result body.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $search        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $element        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertSeeElement()">assertSeeElement()</h3>
+
+<p>
+Assert that we see an element selected via a CSS selector.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $search        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertSeeInField()">assertSeeInField()</h3>
+
+<p>
+Assert that we see an input with name/value.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertSeeLink()">assertSeeLink()</h3>
+
+<p>
+Assert that we see a link with the matching text and/or class.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $text        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $details        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertSessionHas()">assertSessionHas()</h3>
+
+<p>
+Asserts that an SESSION key has been set and, optionally, test it's value.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertSessionMissing()">assertSessionMissing()</h3>
+
+<p>
+Asserts the session is missing $key.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertStatus()">assertStatus()</h3>
+
+<p>
+Asserts that the status is a specific value.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="getJSON()">getJSON()</h3>
+
+<p>
+Returns the response's body as JSON</p>
+
+
+
+<p>Returns: mixed|bool </p>
+
+
+<h3 id="getXML()">getXML()</h3>
+
+<p>
+Returns the response' body as XML</p>
+
+
+
+<p>Returns: mixed|string </p>
+
+
+<h3 id="isOK()">isOK()</h3>
+
+<p>
+Boils down the possible responses into a bolean valid/not-valid
+response type.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="isRedirect()">isRedirect()</h3>
+
+<p>
+Returns whether or not the Response was a redirect response</p>
+
+
+
+<p>Returns: bool </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

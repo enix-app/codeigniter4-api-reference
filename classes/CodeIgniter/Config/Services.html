@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Config\Services &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Config/Services.html">Class Services</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Services</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Config\Services        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../classes/CodeIgniter\Config\BaseService.html">BaseService</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Services Configuration file.    </p>
+    <p>Services are simply other classes/libraries that the system uses
+to do its job. This is used by CodeIgniter to allow the core of the
+framework to be swapped out easily without affecting the usage within
+the rest of your application.</p>
+<p>This is used in place of a Dependency Injection container primarily
+due to its simplicity, which allows a better long-term maintenance
+of the applications built on top of CodeIgniter. A bonus side-effect
+is that IDEs are able to determine what class you are calling
+whereas with DI Containers there usually isn't a way for them to do this.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__callStatic()">
+            __callStatic()
+            </a>
+        </td>
+        <td>
+            Provides the ability to perform case-insensitive calling of service
+names.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\BaseService.html">
+            BaseService            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#autoloader()">
+            autoloader()
+            </a>
+        </td>
+        <td>
+            The Autoloader class is the central class that handles our
+spl_autoload_register method, and helper methods.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\BaseService.html">
+            BaseService            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#cache()">
+            cache()
+            </a>
+        </td>
+        <td>
+            The cache class provides a simple way to store and retrieve
+complex data for later.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clirequest()">
+            clirequest()
+            </a>
+        </td>
+        <td>
+            The CLI Request class provides for ways to interact with
+a command line request.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#curlrequest()">
+            curlrequest()
+            </a>
+        </td>
+        <td>
+            The CURL Request class acts as a simple HTTP client for interacting
+with other servers, typically through APIs.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#email()">
+            email()
+            </a>
+        </td>
+        <td>
+            The Email class allows you to send email via mail, sendmail, SMTP.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#encrypter()">
+            encrypter()
+            </a>
+        </td>
+        <td>
+            The Encryption class provides two-way encryption.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#exceptions()">
+            exceptions()
+            </a>
+        </td>
+        <td>
+            The Exceptions class holds the methods that handle:        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#filters()">
+            filters()
+            </a>
+        </td>
+        <td>
+            Filters allow you to run tasks before and/or after a controller
+is executed. During before filters, the request can be modified,
+and actions taken based on the request, while after filters can
+act on or modify the response itself before it is sent to the client.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#honeypot()">
+            honeypot()
+            </a>
+        </td>
+        <td>
+            The Honeypot provides a secret input on forms that bots should NOT
+fill in, providing an additional safeguard when accepting user input.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#image()">
+            image()
+            </a>
+        </td>
+        <td>
+            Acts as a factory for ImageHandler classes and returns an instance
+of the handler. Used like Services::image()->withFile($path)->rotate(90)->save();        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#injectMock()">
+            injectMock()
+            </a>
+        </td>
+        <td>
+            Inject mock object for testing.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\BaseService.html">
+            BaseService            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#iterator()">
+            iterator()
+            </a>
+        </td>
+        <td>
+            The Iterator class provides a simple way of looping over a function
+and timing the results and memory usage. Used when debugging and
+optimizing applications.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#language()">
+            language()
+            </a>
+        </td>
+        <td>
+            Responsible for loading the language string translations.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#locator()">
+            locator()
+            </a>
+        </td>
+        <td>
+            The file locator provides utility methods for looking for non-classes
+within namespaced folders, as well as convenience methods for
+loading 'helpers', and 'libraries'.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\BaseService.html">
+            BaseService            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#logger()">
+            logger()
+            </a>
+        </td>
+        <td>
+            The Logger class is a PSR-3 compatible Logging class that supports
+multiple handlers that process the actual logging.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#migrations()">
+            migrations()
+            </a>
+        </td>
+        <td>
+            Return the appropriate Migration runner.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#negotiator()">
+            negotiator()
+            </a>
+        </td>
+        <td>
+            The Negotiate class provides the content negotiation features for
+working the request to determine correct language, encoding, charset,
+and more.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#pager()">
+            pager()
+            </a>
+        </td>
+        <td>
+            Return the appropriate pagination handler.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#parser()">
+            parser()
+            </a>
+        </td>
+        <td>
+            The Parser is a simple template parser.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#redirectResponse()">
+            redirectResponse()
+            </a>
+        </td>
+        <td>
+            The Redirect class provides nice way of working with redirects.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#renderer()">
+            renderer()
+            </a>
+        </td>
+        <td>
+            The Renderer class is the class that actually displays a file to the user.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#request()">
+            request()
+            </a>
+        </td>
+        <td>
+            The Request class models an HTTP request.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reset()">
+            reset()
+            </a>
+        </td>
+        <td>
+            Reset shared instances and mocks for testing.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\BaseService.html">
+            BaseService            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#response()">
+            response()
+            </a>
+        </td>
+        <td>
+            The Response class models an HTTP response.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#router()">
+            router()
+            </a>
+        </td>
+        <td>
+            The Router class uses a RouteCollection's array of routes, and determines
+the correct Controller and Method to execute.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#routes()">
+            routes()
+            </a>
+        </td>
+        <td>
+            The Routes service is a class that allows for easily building
+a collection of routes.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#security()">
+            security()
+            </a>
+        </td>
+        <td>
+            The Security class provides a few handy tools for keeping the site
+secure, most notably the CSRF protection tools.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#session()">
+            session()
+            </a>
+        </td>
+        <td>
+            Return the session manager.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#throttler()">
+            throttler()
+            </a>
+        </td>
+        <td>
+            The Throttler class provides a simple method for implementing
+rate limiting in your applications.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#timer()">
+            timer()
+            </a>
+        </td>
+        <td>
+            The Timer class provides a simple way to Benchmark portions of your
+application.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toolbar()">
+            toolbar()
+            </a>
+        </td>
+        <td>
+            Return the debug toolbar.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#typography()">
+            typography()
+            </a>
+        </td>
+        <td>
+            The Typography class provides a way to format text in semantically relevant ways.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#uri()">
+            uri()
+            </a>
+        </td>
+        <td>
+            The URI class provides a way to model and manipulate URIs.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validation()">
+            validation()
+            </a>
+        </td>
+        <td>
+            The Validation class provides tools for validating input data.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#viewcell()">
+            viewcell()
+            </a>
+        </td>
+        <td>
+            View cells are intended to let you insert HTML into view
+that has been generated by any callable in the system.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Config\Services.html">
+            Services            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__callStatic()">__callStatic()</h3>
+
+<p>
+Provides the ability to perform case-insensitive calling of service
+names.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $arguments        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="autoloader()">autoloader()</h3>
+
+<p>
+The Autoloader class is the central class that handles our
+spl_autoload_register method, and helper methods.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Autoloader\Autoloader </p>
+
+
+<h3 id="cache()">cache()</h3>
+
+<p>
+The cache class provides a simple way to store and retrieve
+complex data for later.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\Cache        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Cache\CacheInterface </p>
+
+
+<h3 id="clirequest()">clirequest()</h3>
+
+<p>
+The CLI Request class provides for ways to interact with
+a command line request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\App        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\CLIRequest </p>
+
+
+<h3 id="curlrequest()">curlrequest()</h3>
+
+<p>
+The CURL Request class acts as a simple HTTP client for interacting
+with other servers, typically through APIs.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \CodeIgniter\HTTP\ResponseInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\App        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\CURLRequest </p>
+
+
+<h3 id="email()">email()</h3>
+
+<p>
+The Email class allows you to send email via mail, sendmail, SMTP.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Email\Email|mixed </p>
+
+
+<h3 id="encrypter()">encrypter()</h3>
+
+<p>
+The Encryption class provides two-way encryption.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \EncrypterInterface Encryption handler</p>
+
+
+<h3 id="exceptions()">exceptions()</h3>
+
+<p>
+The Exceptions class holds the methods that handle:</p>
+
+<ul>
+<li>set_exception_handler</li>
+<li>set_error_handler</li>
+<li>register_shutdown_function</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\Exceptions        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \CodeIgniter\HTTP\IncomingRequest        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \CodeIgniter\HTTP\Response        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Debug\Exceptions </p>
+
+
+<h3 id="filters()">filters()</h3>
+
+<p>
+Filters allow you to run tasks before and/or after a controller
+is executed. During before filters, the request can be modified,
+and actions taken based on the request, while after filters can
+act on or modify the response itself before it is sent to the client.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Filters\Filters </p>
+
+
+<h3 id="honeypot()">honeypot()</h3>
+
+<p>
+The Honeypot provides a secret input on forms that bots should NOT
+fill in, providing an additional safeguard when accepting user input.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \CodeIgniter\Config\BaseConfig|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Honeypot\Honeypot|mixed </p>
+
+
+<h3 id="image()">image()</h3>
+
+<p>
+Acts as a factory for ImageHandler classes and returns an instance
+of the handler. Used like Services::image()->withFile($path)->rotate(90)->save();</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $handler        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Images\Handlers\BaseHandler </p>
+
+
+<h3 id="injectMock()">injectMock()</h3>
+
+<p>
+Inject mock object for testing.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $mock        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $mock        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="iterator()">iterator()</h3>
+
+<p>
+The Iterator class provides a simple way of looping over a function
+and timing the results and memory usage. Used when debugging and
+optimizing applications.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Debug\Iterator </p>
+
+
+<h3 id="language()">language()</h3>
+
+<p>
+Responsible for loading the language string translations.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $locale        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Language\Language </p>
+
+
+<h3 id="locator()">locator()</h3>
+
+<p>
+The file locator provides utility methods for looking for non-classes
+within namespaced folders, as well as convenience methods for
+loading 'helpers', and 'libraries'.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Autoloader\FileLocator </p>
+
+
+<h3 id="logger()">logger()</h3>
+
+<p>
+The Logger class is a PSR-3 compatible Logging class that supports
+multiple handlers that process the actual logging.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Log\Logger </p>
+
+
+<h3 id="migrations()">migrations()</h3>
+
+<p>
+Return the appropriate Migration runner.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \CodeIgniter\Config\BaseConfig        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $db        </td>
+        <td>
+            \CodeIgniter\Database\ConnectionInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Database\MigrationRunner </p>
+
+
+<h3 id="negotiator()">negotiator()</h3>
+
+<p>
+The Negotiate class provides the content negotiation features for
+working the request to determine correct language, encoding, charset,
+and more.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \CodeIgniter\HTTP\RequestInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\Negotiate </p>
+
+
+<h3 id="pager()">pager()</h3>
+
+<p>
+Return the appropriate pagination handler.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $view        </td>
+        <td>
+            \CodeIgniter\View\RendererInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Pager\Pager </p>
+
+
+<h3 id="parser()">parser()</h3>
+
+<p>
+The Parser is a simple template parser.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $viewPath        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\View\Parser </p>
+
+
+<h3 id="redirectResponse()">redirectResponse()</h3>
+
+<p>
+The Redirect class provides nice way of working with redirects.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\App        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\Response </p>
+
+
+<h3 id="renderer()">renderer()</h3>
+
+<p>
+The Renderer class is the class that actually displays a file to the user.</p>
+
+<p>The default View class within CodeIgniter is intentionally simple, but this
+service could easily be replaced by a template engine if the user needed to.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $viewPath        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\View\View </p>
+
+
+<h3 id="request()">request()</h3>
+
+<p>
+The Request class models an HTTP request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\App        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\IncomingRequest </p>
+
+
+<h3 id="reset()">reset()</h3>
+
+<p>
+Reset shared instances and mocks for testing.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $init_autoloader        </td>
+        <td>
+            bool        </td>
+        <td>
+            Initializes        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="response()">response()</h3>
+
+<p>
+The Response class models an HTTP response.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\App        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\Response </p>
+
+
+<h3 id="router()">router()</h3>
+
+<p>
+The Router class uses a RouteCollection's array of routes, and determines
+the correct Controller and Method to execute.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $routes        </td>
+        <td>
+            \CodeIgniter\Router\RouteCollectionInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \CodeIgniter\HTTP\Request        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\Router </p>
+
+
+<h3 id="routes()">routes()</h3>
+
+<p>
+The Routes service is a class that allows for easily building
+a collection of routes.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Router\RouteCollection </p>
+
+
+<h3 id="security()">security()</h3>
+
+<p>
+The Security class provides a few handy tools for keeping the site
+secure, most notably the CSRF protection tools.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\App        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Security\Security </p>
+
+
+<h3 id="session()">session()</h3>
+
+<p>
+Return the session manager.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\App        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Session\Session </p>
+
+
+<h3 id="throttler()">throttler()</h3>
+
+<p>
+The Throttler class provides a simple method for implementing
+rate limiting in your applications.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Throttle\Throttler </p>
+
+
+<h3 id="timer()">timer()</h3>
+
+<p>
+The Timer class provides a simple way to Benchmark portions of your
+application.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Debug\Timer </p>
+
+
+<h3 id="toolbar()">toolbar()</h3>
+
+<p>
+Return the debug toolbar.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\Toolbar        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Debug\Toolbar </p>
+
+
+<h3 id="typography()">typography()</h3>
+
+<p>
+The Typography class provides a way to format text in semantically relevant ways.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Typography\Typography </p>
+
+
+<h3 id="uri()">uri()</h3>
+
+<p>
+The URI class provides a way to model and manipulate URIs.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\URI </p>
+
+
+<h3 id="validation()">validation()</h3>
+
+<p>
+The Validation class provides tools for validating input data.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\Validation        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Validation\Validation </p>
+
+
+<h3 id="viewcell()">viewcell()</h3>
+
+<p>
+View cells are intended to let you insert HTML into view
+that has been generated by any callable in the system.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getShared        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\View\Cell </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

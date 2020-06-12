@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Pager\PagerRenderer &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Pager/PagerRenderer.html">Class PagerRenderer</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        PagerRenderer</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Pager\PagerRenderer        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class PagerRenderer    </p>
+    <p>This class is passed to the view that describes the pagination,
+and is used to get the link information and provide utility
+methods needed to work with pagination.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrent()">
+            getCurrent()
+            </a>
+        </td>
+        <td>
+            Returns the URI of the current page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFirst()">
+            getFirst()
+            </a>
+        </td>
+        <td>
+            Returns the URI of the first page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLast()">
+            getLast()
+            </a>
+        </td>
+        <td>
+            Returns the URI of the last page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getNext()">
+            getNext()
+            </a>
+        </td>
+        <td>
+            Returns a URL to the "next" page. The next page is NOT, the
+page after the current page, but is the page that follows the
+"last" page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getNextPage()">
+            getNextPage()
+            </a>
+        </td>
+        <td>
+            Returns a URL to the "next" page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPrevious()">
+            getPrevious()
+            </a>
+        </td>
+        <td>
+            Returns a URL to the "previous" page. The previous page is NOT the
+page before the current page, but is the page just before the
+"first" page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPreviousPage()">
+            getPreviousPage()
+            </a>
+        </td>
+        <td>
+            Returns a URL to the "previous" page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasNext()">
+            hasNext()
+            </a>
+        </td>
+        <td>
+            Checks to see if there is a "next" page after our "last" page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasNextPage()">
+            hasNextPage()
+            </a>
+        </td>
+        <td>
+            Checks to see if there is a "next" page after our "last" page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasPrevious()">
+            hasPrevious()
+            </a>
+        </td>
+        <td>
+            Checks to see if there is a "previous" page before our "first" page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasPreviousPage()">
+            hasPreviousPage()
+            </a>
+        </td>
+        <td>
+            Checks to see if there is a "previous" page before our "first" page.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#links()">
+            links()
+            </a>
+        </td>
+        <td>
+            Returns an array of links that should be displayed. Each link
+is represented by another array containing of the URI the link
+should go to, the title (number) of the link, and a boolean
+value representing whether this link is active or not.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSurroundCount()">
+            setSurroundCount()
+            </a>
+        </td>
+        <td>
+            Sets the total number of links that should appear on either
+side of the current page. Adjusts the first and last counts
+to reflect it.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Pager\PagerRenderer.html">
+            PagerRenderer            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $details        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="getCurrent()">getCurrent()</h3>
+
+<p>
+Returns the URI of the current page.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getFirst()">getFirst()</h3>
+
+<p>
+Returns the URI of the first page.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getLast()">getLast()</h3>
+
+<p>
+Returns the URI of the last page.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getNext()">getNext()</h3>
+
+<p>
+Returns a URL to the "next" page. The next page is NOT, the
+page after the current page, but is the page that follows the
+"last" page.</p>
+
+<p>You MUST call hasNext() first, or this value may be invalid.</p>
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getNextPage()">getNextPage()</h3>
+
+<p>
+Returns a URL to the "next" page.</p>
+
+<p>You MUST call hasNextPage() first, or this value may be invalid.</p>
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getPrevious()">getPrevious()</h3>
+
+<p>
+Returns a URL to the "previous" page. The previous page is NOT the
+page before the current page, but is the page just before the
+"first" page.</p>
+
+<p>You MUST call hasPrevious() first, or this value may be invalid.</p>
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getPreviousPage()">getPreviousPage()</h3>
+
+<p>
+Returns a URL to the "previous" page.</p>
+
+<p>You MUST call hasPreviousPage() first, or this value may be invalid.</p>
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="hasNext()">hasNext()</h3>
+
+<p>
+Checks to see if there is a "next" page after our "last" page.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasNextPage()">hasNextPage()</h3>
+
+<p>
+Checks to see if there is a "next" page after our "last" page.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasPrevious()">hasPrevious()</h3>
+
+<p>
+Checks to see if there is a "previous" page before our "first" page.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasPreviousPage()">hasPreviousPage()</h3>
+
+<p>
+Checks to see if there is a "previous" page before our "first" page.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="links()">links()</h3>
+
+<p>
+Returns an array of links that should be displayed. Each link
+is represented by another array containing of the URI the link
+should go to, the title (number) of the link, and a boolean
+value representing whether this link is active or not.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="setSurroundCount()">setSurroundCount()</h3>
+
+<p>
+Sets the total number of links that should appear on either
+side of the current page. Adjusts the first and last counts
+to reflect it.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $count        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \PagerRenderer </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

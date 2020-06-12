@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Test\Mock\MockCURLRequest &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../../classes/CodeIgniter/Test/Mock/MockCURLRequest.html">Class MockCURLRequest</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        MockCURLRequest</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Test\Mock\MockCURLRequest        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">CURLRequest</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class MockCURLRequest    </p>
+    <p>Simply allows us to not actually call cURL during the
+test runs. Instead, we can set the desired output
+and get back the set options.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Takes an array of options to set the following possible class properties:        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#appendBody()">
+            appendBody()
+            </a>
+        </td>
+        <td>
+            Appends data to the body of the current message.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#appendHeader()">
+            appendHeader()
+            </a>
+        </td>
+        <td>
+            Adds an additional header value to any headers that accept
+multiple values (i.e. are an array or implement ArrayAccess)        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#delete()">
+            delete()
+            </a>
+        </td>
+        <td>
+            Convenience method for sending a DELETE request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fetchGlobal()">
+            fetchGlobal()
+            </a>
+        </td>
+        <td>
+            Fetches one or more items from a global, like cookies, get, post, etc.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get()">
+            get()
+            </a>
+        </td>
+        <td>
+            Convenience method for sending a GET request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBaseURI()">
+            getBaseURI()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockCURLRequest.html">
+            MockCURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBody()">
+            getBody()
+            </a>
+        </td>
+        <td>
+            Returns the Message's body.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDelay()">
+            getDelay()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockCURLRequest.html">
+            MockCURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEnv()">
+            getEnv()
+            </a>
+        </td>
+        <td>
+            Fetch an item from the $_ENV array.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeader()">
+            getHeader()
+            </a>
+        </td>
+        <td>
+            Returns a single header object. If multiple headers with the same
+name exist, then will return an array of header objects.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeaderLine()">
+            getHeaderLine()
+            </a>
+        </td>
+        <td>
+            Retrieves a comma-separated string of the values for a single header.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeaders()">
+            getHeaders()
+            </a>
+        </td>
+        <td>
+            Returns an array containing all headers.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIPAddress()">
+            getIPAddress()
+            </a>
+        </td>
+        <td>
+            Gets the user's IP address.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMethod()">
+            getMethod()
+            </a>
+        </td>
+        <td>
+            Get the request method. Overrides the Request class' method
+since users expect a different answer here.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProtocolVersion()">
+            getProtocolVersion()
+            </a>
+        </td>
+        <td>
+            Returns the HTTP Protocol Version.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getServer()">
+            getServer()
+            </a>
+        </td>
+        <td>
+            Fetch an item from the $_SERVER array.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasHeader()">
+            hasHeader()
+            </a>
+        </td>
+        <td>
+            Determines whether a header exists.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#head()">
+            head()
+            </a>
+        </td>
+        <td>
+            Convenience method for sending a HEAD request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isValidIP()">
+            isValidIP()
+            </a>
+        </td>
+        <td>
+            Validate an IP address        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#options()">
+            options()
+            </a>
+        </td>
+        <td>
+            Convenience method for sending an OPTIONS request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#patch()">
+            patch()
+            </a>
+        </td>
+        <td>
+            Convenience method for sending a PATCH request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#populateHeaders()">
+            populateHeaders()
+            </a>
+        </td>
+        <td>
+            Populates the $headers array with any headers the getServer knows about.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#post()">
+            post()
+            </a>
+        </td>
+        <td>
+            Convenience method for sending a POST request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prependHeader()">
+            prependHeader()
+            </a>
+        </td>
+        <td>
+            Adds an additional header value to any headers that accept
+multiple values (i.e. are an array or implement ArrayAccess)        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#put()">
+            put()
+            </a>
+        </td>
+        <td>
+            Convenience method for sending a PUT request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeHeader()">
+            removeHeader()
+            </a>
+        </td>
+        <td>
+            Removes a header from the list of headers we track.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#request()">
+            request()
+            </a>
+        </td>
+        <td>
+            Sends an HTTP request to the specified $url. If this is a relative
+URL, it will be merged with $this->baseURI to form a complete URL.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#send()">
+            send()
+            </a>
+        </td>
+        <td>
+            Fires the actual cURL request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAuth()">
+            setAuth()
+            </a>
+        </td>
+        <td>
+            Set the HTTP Authentication.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBody()">
+            setBody()
+            </a>
+        </td>
+        <td>
+            Sets the body of the current message.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setForm()">
+            setForm()
+            </a>
+        </td>
+        <td>
+            Set form data to be sent.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setGlobal()">
+            setGlobal()
+            </a>
+        </td>
+        <td>
+            Allows manually setting the value of PHP global, like $_GET, $_POST, etc.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHeader()">
+            setHeader()
+            </a>
+        </td>
+        <td>
+            Sets a header and it's value.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setJSON()">
+            setJSON()
+            </a>
+        </td>
+        <td>
+            Set JSON data to be sent.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\CURLRequest.html">
+            CURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMethod()">
+            setMethod()
+            </a>
+        </td>
+        <td>
+            Sets the request method. Used when spoofing the request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOutput()">
+            setOutput()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockCURLRequest.html">
+            MockCURLRequest            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setProtocolVersion()">
+            setProtocolVersion()
+            </a>
+        </td>
+        <td>
+            Sets the HTTP protocol version.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Takes an array of options to set the following possible class properties:</p>
+
+<ul>
+<li>baseURI</li>
+<li>timeout</li>
+<li>any other request options to use as defaults.</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \App        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            \URI        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \ResponseInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="appendBody()">appendBody()</h3>
+
+<p>
+Appends data to the body of the current message.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $data        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message|\Response </p>
+
+
+<h3 id="appendHeader()">appendHeader()</h3>
+
+<p>
+Adds an additional header value to any headers that accept
+multiple values (i.e. are an array or implement ArrayAccess)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+<h3 id="delete()">delete()</h3>
+
+<p>
+Convenience method for sending a DELETE request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="fetchGlobal()">fetchGlobal()</h3>
+
+<p>
+Fetches one or more items from a global, like cookies, get, post, etc.</p>
+
+<p>Can optionally filter the input when you retrieve it by passing in
+a filter.</p>
+<p>If $type is an array, it must conform to the input allowed by the
+filter_input_array method.</p>
+<p><a href="http://php.net/manual/en/filter.filters.sanitize.php">http://php.net/manual/en/filter.filters.sanitize.php</a></p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+            Input        </td>
+    </tr>
+        <tr>
+        <td>
+            $index        </td>
+        <td>
+            string|array|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $filter        </td>
+        <td>
+            int|null        </td>
+        <td>
+            Filter        </td>
+    </tr>
+        <tr>
+        <td>
+            $flags        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+Convenience method for sending a GET request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="getBaseURI()">getBaseURI()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: void</p>
+
+
+<h3 id="getBody()">getBody()</h3>
+
+<p>
+Returns the Message's body.</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getDelay()">getDelay()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: void</p>
+
+
+<h3 id="getEnv()">getEnv()</h3>
+
+<p>
+Fetch an item from the $_ENV array.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $index        </td>
+        <td>
+            null        </td>
+        <td>
+            Index        </td>
+    </tr>
+        <tr>
+        <td>
+            $filter        </td>
+        <td>
+            null        </td>
+        <td>
+            A        </td>
+    </tr>
+        <tr>
+        <td>
+            $flags        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getHeader()">getHeader()</h3>
+
+<p>
+Returns a single header object. If multiple headers with the same
+name exist, then will return an array of header objects.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array|\CodeIgniter\HTTP\Header </p>
+
+
+<h3 id="getHeaderLine()">getHeaderLine()</h3>
+
+<p>
+Retrieves a comma-separated string of the values for a single header.</p>
+
+<p>This method returns all of the header values of the given
+case-insensitive header name as a string concatenated together using
+a comma.</p>
+<p>NOTE: Not all header values may be appropriately represented using
+comma concatenation. For such headers, use getHeader() instead
+and supply your own delimiter when concatenating.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getHeaders()">getHeaders()</h3>
+
+<p>
+Returns an array containing all headers.</p>
+
+
+
+<p>Returns: array An array of the request headers</p>
+
+
+<h3 id="getIPAddress()">getIPAddress()</h3>
+
+<p>
+Gets the user's IP address.</p>
+
+
+
+<p>Returns: string IP address</p>
+
+
+<h3 id="getMethod()">getMethod()</h3>
+
+<p>
+Get the request method. Overrides the Request class' method
+since users expect a different answer here.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $upper        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getProtocolVersion()">getProtocolVersion()</h3>
+
+<p>
+Returns the HTTP Protocol Version.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getServer()">getServer()</h3>
+
+<p>
+Fetch an item from the $_SERVER array.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $index        </td>
+        <td>
+            string|array|null        </td>
+        <td>
+            Index        </td>
+    </tr>
+        <tr>
+        <td>
+            $filter        </td>
+        <td>
+            int|null        </td>
+        <td>
+            A        </td>
+    </tr>
+        <tr>
+        <td>
+            $flags        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="hasHeader()">hasHeader()</h3>
+
+<p>
+Determines whether a header exists.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="head()">head()</h3>
+
+<p>
+Convenience method for sending a HEAD request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \ResponseInterface </p>
+
+
+<h3 id="isValidIP()">isValidIP()</h3>
+
+<p>
+Validate an IP address</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $ip        </td>
+        <td>
+            string        </td>
+        <td>
+            IP        </td>
+    </tr>
+        <tr>
+        <td>
+            $which        </td>
+        <td>
+            string        </td>
+        <td>
+            IP        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="options()">options()</h3>
+
+<p>
+Convenience method for sending an OPTIONS request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="patch()">patch()</h3>
+
+<p>
+Convenience method for sending a PATCH request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="populateHeaders()">populateHeaders()</h3>
+
+<p>
+Populates the $headers array with any headers the getServer knows about.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="post()">post()</h3>
+
+<p>
+Convenience method for sending a POST request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="prependHeader()">prependHeader()</h3>
+
+<p>
+Adds an additional header value to any headers that accept
+multiple values (i.e. are an array or implement ArrayAccess)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+<h3 id="put()">put()</h3>
+
+<p>
+Convenience method for sending a PUT request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="removeHeader()">removeHeader()</h3>
+
+<p>
+Removes a header from the list of headers we track.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+<h3 id="request()">request()</h3>
+
+<p>
+Sends an HTTP request to the specified $url. If this is a relative
+URL, it will be merged with $this->baseURI to form a complete URL.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $method        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="send()">send()</h3>
+
+<p>
+Fires the actual cURL request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\ResponseInterface </p>
+
+
+<h3 id="setAuth()">setAuth()</h3>
+
+<p>
+Set the HTTP Authentication.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $username        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $password        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+            basic        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setBody()">setBody()</h3>
+
+<p>
+Sets the body of the current message.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message|\Response </p>
+
+
+<h3 id="setForm()">setForm()</h3>
+
+<p>
+Set form data to be sent.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $multipart        </td>
+        <td>
+            bool        </td>
+        <td>
+            Set        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setGlobal()">setGlobal()</h3>
+
+<p>
+Allows manually setting the value of PHP global, like $_GET, $_POST, etc.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setHeader()">setHeader()</h3>
+
+<p>
+Sets a header and it's value.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            array|null|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message|\Response </p>
+
+
+<h3 id="setJSON()">setJSON()</h3>
+
+<p>
+Set JSON data to be sent.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setMethod()">setMethod()</h3>
+
+<p>
+Sets the request method. Used when spoofing the request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Request </p>
+
+
+<h3 id="setOutput()">setOutput()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $output        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void</p>
+
+
+<h3 id="setProtocolVersion()">setProtocolVersion()</h3>
+
+<p>
+Sets the HTTP protocol version.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $version        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

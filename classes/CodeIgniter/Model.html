@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Model &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../index.html">All Components</a>
+    &rarr;        <a href="../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../classes/CodeIgniter/Model.html">Class Model</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Model</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Model        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class Model    </p>
+    <p>The Model class provides a number of convenient features that
+makes working with a database table less painful.</p>
+<p>It will:</p>
+<pre><code> - automatically connect to database
+ - allow intermingling calls between db connection, the builder,
+     and methods in this class.
+ - simplifies pagination
+ - removes the need to use Result object directly in most cases
+ - allow specifying the return type (array, object, etc) with each call
+ - ensure validation is run against objects when saving items
+</code></pre>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__call()">
+            __call()
+            </a>
+        </td>
+        <td>
+            Provides direct access to method in the builder (if available)
+and the database connection.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Model constructor.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Provides/instantiates the builder/db connection and model's table/primary key names and return type.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__isset()">
+            __isset()
+            </a>
+        </td>
+        <td>
+            Checks for the existence of properties across this model, builder, and db connection.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#asArray()">
+            asArray()
+            </a>
+        </td>
+        <td>
+            Sets the return type of the results to be as an associative array.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#asObject()">
+            asObject()
+            </a>
+        </td>
+        <td>
+            Sets the return type to be of the specified type of object.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#chunk()">
+            chunk()
+            </a>
+        </td>
+        <td>
+            Loops over records in batches, allowing you to operate on them.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#classToArray()">
+            classToArray()
+            </a>
+        </td>
+        <td>
+            Takes a class an returns an array of it's public and protected
+properties as an array suitable for use in creates and updates.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#cleanRules()">
+            cleanRules()
+            </a>
+        </td>
+        <td>
+            Should validation rules be removed before saving?
+Most handy when doing updates.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#countAllResults()">
+            countAllResults()
+            </a>
+        </td>
+        <td>
+            Override countAllResults to account for soft deleted accounts.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#delete()">
+            delete()
+            </a>
+        </td>
+        <td>
+            Deletes a single record from $this->table where $id matches
+the table's primaryKey        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#errors()">
+            errors()
+            </a>
+        </td>
+        <td>
+            Grabs the last error(s) that occurred. If data was validated,
+it will first check for errors there, otherwise will try to
+grab the last error from the Database connection.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#find()">
+            find()
+            </a>
+        </td>
+        <td>
+            Fetches the row of database from $this->table with a primary key
+matching $id.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#findAll()">
+            findAll()
+            </a>
+        </td>
+        <td>
+            Works with the current Query Builder instance to return
+all results, while optionally limiting them.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#findColumn()">
+            findColumn()
+            </a>
+        </td>
+        <td>
+            Fetches the column of database from $this->table        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#first()">
+            first()
+            </a>
+        </td>
+        <td>
+            Returns the first row of the result set. Will take any previous
+Query Builder calls into account when determining the result set.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getInsertID()">
+            getInsertID()
+            </a>
+        </td>
+        <td>
+            Returns last insert ID or 0.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getValidationMessages()">
+            getValidationMessages()
+            </a>
+        </td>
+        <td>
+            Returns the model's define validation messages so they
+can be used elsewhere, if needed.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getValidationRules()">
+            getValidationRules()
+            </a>
+        </td>
+        <td>
+            Returns the model's defined validation rules so that they
+can be used elsewhere, if needed.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#insert()">
+            insert()
+            </a>
+        </td>
+        <td>
+            Inserts data into the current table. If an object is provided,
+it will attempt to convert it to an array.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#insertBatch()">
+            insertBatch()
+            </a>
+        </td>
+        <td>
+            Compiles batch insert strings and runs the queries, validating each row prior.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#onlyDeleted()">
+            onlyDeleted()
+            </a>
+        </td>
+        <td>
+            Works with the find* methods to return only the rows that
+have been deleted.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#paginate()">
+            paginate()
+            </a>
+        </td>
+        <td>
+            Works with $this->builder to get the Compiled Select to operate on.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#protect()">
+            protect()
+            </a>
+        </td>
+        <td>
+            Sets whether or not we should whitelist data set during
+updates or inserts against $this->availableFields.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#purgeDeleted()">
+            purgeDeleted()
+            </a>
+        </td>
+        <td>
+            Permanently deletes all rows that have been marked as deleted
+through soft deletes (deleted = 1)        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#replace()">
+            replace()
+            </a>
+        </td>
+        <td>
+            Replace        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#save()">
+            save()
+            </a>
+        </td>
+        <td>
+            A convenience method that will attempt to determine whether the
+data should be inserted or updated. Will work with either
+an array or object. When using with custom class objects,
+you must ensure that the class will provide access to the class
+variables, even if through a magic method.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#set()">
+            set()
+            </a>
+        </td>
+        <td>
+            Captures the builder's set() method so that we can validate the
+data here. This allows it to be used with any of the other
+builder methods and still get validated data, like replace.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTable()">
+            setTable()
+            </a>
+        </td>
+        <td>
+            Specify the table associated with a model        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setValidationMessage()">
+            setValidationMessage()
+            </a>
+        </td>
+        <td>
+            Allows to set field wise validation message.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setValidationMessages()">
+            setValidationMessages()
+            </a>
+        </td>
+        <td>
+            Allows to set validation messages.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#skipValidation()">
+            skipValidation()
+            </a>
+        </td>
+        <td>
+            Set the value of the skipValidation flag.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#update()">
+            update()
+            </a>
+        </td>
+        <td>
+            Updates a single record in $this->table. If an object is provided,
+it will attempt to convert it into an array.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#updateBatch()">
+            updateBatch()
+            </a>
+        </td>
+        <td>
+            Update_Batch        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validate()">
+            validate()
+            </a>
+        </td>
+        <td>
+            Validate the data against the validation rules (or the validation group)
+specified in the class property, $validationRules.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#withDeleted()">
+            withDeleted()
+            </a>
+        </td>
+        <td>
+            Sets $useSoftDeletes value so that we can temporarily override
+the softdeletes settings. Can be used for all find* methods.        </td>
+        <td>
+            <a href="../../classes/CodeIgniter\Model.html">
+            Model            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__call()">__call()</h3>
+
+<p>
+Provides direct access to method in the builder (if available)
+and the database connection.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Model|null </p>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Model constructor.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $db        </td>
+        <td>
+            \ConnectionInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $validation        </td>
+        <td>
+            \ValidationInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Provides/instantiates the builder/db connection and model's table/primary key names and return type.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="__isset()">__isset()</h3>
+
+<p>
+Checks for the existence of properties across this model, builder, and db connection.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="asArray()">asArray()</h3>
+
+<p>
+Sets the return type of the results to be as an associative array.</p>
+
+
+
+<p>Returns: \Model </p>
+
+
+<h3 id="asObject()">asObject()</h3>
+
+<p>
+Sets the return type to be of the specified type of object.</p>
+
+<p>Defaults to a simple object, but can be any class that has
+class vars with the same name as the table columns, or at least
+allows them to be created.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Model </p>
+
+
+<h3 id="chunk()">chunk()</h3>
+
+<p>
+Loops over records in batches, allowing you to operate on them.</p>
+
+<p>Works with $this-&gt;builder to get the Compiled select to
+determine the rows to operate on.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $size        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $userFunc        </td>
+        <td>
+            \Closure        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="classToArray()">classToArray()</h3>
+
+<p>
+Takes a class an returns an array of it's public and protected
+properties as an array suitable for use in creates and updates.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            string|object        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $primaryKey        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $dateFormat        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $onlyChanged        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="cleanRules()">cleanRules()</h3>
+
+<p>
+Should validation rules be removed before saving?
+Most handy when doing updates.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $choice        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="countAllResults()">countAllResults()</h3>
+
+<p>
+Override countAllResults to account for soft deleted accounts.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $reset        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $test        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="delete()">delete()</h3>
+
+<p>
+Deletes a single record from $this->table where $id matches
+the table's primaryKey</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $id        </td>
+        <td>
+            int|string|array|null        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $purge        </td>
+        <td>
+            bool        </td>
+        <td>
+            Allows        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="errors()">errors()</h3>
+
+<p>
+Grabs the last error(s) that occurred. If data was validated,
+it will first check for errors there, otherwise will try to
+grab the last error from the Database connection.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $forceDB        </td>
+        <td>
+            bool        </td>
+        <td>
+            Always        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|null </p>
+
+
+<h3 id="find()">find()</h3>
+
+<p>
+Fetches the row of database from $this->table with a primary key
+matching $id.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $id        </td>
+        <td>
+            mixed|array|null        </td>
+        <td>
+            One        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|object|null The resulting row of data, or null.</p>
+
+
+<h3 id="findAll()">findAll()</h3>
+
+<p>
+Works with the current Query Builder instance to return
+all results, while optionally limiting them.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $limit        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $offset        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="findColumn()">findColumn()</h3>
+
+<p>
+Fetches the column of database from $this->table</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $columnName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array|null The resulting row of data, or null if no data found.</p>
+
+
+<h3 id="first()">first()</h3>
+
+<p>
+Returns the first row of the result set. Will take any previous
+Query Builder calls into account when determining the result set.</p>
+
+
+
+<p>Returns: array|object|null </p>
+
+
+<h3 id="getInsertID()">getInsertID()</h3>
+
+<p>
+Returns last insert ID or 0.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getValidationMessages()">getValidationMessages()</h3>
+
+<p>
+Returns the model's define validation messages so they
+can be used elsewhere, if needed.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getValidationRules()">getValidationRules()</h3>
+
+<p>
+Returns the model's defined validation rules so that they
+can be used elsewhere, if needed.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="insert()">insert()</h3>
+
+<p>
+Inserts data into the current table. If an object is provided,
+it will attempt to convert it to an array.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array|object        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $returnID        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: int|string|bool </p>
+
+
+<h3 id="insertBatch()">insertBatch()</h3>
+
+<p>
+Compiles batch insert strings and runs the queries, validating each row prior.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+        <tr>
+        <td>
+            $batchSize        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $testing        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: int|bool Number of rows inserted or FALSE on failure</p>
+
+
+<h3 id="onlyDeleted()">onlyDeleted()</h3>
+
+<p>
+Works with the find* methods to return only the rows that
+have been deleted.</p>
+
+
+
+<p>Returns: \Model </p>
+
+
+<h3 id="paginate()">paginate()</h3>
+
+<p>
+Works with $this->builder to get the Compiled Select to operate on.</p>
+
+<p>Expects a GET variable (?page=2) that specifies the page of results
+to display.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $perPage        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $group        </td>
+        <td>
+            string        </td>
+        <td>
+            Will        </td>
+    </tr>
+        <tr>
+        <td>
+            $page        </td>
+        <td>
+            int        </td>
+        <td>
+            Optional        </td>
+    </tr>
+        <tr>
+        <td>
+            $segment        </td>
+        <td>
+            int        </td>
+        <td>
+            Optional        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|null </p>
+
+
+<h3 id="protect()">protect()</h3>
+
+<p>
+Sets whether or not we should whitelist data set during
+updates or inserts against $this->availableFields.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $protect        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Model </p>
+
+
+<h3 id="purgeDeleted()">purgeDeleted()</h3>
+
+<p>
+Permanently deletes all rows that have been marked as deleted
+through soft deletes (deleted = 1)</p>
+
+
+
+<p>Returns: bool|mixed </p>
+
+
+<h3 id="replace()">replace()</h3>
+
+<p>
+Replace</p>
+
+<p>Compiles an replace into string and runs the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $returnSQL        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="save()">save()</h3>
+
+<p>
+A convenience method that will attempt to determine whether the
+data should be inserted or updated. Will work with either
+an array or object. When using with custom class objects,
+you must ensure that the class will provide access to the class
+variables, even if through a magic method.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array|object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="set()">set()</h3>
+
+<p>
+Captures the builder's set() method so that we can validate the
+data here. This allows it to be used with any of the other
+builder methods and still get validated data, like replace.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Field        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+            Field        </td>
+    </tr>
+        <tr>
+        <td>
+            $escape        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setTable()">setTable()</h3>
+
+<p>
+Specify the table associated with a model</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Model </p>
+
+
+<h3 id="setValidationMessage()">setValidationMessage()</h3>
+
+<p>
+Allows to set field wise validation message.</p>
+
+<p>It could be used when you have to change default or override current validate messages.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $field        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $fieldMessages        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="setValidationMessages()">setValidationMessages()</h3>
+
+<p>
+Allows to set validation messages.</p>
+
+<p>It could be used when you have to change default or override current validate messages.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $validationMessages        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="skipValidation()">skipValidation()</h3>
+
+<p>
+Set the value of the skipValidation flag.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $skip        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Model </p>
+
+
+<h3 id="update()">update()</h3>
+
+<p>
+Updates a single record in $this->table. If an object is provided,
+it will attempt to convert it into an array.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $id        </td>
+        <td>
+            int|array|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array|object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="updateBatch()">updateBatch()</h3>
+
+<p>
+Update_Batch</p>
+
+<p>Compiles an update string and runs the query</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $index        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $batchSize        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $returnSQL        </td>
+        <td>
+            bool        </td>
+        <td>
+            True        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed Number of rows affected or FALSE on failure</p>
+
+
+<h3 id="validate()">validate()</h3>
+
+<p>
+Validate the data against the validation rules (or the validation group)
+specified in the class property, $validationRules.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array|object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="withDeleted()">withDeleted()</h3>
+
+<p>
+Sets $useSoftDeletes value so that we can temporarily override
+the softdeletes settings. Can be used for all find* methods.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $val        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Model </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/loadCSS.js"></script>
+<script src="../../assets/js/popup.js"></script>
+
+<script src="../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

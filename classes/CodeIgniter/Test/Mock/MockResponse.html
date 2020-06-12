@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Test\Mock\MockResponse &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../../classes/CodeIgniter/Test/Mock/MockResponse.html">Class MockResponse</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        MockResponse</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Test\Mock\MockResponse        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/CodeIgniter\HTTP\Response.html">Response</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class MockResponse    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#appendBody()">
+            appendBody()
+            </a>
+        </td>
+        <td>
+            Appends data to the body of the current message.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#appendHeader()">
+            appendHeader()
+            </a>
+        </td>
+        <td>
+            Adds an additional header value to any headers that accept
+multiple values (i.e. are an array or implement ArrayAccess)        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#deleteCookie()">
+            deleteCookie()
+            </a>
+        </td>
+        <td>
+            Sets a cookie to be deleted when the response is sent.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#download()">
+            download()
+            </a>
+        </td>
+        <td>
+            Force a download.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBody()">
+            getBody()
+            </a>
+        </td>
+        <td>
+            Grabs the current body.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCookie()">
+            getCookie()
+            </a>
+        </td>
+        <td>
+            Returns the cookie        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeader()">
+            getHeader()
+            </a>
+        </td>
+        <td>
+            Returns a single header object. If multiple headers with the same
+name exist, then will return an array of header objects.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeaderLine()">
+            getHeaderLine()
+            </a>
+        </td>
+        <td>
+            Retrieves a comma-separated string of the values for a single header.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeaders()">
+            getHeaders()
+            </a>
+        </td>
+        <td>
+            Returns an array containing all headers.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getJSON()">
+            getJSON()
+            </a>
+        </td>
+        <td>
+            Returns the current body, converted to JSON is it isn't already.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPretend()">
+            getPretend()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockResponse.html">
+            MockResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProtocolVersion()">
+            getProtocolVersion()
+            </a>
+        </td>
+        <td>
+            Returns the HTTP Protocol Version.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getReason()">
+            getReason()
+            </a>
+        </td>
+        <td>
+            Gets the response response phrase associated with the status code.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStatusCode()">
+            getStatusCode()
+            </a>
+        </td>
+        <td>
+            Gets the response status code.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getXML()">
+            getXML()
+            </a>
+        </td>
+        <td>
+            Retrieves the current body into XML and returns it.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasCookie()">
+            hasCookie()
+            </a>
+        </td>
+        <td>
+            Checks to see if the Response has a specified cookie or not.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasHeader()">
+            hasHeader()
+            </a>
+        </td>
+        <td>
+            Determines whether a header exists.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#misbehave()">
+            misbehave()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockResponse.html">
+            MockResponse            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#noCache()">
+            noCache()
+            </a>
+        </td>
+        <td>
+            Sets the appropriate headers to ensure this response
+is not cached by the browsers.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#populateHeaders()">
+            populateHeaders()
+            </a>
+        </td>
+        <td>
+            Populates the $headers array with any headers the getServer knows about.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prependHeader()">
+            prependHeader()
+            </a>
+        </td>
+        <td>
+            Adds an additional header value to any headers that accept
+multiple values (i.e. are an array or implement ArrayAccess)        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#pretend()">
+            pretend()
+            </a>
+        </td>
+        <td>
+            Turns "pretend" mode on or off to aid in testing.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#redirect()">
+            redirect()
+            </a>
+        </td>
+        <td>
+            Perform a redirect to a new URL, in two flavors: header or location.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeHeader()">
+            removeHeader()
+            </a>
+        </td>
+        <td>
+            Removes a header from the list of headers we track.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#send()">
+            send()
+            </a>
+        </td>
+        <td>
+            Sends the output to the browser.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#sendBody()">
+            sendBody()
+            </a>
+        </td>
+        <td>
+            Sends the Body of the message to the browser.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#sendHeaders()">
+            sendHeaders()
+            </a>
+        </td>
+        <td>
+            Sends the headers of this HTTP request to the browser.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBody()">
+            setBody()
+            </a>
+        </td>
+        <td>
+            Sets the body of the current message.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCache()">
+            setCache()
+            </a>
+        </td>
+        <td>
+            A shortcut method that allows the developer to set all of the
+cache-control headers in one method call.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setContentType()">
+            setContentType()
+            </a>
+        </td>
+        <td>
+            Sets the Content Type header for this response with the mime type
+and, optionally, the charset.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCookie()">
+            setCookie()
+            </a>
+        </td>
+        <td>
+            Set a cookie        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDate()">
+            setDate()
+            </a>
+        </td>
+        <td>
+            Sets the date header        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHeader()">
+            setHeader()
+            </a>
+        </td>
+        <td>
+            Sets a header and it's value.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setJSON()">
+            setJSON()
+            </a>
+        </td>
+        <td>
+            Converts the $body into JSON and sets the Content Type header.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLastModified()">
+            setLastModified()
+            </a>
+        </td>
+        <td>
+            Sets the Last-Modified date header.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLink()">
+            setLink()
+            </a>
+        </td>
+        <td>
+            Set the Link Header        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setProtocolVersion()">
+            setProtocolVersion()
+            </a>
+        </td>
+        <td>
+            Sets the HTTP protocol version.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStatusCode()">
+            setStatusCode()
+            </a>
+        </td>
+        <td>
+            Return an instance with the specified status code and, optionally, reason phrase.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setXML()">
+            setXML()
+            </a>
+        </td>
+        <td>
+            Converts $body into XML, and sets the correct Content-Type.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \App        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="appendBody()">appendBody()</h3>
+
+<p>
+Appends data to the body of the current message.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $data        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message|\Response </p>
+
+
+<h3 id="appendHeader()">appendHeader()</h3>
+
+<p>
+Adds an additional header value to any headers that accept
+multiple values (i.e. are an array or implement ArrayAccess)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+<h3 id="deleteCookie()">deleteCookie()</h3>
+
+<p>
+Sets a cookie to be deleted when the response is sent.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $domain        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $prefix        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="download()">download()</h3>
+
+<p>
+Force a download.</p>
+
+<p>Generates the headers that force a download to happen. And
+sends the file to the browser.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $filename        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            string|null        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $setMime        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\HTTP\DownloadResponse|null </p>
+
+
+<h3 id="getBody()">getBody()</h3>
+
+<p>
+Grabs the current body.</p>
+
+
+
+<p>Returns: mixed|string </p>
+
+
+<h3 id="getCookie()">getCookie()</h3>
+
+<p>
+Returns the cookie</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $prefix        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getHeader()">getHeader()</h3>
+
+<p>
+Returns a single header object. If multiple headers with the same
+name exist, then will return an array of header objects.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array|\CodeIgniter\HTTP\Header </p>
+
+
+<h3 id="getHeaderLine()">getHeaderLine()</h3>
+
+<p>
+Retrieves a comma-separated string of the values for a single header.</p>
+
+<p>This method returns all of the header values of the given
+case-insensitive header name as a string concatenated together using
+a comma.</p>
+<p>NOTE: Not all header values may be appropriately represented using
+comma concatenation. For such headers, use getHeader() instead
+and supply your own delimiter when concatenating.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getHeaders()">getHeaders()</h3>
+
+<p>
+Returns an array containing all headers.</p>
+
+
+
+<p>Returns: array An array of the request headers</p>
+
+
+<h3 id="getJSON()">getJSON()</h3>
+
+<p>
+Returns the current body, converted to JSON is it isn't already.</p>
+
+
+
+<p>Returns: mixed|string </p>
+
+
+<h3 id="getPretend()">getPretend()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: void</p>
+
+
+<h3 id="getProtocolVersion()">getProtocolVersion()</h3>
+
+<p>
+Returns the HTTP Protocol Version.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getReason()">getReason()</h3>
+
+<p>
+Gets the response response phrase associated with the status code.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getStatusCode()">getStatusCode()</h3>
+
+<p>
+Gets the response status code.</p>
+
+<p>The status code is a 3-digit integer result code of the getServer's attempt
+to understand and satisfy the request.</p>
+
+
+<p>Returns: int Status code.</p>
+
+
+<h3 id="getXML()">getXML()</h3>
+
+<p>
+Retrieves the current body into XML and returns it.</p>
+
+
+
+<p>Returns: mixed|string </p>
+
+
+<h3 id="hasCookie()">hasCookie()</h3>
+
+<p>
+Checks to see if the Response has a specified cookie or not.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $prefix        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasHeader()">hasHeader()</h3>
+
+<p>
+Determines whether a header exists.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="misbehave()">misbehave()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: void</p>
+
+
+<h3 id="noCache()">noCache()</h3>
+
+<p>
+Sets the appropriate headers to ensure this response
+is not cached by the browsers.</p>
+
+
+
+<p>Returns: \Response </p>
+
+
+<h3 id="populateHeaders()">populateHeaders()</h3>
+
+<p>
+Populates the $headers array with any headers the getServer knows about.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="prependHeader()">prependHeader()</h3>
+
+<p>
+Adds an additional header value to any headers that accept
+multiple values (i.e. are an array or implement ArrayAccess)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+<h3 id="pretend()">pretend()</h3>
+
+<p>
+Turns "pretend" mode on or off to aid in testing.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pretend        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="redirect()">redirect()</h3>
+
+<p>
+Perform a redirect to a new URL, in two flavors: header or location.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="removeHeader()">removeHeader()</h3>
+
+<p>
+Removes a header from the list of headers we track.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+<h3 id="send()">send()</h3>
+
+<p>
+Sends the output to the browser.</p>
+
+
+
+<p>Returns: \Response </p>
+
+
+<h3 id="sendBody()">sendBody()</h3>
+
+<p>
+Sends the Body of the message to the browser.</p>
+
+
+
+<p>Returns: \Response </p>
+
+
+<h3 id="sendHeaders()">sendHeaders()</h3>
+
+<p>
+Sends the headers of this HTTP request to the browser.</p>
+
+
+
+<p>Returns: \Response </p>
+
+
+<h3 id="setBody()">setBody()</h3>
+
+<p>
+Sets the body of the current message.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message|\Response </p>
+
+
+<h3 id="setCache()">setCache()</h3>
+
+<p>
+A shortcut method that allows the developer to set all of the
+cache-control headers in one method call.</p>
+
+<p>The options array is used to provide the cache-control directives
+for the header. It might look something like:</p>
+<pre><code> $options = [
+     'max-age'  =&gt; 300,
+     's-maxage' =&gt; 900
+     'etag'     =&gt; 'abcde',
+ ];
+</code></pre>
+<p>Typical options are:</p>
+<ul>
+<li>etag</li>
+<li>last-modified</li>
+<li>max-age</li>
+<li>s-maxage</li>
+<li>private</li>
+<li>public</li>
+<li>must-revalidate</li>
+<li>proxy-revalidate</li>
+<li>no-transform</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Response </p>
+
+
+<h3 id="setContentType()">setContentType()</h3>
+
+<p>
+Sets the Content Type header for this response with the mime type
+and, optionally, the charset.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $mime        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $charset        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Response </p>
+
+
+<h3 id="setCookie()">setCookie()</h3>
+
+<p>
+Set a cookie</p>
+
+<p>Accepts an arbitrary number of binds (up to 7) or an associative
+array in the first parameter containing all the values.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Cookie        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+            Cookie        </td>
+    </tr>
+        <tr>
+        <td>
+            $expire        </td>
+        <td>
+            string        </td>
+        <td>
+            Cookie        </td>
+    </tr>
+        <tr>
+        <td>
+            $domain        </td>
+        <td>
+            string        </td>
+        <td>
+            Cookie        </td>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+            Cookie        </td>
+    </tr>
+        <tr>
+        <td>
+            $prefix        </td>
+        <td>
+            string        </td>
+        <td>
+            Cookie        </td>
+    </tr>
+        <tr>
+        <td>
+            $secure        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+        <tr>
+        <td>
+            $httponly        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setDate()">setDate()</h3>
+
+<p>
+Sets the date header</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $date        </td>
+        <td>
+            \DateTime        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Response </p>
+
+
+<h3 id="setHeader()">setHeader()</h3>
+
+<p>
+Sets a header and it's value.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            array|null|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message|\Response </p>
+
+
+<h3 id="setJSON()">setJSON()</h3>
+
+<p>
+Converts the $body into JSON and sets the Content Type header.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $body        </td>
+        <td>
+            array|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $unencoded        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setLastModified()">setLastModified()</h3>
+
+<p>
+Sets the Last-Modified date header.</p>
+
+<p>$date can be either a string representation of the date or,
+preferably, an instance of DateTime.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $date        </td>
+        <td>
+            \DateTime|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Response </p>
+
+
+<h3 id="setLink()">setLink()</h3>
+
+<p>
+Set the Link Header</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pager        </td>
+        <td>
+            \CodeIgniter\Pager\PagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Response </p>
+
+
+<h3 id="setProtocolVersion()">setProtocolVersion()</h3>
+
+<p>
+Sets the HTTP protocol version.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $version        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+<h3 id="setStatusCode()">setStatusCode()</h3>
+
+<p>
+Return an instance with the specified status code and, optionally, reason phrase.</p>
+
+<p>If no reason phrase is specified, will default recommended reason phrase for
+the response's status code.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $reason        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setXML()">setXML()</h3>
+
+<p>
+Converts $body into XML, and sets the correct Content-Type.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $body        </td>
+        <td>
+            array|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

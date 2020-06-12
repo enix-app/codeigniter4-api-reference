@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Test\ControllerTester &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Test/ControllerTester.html">Class ControllerTester</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Interface 
+        ControllerTester</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Test\ControllerTester        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    ControllerTester Trait    </p>
+    <p>Provides features that make testing controllers simple and fluent.</p>
+<p>Example:</p>
+<p> $this-&gt;withRequest($request)</p>
+<pre><code>  -&gt;withResponse($response)
+  -&gt;withURI($uri)
+  -&gt;withBody($body)
+  -&gt;controller('App\Controllers\Home')
+  -&gt;run('methodName');
+</code></pre>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#controller()">
+            controller()
+            </a>
+        </td>
+        <td>
+            Loads the specified controller, and generates any needed dependencies.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\ControllerTester.html">
+            ControllerTester            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#execute()">
+            execute()
+            </a>
+        </td>
+        <td>
+            Runs the specified method on the controller and returns the results.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\ControllerTester.html">
+            ControllerTester            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#withBody()">
+            withBody()
+            </a>
+        </td>
+        <td>
+            Set the method's body, with method chaining.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\ControllerTester.html">
+            ControllerTester            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#withConfig()">
+            withConfig()
+            </a>
+        </td>
+        <td>
+            Set controller's config, with method chaining.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\ControllerTester.html">
+            ControllerTester            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#withLogger()">
+            withLogger()
+            </a>
+        </td>
+        <td>
+            Set controller's logger, with method chaining.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\ControllerTester.html">
+            ControllerTester            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#withRequest()">
+            withRequest()
+            </a>
+        </td>
+        <td>
+            Set controller's request, with method chaining.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\ControllerTester.html">
+            ControllerTester            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#withResponse()">
+            withResponse()
+            </a>
+        </td>
+        <td>
+            Set controller's response, with method chaining.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\ControllerTester.html">
+            ControllerTester            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#withUri()">
+            withUri()
+            </a>
+        </td>
+        <td>
+            Set the controller's URI, with method chaining.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Test\ControllerTester.html">
+            ControllerTester            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="controller()">controller()</h3>
+
+<p>
+Loads the specified controller, and generates any needed dependencies.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="execute()">execute()</h3>
+
+<p>
+Runs the specified method on the controller and returns the results.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \CodeIgniter\Test\ControllerResponse|\InvalidArgumentException </p>
+
+
+<h3 id="withBody()">withBody()</h3>
+
+<p>
+Set the method's body, with method chaining.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $body        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="withConfig()">withConfig()</h3>
+
+<p>
+Set controller's config, with method chaining.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $appConfig        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="withLogger()">withLogger()</h3>
+
+<p>
+Set controller's logger, with method chaining.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $logger        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="withRequest()">withRequest()</h3>
+
+<p>
+Set controller's request, with method chaining.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="withResponse()">withResponse()</h3>
+
+<p>
+Set controller's response, with method chaining.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="withUri()">withUri()</h3>
+
+<p>
+Set the controller's URI, with method chaining.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

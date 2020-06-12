@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\HTTP\Files\UploadedFileInterface &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../../classes/CodeIgniter/HTTP/Files/UploadedFileInterface.html">Class UploadedFileInterface</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Interface 
+        UploadedFileInterface</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\HTTP\Files\UploadedFileInterface        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Value object representing a single file uploaded through an
+HTTP request. Used by the IncomingRequest class to
+provide files.    </p>
+    <p>Typically, implementors will extend the SplFileInfo class.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Accepts the file information as would be filled in from the $_FILES array.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClientExtension()">
+            getClientExtension()
+            </a>
+        </td>
+        <td>
+            Returns the original file extension, based on the file name that
+was uploaded. This is NOT a trusted source.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClientMimeType()">
+            getClientMimeType()
+            </a>
+        </td>
+        <td>
+            Returns the mime type as provided by the client.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDestination()">
+            getDestination()
+            </a>
+        </td>
+        <td>
+            Returns the destination path for the move operation where overwriting is not expected.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getError()">
+            getError()
+            </a>
+        </td>
+        <td>
+            Retrieve the error associated with the uploaded file.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getName()">
+            getName()
+            </a>
+        </td>
+        <td>
+            Retrieve the filename sent by the client.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTempName()">
+            getTempName()
+            </a>
+        </td>
+        <td>
+            Gets the temporary filename where the file was uploaded to.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasMoved()">
+            hasMoved()
+            </a>
+        </td>
+        <td>
+            Returns whether the file has been moved or not. If it has,
+the move() method will not work and certain properties, like
+the tempName, will no longer be available.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isValid()">
+            isValid()
+            </a>
+        </td>
+        <td>
+            Returns whether the file was uploaded successfully, based on whether
+it was uploaded via HTTP and has no errors.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#move()">
+            move()
+            </a>
+        </td>
+        <td>
+            Move the uploaded file to a new location.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\HTTP\Files\UploadedFileInterface.html">
+            UploadedFileInterface            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Accepts the file information as would be filled in from the $_FILES array.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $originalName        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $mimeType        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $size        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $error        </td>
+        <td>
+            int        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="getClientExtension()">getClientExtension()</h3>
+
+<p>
+Returns the original file extension, based on the file name that
+was uploaded. This is NOT a trusted source.</p>
+
+<p>For a trusted version, use guessExtension() instead.</p>
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getClientMimeType()">getClientMimeType()</h3>
+
+<p>
+Returns the mime type as provided by the client.</p>
+
+<p>This is NOT a trusted value.
+For a trusted version, use getMimeType() instead.</p>
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getDestination()">getDestination()</h3>
+
+<p>
+Returns the destination path for the move operation where overwriting is not expected.</p>
+
+<p>First, it checks whether the delimiter is present in the filename, if it is, then it checks whether the
+last element is an integer as there may be cases that the delimiter may be present in the filename.
+For the all other cases, it appends an integer starting from zero before the file's extension.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $destination        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $delimiter        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $i        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getError()">getError()</h3>
+
+<p>
+Retrieve the error associated with the uploaded file.</p>
+
+<p>The return value MUST be one of PHP's UPLOAD_ERR_XXX constants.</p>
+<p>If the file was uploaded successfully, this method MUST return
+UPLOAD_ERR_OK.</p>
+<p>Implementations SHOULD return the value stored in the "error" key of
+the file in the $_FILES array.</p>
+
+
+<p>Returns: int One of PHP's UPLOAD_ERR_XXX constants.</p>
+
+
+<h3 id="getName()">getName()</h3>
+
+<p>
+Retrieve the filename sent by the client.</p>
+
+<p>Do not trust the value returned by this method. A client could send
+a malicious filename with the intention to corrupt or hack your
+application.</p>
+<p>Implementations SHOULD return the value stored in the "name" key of
+the file in the $_FILES array.</p>
+
+
+<p>Returns: string|null The filename sent by the client or null if none
+was provided.</p>
+
+
+<h3 id="getTempName()">getTempName()</h3>
+
+<p>
+Gets the temporary filename where the file was uploaded to.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="hasMoved()">hasMoved()</h3>
+
+<p>
+Returns whether the file has been moved or not. If it has,
+the move() method will not work and certain properties, like
+the tempName, will no longer be available.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="isValid()">isValid()</h3>
+
+<p>
+Returns whether the file was uploaded successfully, based on whether
+it was uploaded via HTTP and has no errors.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="move()">move()</h3>
+
+<p>
+Move the uploaded file to a new location.</p>
+
+<p>$targetPath may be an absolute path, or a relative path. If it is a
+relative path, resolution should be the same as used by PHP's rename()
+function.</p>
+<p>The original file MUST be removed on completion.</p>
+<p>If this method is called more than once, any subsequent calls MUST raise
+an exception.</p>
+<p>When used in an SAPI environment where $_FILES is populated, when writing
+files via moveTo(), is_uploaded_file() and move_uploaded_file() SHOULD be
+used to ensure permissions and upload status are verified correctly.</p>
+<p>If you wish to move to a stream, use getStream(), as SAPI operations
+cannot guarantee writing to stream destinations.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $targetPath        </td>
+        <td>
+            string        </td>
+        <td>
+            Path        </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            the        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

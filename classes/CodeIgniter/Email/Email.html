@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Email\Email &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/Email/Email.html">Class Email</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Email</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Email\Email        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    CodeIgniter Email Class    </p>
+    <p>Permits email to be sent using Mail, Sendmail, or SMTP.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor - Sets Email Preferences        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__destruct()">
+            __destruct()
+            </a>
+        </td>
+        <td>
+            Destructor        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#attach()">
+            attach()
+            </a>
+        </td>
+        <td>
+            Assign file attachments        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#batchBCCSend()">
+            batchBCCSend()
+            </a>
+        </td>
+        <td>
+            Batch Bcc Send. Sends groups of BCCs in batches        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#cleanEmail()">
+            cleanEmail()
+            </a>
+        </td>
+        <td>
+            Clean Extended Email Address: Joe Smith <joe@smith.com>        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clear()">
+            clear()
+            </a>
+        </td>
+        <td>
+            Initialize the Email Data        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#initialize()">
+            initialize()
+            </a>
+        </td>
+        <td>
+            Initialize preferences        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isValidEmail()">
+            isValidEmail()
+            </a>
+        </td>
+        <td>
+            Email Validation        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#printDebugger()">
+            printDebugger()
+            </a>
+        </td>
+        <td>
+            Get Debug Message        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#send()">
+            send()
+            </a>
+        </td>
+        <td>
+            Send Email        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAltMessage()">
+            setAltMessage()
+            </a>
+        </td>
+        <td>
+            Set Multipart Value        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAttachmentCID()">
+            setAttachmentCID()
+            </a>
+        </td>
+        <td>
+            Set and return attachment Content-ID        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBCC()">
+            setBCC()
+            </a>
+        </td>
+        <td>
+            Set BCC        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCC()">
+            setCC()
+            </a>
+        </td>
+        <td>
+            Set CC        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCRLF()">
+            setCRLF()
+            </a>
+        </td>
+        <td>
+            Set CRLF        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFrom()">
+            setFrom()
+            </a>
+        </td>
+        <td>
+            Set FROM        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHeader()">
+            setHeader()
+            </a>
+        </td>
+        <td>
+            Add a Header Item        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMailType()">
+            setMailType()
+            </a>
+        </td>
+        <td>
+            Set Mailtype        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMessage()">
+            setMessage()
+            </a>
+        </td>
+        <td>
+            Set Body        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setNewline()">
+            setNewline()
+            </a>
+        </td>
+        <td>
+            Set Newline Character        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPriority()">
+            setPriority()
+            </a>
+        </td>
+        <td>
+            Set Priority        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setProtocol()">
+            setProtocol()
+            </a>
+        </td>
+        <td>
+            Set Protocol        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setReplyTo()">
+            setReplyTo()
+            </a>
+        </td>
+        <td>
+            Set Reply-to        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSubject()">
+            setSubject()
+            </a>
+        </td>
+        <td>
+            Set Email Subject        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTo()">
+            setTo()
+            </a>
+        </td>
+        <td>
+            Set Recipients        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWordWrap()">
+            setWordWrap()
+            </a>
+        </td>
+        <td>
+            Set Wordwrap        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validateEmail()">
+            validateEmail()
+            </a>
+        </td>
+        <td>
+            Validate Email Address        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#wordWrap()">
+            wordWrap()
+            </a>
+        </td>
+        <td>
+            Word Wrap        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\Email\Email.html">
+            Email            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor - Sets Email Preferences</p>
+
+<p>The constructor can be passed an array of config values</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            array|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__destruct()">__destruct()</h3>
+
+<p>
+Destructor</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+Assign file attachments</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $file        </td>
+        <td>
+            string        </td>
+        <td>
+            Can        </td>
+    </tr>
+        <tr>
+        <td>
+            $disposition        </td>
+        <td>
+            string        </td>
+        <td>
+            'attachment'        </td>
+    </tr>
+        <tr>
+        <td>
+            $newname        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $mime        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="batchBCCSend()">batchBCCSend()</h3>
+
+<p>
+Batch Bcc Send. Sends groups of BCCs in batches</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="cleanEmail()">cleanEmail()</h3>
+
+<p>
+Clean Extended Email Address: Joe Smith <joe@smith.com></p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $email        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="clear()">clear()</h3>
+
+<p>
+Initialize the Email Data</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $clearAttachments        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="initialize()">initialize()</h3>
+
+<p>
+Initialize preferences</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            array|\Config\Email        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="isValidEmail()">isValidEmail()</h3>
+
+<p>
+Email Validation</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $email        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="printDebugger()">printDebugger()</h3>
+
+<p>
+Get Debug Message</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $include        </td>
+        <td>
+            array        </td>
+        <td>
+            List        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="send()">send()</h3>
+
+<p>
+Send Email</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $autoClear        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="setAltMessage()">setAltMessage()</h3>
+
+<p>
+Set Multipart Value</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $str        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setAttachmentCID()">setAttachmentCID()</h3>
+
+<p>
+Set and return attachment Content-ID</p>
+
+<p>Useful for attached inline pictures</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $filename        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="setBCC()">setBCC()</h3>
+
+<p>
+Set BCC</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $bcc        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $limit        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setCC()">setCC()</h3>
+
+<p>
+Set CC</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cc        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setCRLF()">setCRLF()</h3>
+
+<p>
+Set CRLF</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $CRLF        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setFrom()">setFrom()</h3>
+
+<p>
+Set FROM</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $from        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $returnPath        </td>
+        <td>
+            string|null        </td>
+        <td>
+            Return-Path        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setHeader()">setHeader()</h3>
+
+<p>
+Add a Header Item</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $header        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setMailType()">setMailType()</h3>
+
+<p>
+Set Mailtype</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setMessage()">setMessage()</h3>
+
+<p>
+Set Body</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $body        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setNewline()">setNewline()</h3>
+
+<p>
+Set Newline Character</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $newline        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setPriority()">setPriority()</h3>
+
+<p>
+Set Priority</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $n        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setProtocol()">setProtocol()</h3>
+
+<p>
+Set Protocol</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $protocol        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setReplyTo()">setReplyTo()</h3>
+
+<p>
+Set Reply-to</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $replyto        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setSubject()">setSubject()</h3>
+
+<p>
+Set Email Subject</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $subject        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setTo()">setTo()</h3>
+
+<p>
+Set Recipients</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $to        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="setWordWrap()">setWordWrap()</h3>
+
+<p>
+Set Wordwrap</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $wordWrap        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Email </p>
+
+
+<h3 id="validateEmail()">validateEmail()</h3>
+
+<p>
+Validate Email Address</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $email        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="wordWrap()">wordWrap()</h3>
+
+<p>
+Word Wrap</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $str        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $charlim        </td>
+        <td>
+            int|null        </td>
+        <td>
+            Line-length        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\HTTP\ContentSecurityPolicy &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../classes/CodeIgniter/HTTP/ContentSecurityPolicy.html">Class ContentSecurityPolicy</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        ContentSecurityPolicy</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\HTTP\ContentSecurityPolicy        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class ContentSecurityPolicy    </p>
+    <p>Provides tools for working with the Content-Security-Policy header
+to help defeat XSS attacks.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            ContentSecurityPolicy constructor.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addBaseURI()">
+            addBaseURI()
+            </a>
+        </td>
+        <td>
+            Adds a new base_uri value. Can be either a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addChildSrc()">
+            addChildSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addConnectSrc()">
+            addConnectSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addFontSrc()">
+            addFontSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addFormAction()">
+            addFormAction()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addFrameAncestor()">
+            addFrameAncestor()
+            </a>
+        </td>
+        <td>
+            Adds a new resource that should allow embedding the resource using
+<frame>, <iframe>, <object>, <embed>, or <applet>        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addImageSrc()">
+            addImageSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for valid image sources. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addManifestSrc()">
+            addManifestSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for manifest sources. Can be either
+a URI class or simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addMediaSrc()">
+            addMediaSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for valid video and audio. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addObjectSrc()">
+            addObjectSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for Flash and other plugin sources. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPluginType()">
+            addPluginType()
+            </a>
+        </td>
+        <td>
+            Limits the types of plugins that can be used. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addSandbox()">
+            addSandbox()
+            </a>
+        </td>
+        <td>
+            specifies an HTML sandbox policy that the user agent applies to
+the protected resource.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addScriptSrc()">
+            addScriptSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for javascript file sources. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addStyleSrc()">
+            addStyleSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for CSS file sources. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#finalize()">
+            finalize()
+            </a>
+        </td>
+        <td>
+            Compiles and sets the appropriate headers in the request.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reportOnly()">
+            reportOnly()
+            </a>
+        </td>
+        <td>
+            If TRUE, nothing will be restricted. Instead all violations will
+be reported to the reportURI for monitoring. This is useful when
+you are just starting to implement the policy, and will help
+determine what errors need to be addressed before you turn on
+all filtering.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultSrc()">
+            setDefaultSrc()
+            </a>
+        </td>
+        <td>
+            Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setReportURI()">
+            setReportURI()
+            </a>
+        </td>
+        <td>
+            Specifies a URL where a browser will send reports when a content
+security policy is violated. Can be either a URI class or a simple string.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#upgradeInsecureRequests()">
+            upgradeInsecureRequests()
+            </a>
+        </td>
+        <td>
+            Sets whether the user agents should rewrite URL schemes, changing
+HTTP to HTTPS.        </td>
+        <td>
+            <a href="../../../classes/CodeIgniter\HTTP\ContentSecurityPolicy.html">
+            ContentSecurityPolicy            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+ContentSecurityPolicy constructor.</p>
+
+<p>Stores our default values from the Config file.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\ContentSecurityPolicy        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="addBaseURI()">addBaseURI()</h3>
+
+<p>
+Adds a new base_uri value. Can be either a URI class or a simple string.</p>
+
+<p>base_uri restricts the URLs that can appear in a page’s <base> element.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addChildSrc()">addChildSrc()</h3>
+
+<p>
+Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.</p>
+
+<p>child-src lists the URLs for workers and embedded frame contents.
+For example: child-src <a href="https://youtube.com">https://youtube.com</a> would enable embedding
+videos from YouTube but not from other origins.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addConnectSrc()">addConnectSrc()</h3>
+
+<p>
+Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.</p>
+
+<p>connect-src limits the origins to which you can connect
+(via XHR, WebSockets, and EventSource).</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addFontSrc()">addFontSrc()</h3>
+
+<p>
+Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.</p>
+
+<p>font-src specifies the origins that can serve web fonts.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addFormAction()">addFormAction()</h3>
+
+<p>
+Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addFrameAncestor()">addFrameAncestor()</h3>
+
+<p>
+Adds a new resource that should allow embedding the resource using
+<frame>, <iframe>, <object>, <embed>, or <applet></p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addImageSrc()">addImageSrc()</h3>
+
+<p>
+Adds a new valid endpoint for valid image sources. Can be either
+a URI class or a simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addManifestSrc()">addManifestSrc()</h3>
+
+<p>
+Adds a new valid endpoint for manifest sources. Can be either
+a URI class or simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addMediaSrc()">addMediaSrc()</h3>
+
+<p>
+Adds a new valid endpoint for valid video and audio. Can be either
+a URI class or a simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addObjectSrc()">addObjectSrc()</h3>
+
+<p>
+Adds a new valid endpoint for Flash and other plugin sources. Can be either
+a URI class or a simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addPluginType()">addPluginType()</h3>
+
+<p>
+Limits the types of plugins that can be used. Can be either
+a URI class or a simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $mime        </td>
+        <td>
+            string|array        </td>
+        <td>
+            One        </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addSandbox()">addSandbox()</h3>
+
+<p>
+specifies an HTML sandbox policy that the user agent applies to
+the protected resource.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $flags        </td>
+        <td>
+            string|array        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addScriptSrc()">addScriptSrc()</h3>
+
+<p>
+Adds a new valid endpoint for javascript file sources. Can be either
+a URI class or a simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="addStyleSrc()">addStyleSrc()</h3>
+
+<p>
+Adds a new valid endpoint for CSS file sources. Can be either
+a URI class or a simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="finalize()">finalize()</h3>
+
+<p>
+Compiles and sets the appropriate headers in the request.</p>
+
+<p>Should be called just prior to sending the response to the user agent.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \ResponseInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="reportOnly()">reportOnly()</h3>
+
+<p>
+If TRUE, nothing will be restricted. Instead all violations will
+be reported to the reportURI for monitoring. This is useful when
+you are just starting to implement the policy, and will help
+determine what errors need to be addressed before you turn on
+all filtering.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setDefaultSrc()">setDefaultSrc()</h3>
+
+<p>
+Adds a new valid endpoint for a form's action. Can be either
+a URI class or a simple string.</p>
+
+<p>default_src is the URI that is used for many of the settings when
+no other source has been set.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $explicitReporting        </td>
+        <td>
+            bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setReportURI()">setReportURI()</h3>
+
+<p>
+Specifies a URL where a browser will send reports when a content
+security policy is violated. Can be either a URI class or a simple string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="upgradeInsecureRequests()">upgradeInsecureRequests()</h3>
+
+<p>
+Sets whether the user agents should rewrite URL schemes, changing
+HTTP to HTTPS.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+<script src="../../../assets/js/popup.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+

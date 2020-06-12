@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CodeIgniter4 API Reference">
+<meta name="keywords" content="php,codeigniter4 framework,api,reference">
+<meta name="author" content="(c) 2020">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class CodeIgniter\Test\Mock\MockSession &ndash; CodeIgniter4 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">CodeIgniter4 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://codeigniter.com">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/enix-app/codeigniter4-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/codeigniter4/codeigniter4.html">codeigniter4/codeigniter4</a>
+    &rarr;        <a href="../../../../classes/CodeIgniter/Test/Mock/MockSession.html">Class MockSession</a>
+        </div>
+
+
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        MockSession</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            CodeIgniter\Test\Mock\MockSession        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/CodeIgniter\Session\Session.html">Session</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class MockSession    </p>
+    <p>Provides a safe way to test the Session class itself,
+that doesn't interact with the session or cookies at all.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Magic method to get session variables by simply calling
+ $foo = $session->foo;        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__isset()">
+            __isset()
+            </a>
+        </td>
+        <td>
+            Magic method to check for session variables.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__set()">
+            __set()
+            </a>
+        </td>
+        <td>
+            Magic method to set variables in the session by simply calling
+ $session->foo = bar;        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#destroy()">
+            destroy()
+            </a>
+        </td>
+        <td>
+            Destroys the current session.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get()">
+            get()
+            </a>
+        </td>
+        <td>
+            Get user data that has been set in the session.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFlashKeys()">
+            getFlashKeys()
+            </a>
+        </td>
+        <td>
+            Retrieve all of the keys for session data marked as flashdata.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFlashdata()">
+            getFlashdata()
+            </a>
+        </td>
+        <td>
+            Retrieve one or more items of flash data from the session.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTempKeys()">
+            getTempKeys()
+            </a>
+        </td>
+        <td>
+            Retrieve the keys of all session data that have been marked as temporary data.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTempdata()">
+            getTempdata()
+            </a>
+        </td>
+        <td>
+            Returns either a single piece of tempdata, or all temp data currently
+in the session.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#has()">
+            has()
+            </a>
+        </td>
+        <td>
+            Returns whether an index exists in the session array.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#keepFlashdata()">
+            keepFlashdata()
+            </a>
+        </td>
+        <td>
+            Keeps a single piece of flash data alive for one more request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#markAsFlashdata()">
+            markAsFlashdata()
+            </a>
+        </td>
+        <td>
+            Mark a session property or properties as flashdata.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#markAsTempdata()">
+            markAsTempdata()
+            </a>
+        </td>
+        <td>
+            Mark one of more pieces of data as being temporary, meaning that
+it has a set lifespan within the session.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#push()">
+            push()
+            </a>
+        </td>
+        <td>
+            Push new value onto session value that is array.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#regenerate()">
+            regenerate()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Test\Mock\MockSession.html">
+            MockSession            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#remove()">
+            remove()
+            </a>
+        </td>
+        <td>
+            Remove one or more session properties.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeTempdata()">
+            removeTempdata()
+            </a>
+        </td>
+        <td>
+            Removes a single piece of temporary data from the session.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#set()">
+            set()
+            </a>
+        </td>
+        <td>
+            Sets user data into the session.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFlashdata()">
+            setFlashdata()
+            </a>
+        </td>
+        <td>
+            Sets data into the session that will only last for a single request.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTempdata()">
+            setTempdata()
+            </a>
+        </td>
+        <td>
+            Sets new data into the session, and marks it as temporary data
+with a set lifespan.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#start()">
+            start()
+            </a>
+        </td>
+        <td>
+            Initialize the session container and starts up the session.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#stop()">
+            stop()
+            </a>
+        </td>
+        <td>
+            Does a full stop of the session:        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#unmarkFlashdata()">
+            unmarkFlashdata()
+            </a>
+        </td>
+        <td>
+            Unmark data in the session as flashdata.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#unmarkTempdata()">
+            unmarkTempdata()
+            </a>
+        </td>
+        <td>
+            Unmarks temporary data in the session, effectively removing its
+lifespan and allowing it to live as long as the session does.        </td>
+        <td>
+            <a href="../../../../classes/CodeIgniter\Session\Session.html">
+            Session            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor.</p>
+
+<p>Extract configuration settings and save them here.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $driver        </td>
+        <td>
+            \SessionHandlerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config\App        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Magic method to get session variables by simply calling
+ $foo = $session->foo;</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+    </table>
+
+<p>Returns: null|string </p>
+
+
+<h3 id="__isset()">__isset()</h3>
+
+<p>
+Magic method to check for session variables.</p>
+
+<p>Different from has() in that it will validate 'session_id' as well.
+Mostly used by internal PHP functions, users should stick to has()</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="__set()">__set()</h3>
+
+<p>
+Magic method to set variables in the session by simply calling
+ $session->foo = bar;</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="destroy()">destroy()</h3>
+
+<p>
+Destroys the current session.</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+Get user data that has been set in the session.</p>
+
+<p>If the property exists as "normal", returns it.
+Otherwise, returns an array of any temp or flash data values with the
+property key.</p>
+<p>Replaces the legacy method $session-&gt;userdata();</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|null The property value(s)</p>
+
+
+<h3 id="getFlashKeys()">getFlashKeys()</h3>
+
+<p>
+Retrieve all of the keys for session data marked as flashdata.</p>
+
+
+
+<p>Returns: array The property names of all flashdata</p>
+
+
+<h3 id="getFlashdata()">getFlashdata()</h3>
+
+<p>
+Retrieve one or more items of flash data from the session.</p>
+
+<p>If the item key is null, return all flashdata.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Property        </td>
+    </tr>
+    </table>
+
+<p>Returns: array|null The requested property value, or an associative array  of them</p>
+
+
+<h3 id="getTempKeys()">getTempKeys()</h3>
+
+<p>
+Retrieve the keys of all session data that have been marked as temporary data.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getTempdata()">getTempdata()</h3>
+
+<p>
+Returns either a single piece of tempdata, or all temp data currently
+in the session.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Session        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed Session data value or null if not found.</p>
+
+
+<h3 id="has()">has()</h3>
+
+<p>
+Returns whether an index exists in the session array.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="keepFlashdata()">keepFlashdata()</h3>
+
+<p>
+Keeps a single piece of flash data alive for one more request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            array|string        </td>
+        <td>
+            Property        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="markAsFlashdata()">markAsFlashdata()</h3>
+
+<p>
+Mark a session property or properties as flashdata.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            array|string        </td>
+        <td>
+            Property        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool False if any of the properties are not already set</p>
+
+
+<h3 id="markAsTempdata()">markAsTempdata()</h3>
+
+<p>
+Mark one of more pieces of data as being temporary, meaning that
+it has a set lifespan within the session.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Property        </td>
+    </tr>
+        <tr>
+        <td>
+            $ttl        </td>
+        <td>
+            int        </td>
+        <td>
+            Time        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool False if any of the properties were not set</p>
+
+
+<h3 id="push()">push()</h3>
+
+<p>
+Push new value onto session value that is array.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array        </td>
+        <td>
+            value        </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="regenerate()">regenerate()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $destroy        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void</p>
+
+
+<h3 id="remove()">remove()</h3>
+
+<p>
+Remove one or more session properties.</p>
+
+<p>If $key is an array, it is interpreted as an array of string property
+identifiers to remove. Otherwise, it is interpreted as the identifier
+of a specific session property to remove.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="removeTempdata()">removeTempdata()</h3>
+
+<p>
+Removes a single piece of temporary data from the session.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+            Session        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="set()">set()</h3>
+
+<p>
+Sets user data into the session.</p>
+
+<p>If $data is a string, then it is interpreted as a session property
+key, and  $value is expected to be non-null.</p>
+<p>If $data is an array, it is expected to be an array of key/value pairs
+to be set as session properties.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Property        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Property        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setFlashdata()">setFlashdata()</h3>
+
+<p>
+Sets data into the session that will only last for a single request.</p>
+
+<p>Perfect for use with single-use status update messages.</p>
+<p>If $data is an array, it is interpreted as an associative array of
+key/value pairs for flashdata properties.
+Otherwise, it is interpreted as the identifier of a specific
+flashdata property, with $value containing the property value.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array|string        </td>
+        <td>
+            Property        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Property        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setTempdata()">setTempdata()</h3>
+
+<p>
+Sets new data into the session, and marks it as temporary data
+with a set lifespan.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Session        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            null        </td>
+        <td>
+            Value        </td>
+    </tr>
+        <tr>
+        <td>
+            $ttl        </td>
+        <td>
+            int        </td>
+        <td>
+            Time-to-live        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="start()">start()</h3>
+
+<p>
+Initialize the session container and starts up the session.</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="stop()">stop()</h3>
+
+<p>
+Does a full stop of the session:</p>
+
+<ul>
+<li>destroys the session</li>
+<li>unsets the session id</li>
+<li>destroys the session cookie</li>
+</ul>
+
+
+<p>Returns: </p>
+
+
+<h3 id="unmarkFlashdata()">unmarkFlashdata()</h3>
+
+<p>
+Unmark data in the session as flashdata.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Property        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="unmarkTempdata()">unmarkTempdata()</h3>
+
+<p>
+Unmarks temporary data in the session, effectively removing its
+lifespan and allowing it to live as long as the session does.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Property        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+
+</body>
+</html>    
+
