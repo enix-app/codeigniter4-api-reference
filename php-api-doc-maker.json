@@ -11,7 +11,8 @@
     ],
     "links": {
         "Home": "https://codeigniter.com",
-        "Contribute": "https://github.com/enix-app/codeigniter4-api-reference"
+        "Contribute": "https://github.com/enix-app/codeigniter4-api-reference",
+        "Download": "https://github.com/enix-app/codeigniter4-api-reference/archive/gh-pages.zip"
     },
     "components": [
         "codeigniter4/framework"
